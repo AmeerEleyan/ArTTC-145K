@@ -113,7 +113,7 @@ The five runs use seeds 1–5 on the same fixed splits. TF-IDF + SVM is determin
 
 ## Contact
 
-Ameer Eleyan, [email], Faculty of Engineering and Technology, Birzeit University, Palestine.
+Ameer Eleyan, ameleyan@birzeit.edu, Faculty of Engineering and Technology, Birzeit University, Palestine.
 
 ## Acknowledgments
 
