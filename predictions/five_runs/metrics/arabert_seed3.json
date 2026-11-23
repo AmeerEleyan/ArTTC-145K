@@ -1,0 +1,43 @@
+{
+  "model": "arabert",
+  "seed": 3,
+  "n_test": 21757,
+  "metrics": {
+    "accuracy": 94.14,
+    "macro_precision": 94.07,
+    "macro_recall": 94.04,
+    "macro_f1": 94.05,
+    "weighted_f1": 94.14,
+    "per_class_f1": {
+      "اقتصاد": 94.24,
+      "تكنولوجيا": 94.97,
+      "خواطر واقتباسات": 92.67,
+      "دين": 92.25,
+      "رياضه": 98.88,
+      "سيارت": 97.22,
+      "سياسه": 95.97,
+      "صحه": 90.22,
+      "طهي": 96.13,
+      "علوم": 87.95
+    }
+  },
+  "info": {
+    "train_seconds": 1212.601,
+    "train_peak_gpu_mb": 2826.8,
+    "epochs_trained": 4,
+    "best_epoch": 4
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA A100-SXM4-80GB, 81920 MiB",
+    "cpu_count": "12",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tensorflow": "2.21.0",
+    "sklearn": "1.6.1",
+    "numpy": "2.4.6"
+  },
+  "saved_at": "2026-11-20 13:46:22"
+}

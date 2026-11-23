@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1001 to T1050.
+- Each line has the form ID,Category (for example: T1001,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1001 to T1050):
+T1001: شركات نفط صينيه تجري محادثات متقدمه مع قطر للاستثمار في مشروع توسعه حقل الشمال وشراء غاز بموجب عقود طويله الأجل
+T1002: ألمانيا باتجاه حظر واردات الفحم الروسي
+T1003: شاهد باراغواي تسلم واشنطن لبنانيا متهما بغسيل الأموال في أربع قارات وله علاقات ب حزب الله لبنان
+T1004: جرحي بإطلاق نار في مركز تسوق في كوبنهاغن واعتقال شخص
+T1005: حثت مديره منظمه التجاره العالميه نغوزي أوكونجو إيويالا دول العالم علي عدم منع أو تقييد صادرات المواد الغذائيه الأساسيه بعدما أدي الغزو الروسي لأوكرانيا إلي تفاقم التوتر في أسواق الغذاء العالميه
+T1006: هل تنوي السفر لمنتجع جبلي احذر هذه الأعراض
+T1007: إضافه ألعاب جديد لخدمه هذا الأسبوع
+T1008: أعظم كرامه لزوم الاستقامه والشرف والسياده في دوام العباده من أراد الدنيا والآخره فعليه بصدق التوجه إلي الله وحده فهو الذي يملك الأولي والأخري عنده خزائن الفتوحات وكنوز الخيرات كرمه لا يحد وعطاؤه لا يرد لأنه أحد فرد صمد لم يلد ولم يولد عز جاهه وجل ثناؤه
+T1009: حزمه عقوبات أمريكيه جديده تطال مصنعه رقائق روسيه
+T1010: عمليات تهريب المخدرات عبر إيران تسارعت في الآونه الأخيره بالمياه الدوليه وفقا لما أعلنت عنه القوات البحريه المشتركه
+T1011: تغيير محركات لامبورغيني أوروس وبورش كايين وسيارات أودي بعد استدعائهم للتفاصيل
+T1012: يركز شعار هذا العام علي الأسر والتعليم والرفاهيه من خلال زياده الوعي بدور الأسر في تعزيز التعليم في جميع المراحل
+T1013: كيف يغير الذكاء الاصطناعي من صناعه التعليم ترجمه شريف فضل تدقيق راما الهريسي
+T1014: بورصه قطر تغلق التعاملات باللون الأحمر
+T1015: ب مكونات فقط حضري أطيب حلي بالكاسترد والبسكويت
+T1016: فولكس واجن تخضع رسميا للتحقيق بسبب مزحه للتفاصيل
+T1017: يعمل تناول الأرز علي ارتفاع نسبه السكر في الدم بشكل مفاجئ ويخفضه بشكل مفاجئ أيضا وبسرعه لهذا فإننا نشعر بالجوع المفاجئ بعد تناولنا الأكلات المعده بالأرز صباح الخير
+T1018: صورت أفلام الخيال العلمي تطورا هائلا في التقنيه والذكاء الاصطناعي فما صحه هذه التخيلات مقال نون
+T1019: البنك المركزي المصري ارتفاع ودائع العملاء بالجهاز المصرفي بنهايه شهر مارس الماضي بنحو مليار جنيه لتسجل تريليون جنيه مقابل تريليون جنيه في فبراير السابق للمزيد من
+T1020: زيني الطبق بالريحان الطازج
+T1021: شرح الأرقام علي الكفرات
+T1022: تحديات عديده تواجه القطاع العقاري المصري أبرزها ارتفاع التضخم وخفض قيمه الجنيه وارتفاع أسعار مدخلات البناء فكيف سيتعامل المطورون العقارييون للتغلب علي هذه المعوقات أحمد منصور عضو مجلس إداره غرفه التطوير العقاري يكشف للعربيه الحلول الممكنه لدعم القطاع
+T1023: اهتمي اكثر بالطماطم الكرزيه علي وجبه الإفطار واجعليها محشوه بالجبن مع اللحم المقدد وقدميها لأطفالك في اللانش بوكس   الحياه حلوه وصفات
+T1024: خيانه ترمب ثمنها الإقاله
+T1025: اللهم أنت الرحيم فاشملنا برحمتك وأنت الغفور فأنعم علينا بغفرانك وأنت الغني فجد علينا بكرمك وأنت النور فأفض علينا من نورك اللهم افتح لي ولأهلي وأحبابي أبواب الأمن والسلام واكفني وإياهم طريق الشر والآثام
+T1026: رسميا ماتيو فالبوينا سنه يجدد عقده مع أولمبياكوس حتي يونيو
+T1027: النفوس الطيبه لها وجوه طيبه حتي وإن لم تكن ملامحها جميله
+T1028: مشاهد للاشتباكات بين المتظاهرين والقوات الأمنيه في العاصمه السودانيه الخرطوم
+T1029: نهايه اللقاء بفوز الانتر علي فيرونا بنتيجه باريلا دزيكو
+T1030: المزيد من شركات الطيران تبدأ بحظر إستخدام حواسيب أثناء الرحلات
+T1031: علي الإنسان أن يكون رحيما لأن الرحمه تجمع بين البشر و أن يكون أديبا لأن الأدب يوحد القلوب المتنافره ليو تولستوي
+T1032: الشمام مفيد جدا صحيا أبرز فوائده المساعده علي خساره الوزن
+T1033: كويكب مظلم كان وراء تشكل فوهه تشيكشولوب وانقراض الديناصورات
+T1034: سكر بنات اضبطي الحلوي السكري بهذه الطريقه علي طريقه جدتي تسلم هالأيادي الحياه حلوه
+T1035: دراسه جديده أجراها باحثون في كليه الطب بجامعه واشنطن في سانت لويس تشير إلي أن أطفال الأمهات اللائي يواجهن صعوبات اجتماعيه مثل الفقر والجريمه يميلون إلي أن يولدوا بأدمغه أصغر من الأطفال الذين تتمتع أمهاتهم بدخل عائلي وظروف اجتماعيه أعلي
+T1036: لاعبو ريال مدريد يجرون عملياء الإحماء استعدادا لمباراه ليفربول في نهائي دوري أبطال أوروبا
+T1037: بدء موسم إعلان نتائج الربع الثاني في هذا الأسبوع ونظره أقل تفاؤلا من المحللين مع مذيعه  نور عماشه
+T1038: ستكلف خطه تحويل السعوديه إلي وجهه ضيافه عالميه أكثر من مليارات دولار بهدف إدخال آلاف غرفه فندقيه جديده إلي السوق خلال أقل من سنوات بحسب نايت فرانك
+T1039: لا تختبر صبر من طابت سجاياه ألا تري البحر لا تبدي نواياه لا تقصد البحر إن جدت طبائعه فالبحر لم ينفلق إلا لموساه شعر
+T1040: أفضل معدل لخساره الوزن هو نصف كيلو كل أسبوع كل مازاد معدل خساره الوزن فرصه اكتساب الوزن المفقود و الزياده عليه تزداد
+T1041: عندما تمتزج الحقيقه المره بالخيال القاسي عندما تصبح الأحلام عباره عن قطره ماء لا يجدها ملايين الناس في أفريقيا حينها نطلق حملتنا تخيل لحفر الآبار في أفريقيا
+T1042: فذ كروني أذ كر كم لا إله إلا الله
+T1043: رهيييب طريقه تحضير سموذي الافوكادو بالعسل والقشطه بطريقه مبتكره وسريعه مع الطاهيه سوزان شحاده
+T1044: قال السعدي رحمه الله تعالي يا أيها الذين آمنوا تسليما اقتداء بالله وملائكته وجزاء له علي بعض حقوقه عليكم وتكميلا لإيمانكم وتعظيما له ومحبه وإكراما وزياده في حسناتكم وتكفيرا من سيئاتكم تفسير السعدي
+T1045: في الميثولوجيا الإغريقيه ذاع صيت المارد بروميثيوس بأنه مخادع ومشعوذ ذكي منح العرق البشري هبه النار ومهاره شغل المعادن ما دفع الإله زيوس لمعاقبته بتقييده إلي صخره ليلتهم نسر كبده كل يوم
+T1046: كيف بوسع الإنسان التعامل مع القولون العصبي ما هو القولون العصبي وكيف يمكن التعامل معه
+T1047: تجمع هذه السياره بين عناصر التصميم والفخامه والتكنولوجيا في آن واحد   سيارات كاديلاك
+T1048: شركه تدافع عن قرار شراء النفط الروسي وتعلن عن تبرعها بالأرباح لأوكرانيا للتفاصيل
+T1049: جاكوار لاند رو ر تشارك في احتفالات اليوبيل البلاتيني لملكه بريطانيا ب من سياراتها
+T1050: مسؤول بوزاره التجاره الإندونيسيه توقيع اتفاقيه للتجاره الحره مع الإمارات

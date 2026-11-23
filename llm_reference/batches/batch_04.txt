@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0151 to T0200.
+- Each line has the form ID,Category (for example: T0151,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0151 to T0200):
+T0151: شركه تعلن عن تجاوز عدد أجهزه النشطه لأكثر من مليار هاتف شركه اكدت بأن هنالك مليار جهاز يعمل الآن مليار منها أجهزه نشطه استخدمت خدمات خلال آخر ثلاث أشهر علما بأن وصلت ل مليون جهاز نشط في
+T0152: مستشار الرئيس ل سنغادر جنيف والحسم العسكري هو الحل
+T0153: كيف تتقن لعبه الحياه تأليف د سميه الناصر كثير من الناس لا يتغيرون لأن ليس لديهم وقت للتغيير في جدولهم اليومي أو أنهم يعتقدون ان التغيير صعب هذا الكتاب يختصر التغيير لكل شخص لديه نيه صادقه بتحسين حياته مصمم بطريقه ذكيه وسهله وعميقه ومركزه مكتبه جليس
+T0154: عن الحسن رضي الله عنه قال إن المؤمن أسير في الدنيا يسعي في فكاك رقبته لا يأمن شيئا حتي يلقي الله تبارك وتعالي كتاب محاسبه النفس لابن أبي الدنيا ص
+T0155: حضريه مع الخضار المسلوق واستمتعي بوجبه صحيه وشهيه
+T0156: فريق باناسونيك جاكوار يرحب بسام بيرد كفرد جديد في العائله   سيارات
+T0157: إيران تختبر ممرا تجاريا جديدا لشحن البضائع الروسيه إلي الهند روسيا
+T0158: تسريبات جديده تستعرض لنا الهاتف المرتقب مع كاميرتين فقط في الخلف
+T0159: نمو حجم التجاره البينيه بين الإمارات و الهند خلال أشهر
+T0160: وهذه هي ساعه هواوي بتصميم بورش ديزاين
+T0161: الرياضه والحميه تزيدان فرص الحمل لمن تعاني البدانه
+T0162: تدهورت حالته الصحيه لإضرابه عن الطعام نقل رئيس وزراء تونس الأسبق حمادي الجبالي للمستشفي
+T0163: قصه مشوقه عن أول مخالفه سرعه المصدر ديلي ميل   سيارات مخالفه
+T0164: يارب هب لنا من لدنك رحمه
+T0165: يا رب فرح قلبي بشيء لا اتوقع حدوثه فيحدث
+T0166: تشكيله الفريقين المتوقعه يوفنتوس فياريال
+T0167: أكد الإعلان التشويقي الذي نشر اليوم علي خطط شركه لإطلاق إصدارها الجديد من هواتف الألعاب يوم من شهر ديسمر الجاري
+T0168: الإنتحار هو السبب الرئيسي الثاني لوفاه الشباب الذين تتراوح أعمارهم بين و عاما وهم فئه عمر شائعه لطلاب الطب والمقيمين ارتفاع معدلات الانتحار بين الأطباء في الولايات المتحده فما السبب
+T0169: لطبق سلطه بارده ولذيذه حضري سلطه البيض المسلوق بالمايونيزكما بالوصفه وأخبرينا برأيك
+T0170: الاداء الصوتي في هاتف محسن بشكل كبير خلال ميزه البوم ساوند
+T0171: كان رسول الله يلقب الأطفال بألقاب كنوع من التلطيف قال رسول الله أين لكع يعني الحسن بن علي متفق عليه
+T0172: في نواه عجوه المشمش مدمره السرطان سم يقتل آكليها
+T0173: اجمل مايقال كل صباح اللهم إني وكلتك امري ف انت لي خير وكيل ودبر لي امري فإني لا احسن التدبير
+T0174: طوبي لهم أولئك القادرون علي الرؤيه في هذه العتمه الباهره عبدالله النادي
+T0175: الصين ترفع أسعار البنزين والديزل اعتبارا من الجمعه
+T0176: المشروع الفائز بالجائزه الخاصه بالافراد فهو صلاح الصادي من قطاع غزه عن مشروعه تصفيه المياه الرماديه
+T0177: كشف الباحث المتخصص ليم جي يونغ عن آراء عن دور الجنسين والمواقف تجاه الزواج والأطفال أن اعتبارات اتخاذ قرار الزواج مختلفه فيعتقد معظم الرجال أن أوضاعهم الاقتصاديه يجب أن تأخذ بعين الاعتبار فيما معظم النساء تعد أوضاع أزواجهن الاقتصاديه معيارا أساسيا عند اتخاذ القرار
+T0178: ما هو نموذج السحاب الإلكترونيه التفاصيل
+T0179: الرئيس اللبناني الحكومه قاب قوسين أو أدني لبنان
+T0180: أول ظهور بالفيديو لهاتف سامسونج القادم القابل للطي
+T0181: علوم إنسانيه ما الذي يضفي علي حياتنا معني الم ترجمه ساره خالد العلوي تويتر مراجعه و تدقيق زينب محمد تويتر
+T0182: علماء طالبوا بمزيد من الأبحاث حول نقلها الفيروس إلي البشر الحيوانات قد تتسبب بموجه ثانيه ل كورونا
+T0183: الحياه حكمه مدرستها الدنيا ومعلمها الإنسان والايام كتابها والامل عنوانها والموت نهايتها فولتير
+T0184: اللهم اغفر للشيخ مشرف الشهري وارحمه وأسكنه الجنه واجعل ما بذله من جهد في نشر العلوم الشرعيه في ميزان حسناته عن أبي هريره رضي الله عنه أن رسول الله قال إذا مات ابن آدم انقطع عمله إلا من ثلاث صدقه جاريه أو علم ينتفع به أو ولد صالح يدعو له
+T0185: الرئيس الفلسطيني يجدد رفض خطه السلام الأمريكيه
+T0186: فايزر وبايونتك تؤكدان أن لقاحهما يحتفظ بالجزء الأكبر لفاعليته ضد النسختين البريطانيه والجنوب أفريقيه من كورونا
+T0187: التجربه مدرسه ممتازه ولكن مصاريفها مرتفعه هينريتش هاين
+T0188: المعالج القادمه في العام سيتم تصنيعه بإستخدام تقنيه نانومتر
+T0189: يعاني أطفال اليمن نقص شديد في التغذيه ساهم في حمله اليوم لإغاثه أهلنا في اليمن رابط التبرع
+T0190: من خلال زراعتها وتكبيرها في صناديق هكذا يأخذ البطيخ هذا الشكل وسبب هذه الفكره أن تقطيعه يكون أسهل ويلائم الثلاجه بشكل أكبر
+T0191: استشاري علم الفيروسات يحيي مكي مليون شخص تلقوا لقاح أسترازينيكا وفرنسا ما زالت تستخدمه في حملات التطعيم
+T0192: زينيه بالبصل الأخضر المفروم
+T0193: إهمال تنظيف ساعه اليد يمكن أن يعرض صاحبها أيضا لأمراض جلديه مختلفه ساعه اليد أقذر من مقعد المرحاض بثلاث مرات
+T0194: القراءه هي الخطوه الأولي لتنشئه طفل واع ومثقف لذلك اصنع لطفلك مكتبه في غرفته تساعده علي القراءه والإطلاع
+T0195: تعرف علي وظائف مقبس ولاعه السجائر التي لم تسمع عنها
+T0196: استقرت أسعار النفط بعد تداولها داخل وخارج المنطقه الإيجابيه اليوم الخميس حيث ركز المستثمرون علي تشديد الإمدادات الروسيه واحتمال تباطؤ الطلب علي الوقود في الصين
+T0197: لماذا ضرب الله الأمثال في القرآن ناشر الخير
+T0198: طائرات إف أميركيه تنفذ أولي طلعاتها القتاليه في أفغانستان
+T0199: التدخين يودي بحياه أكثر من ملايين شخص سنويا
+T0200: أفضل لاعب سعودي حاليا

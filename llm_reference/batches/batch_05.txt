@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0201 to T0250.
+- Each line has the form ID,Category (for example: T0201,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0201 to T0250):
+T0201: قبل ذلك كان الناس بسطاء يفكرون أقل ولذلك كانوا يحسمون القضايا بجرأه أما نحن فنفكر أكثر من اللازم والمنطق قد أغرقنا تماما تشيخوف
+T0202: خسائر عذيب للاتصالات المتراكمه تبلغ مليون ريال تمثل من رأس المال
+T0203: من المقرر بناء السياره التي ستصممها نيسان في مركز رينو إلكتريسيتي في فرنسا
+T0204: تحذير من هذه التسريحه تؤدي الي صلع دائم لا علاج له
+T0205: نشاط إيجابي لسهم سابك يقفز به لأعلي مستوياته منذ أكتوبر الماضي
+T0206: تعلمي مع مطبخ سيدتي طريقه الحفاظ علي الخيار في الثلاجه
+T0207: الرياضيه من المقرر غياب بانيغا حتي نهايه الموسم بسبب الاصابه
+T0208: حسب منظمه الصحه العالميه تلوث الهواء يؤثر في من سكان العالم
+T0209: قال خير الدعاء دعاء يوم عرفه وخير ماقلت أنا والنبيون من قبلي لاإله إلا الله وحده لا شريك له له الملك وله الحمد وهو علي كل شيء قدير
+T0210: جاكوار وباراكوتا يتعاونان للحصول علي البريطانيه الأنيقه تتعاون العلامتان التجاريتان البريطانيتان لتقديم سياره دفع رباعي عصريه باراكوتا جاكوار
+T0211: إطلاق تحديث لعلاج خلل في أداء بعض الألعاب
+T0212: نصائح هامه للحفاظ علي محرك السياره وإطاله عمره
+T0213: جربي مذاق موهيتو بطعم الفراوله وقدميه علي سفرتك مزينا بحسب الرغبه
+T0214: صور تجسسيه للنسخه الكهربائيه من الفئه السابعه تحت اسم و نلاحظ ان بي ام تختبرها مع سيارات كهربائيه من شركات منافسه اخبار العرب
+T0215: اسباب تهيج القولون العصبي تختلف من شخص لأخر بعضهم حاله نفسيه وبعضهم نوع غذاء مهيج فلفل او بقوليات قهوه وبعضهم اجهاد وقلق وتوتر وعدم النوم الكافي وبعضهم بسبب الامساك بسبب عدم شرب ماء كافي ونقص تناول الالياف والخضار لذا فالحلول بيدك ابحث عن المسببات وتجنبها
+T0216: تذكر دائما مهما كنت جميلا بدون أخلاقك سيراك الناس قبيحا
+T0217: أمسينا علي فطره الإسلام وعلي كلمه الإخلاص وعلي دين نبينا محمد صلي الله عليه وسلم وعلي مله ابينا إبراهيم حنيفا مسلما وما كان من المشركين
+T0218: تعلمي بالصور طريقه عمل أطيب الأكلات ومنها وصفات اللازانيا الشهيه تعلمي طريقتها خطوه بخطوه
+T0219: أسابيع بدون وفيات كورونا جديده في عمان ومعدل التعافي يستقر
+T0220: ترجمه عبد القادر حسين تدقيق بدر الفراك
+T0221: أكراد سوريه يوافقون علي إعاده الانتشار
+T0222: شيفروليه نوفا شبيهه الموستينغ من فورد في نفس الحقبه
+T0223: المملكه تعلن بيع شركتها التابعه نصف حصتها ب فورسيزونز ب مليار ريال
+T0224: لا تحزن إذا ارهقتك الهموم وضاقت بك الدنيا بما رحبت فربما أحب الله أن يسمع صوتك وأنت تدعوه الشعراوي
+T0225: يا هبوب من شمال هواها ينشري انعشي قلب المعنا يالهبوب البارده
+T0226: جمال الدنيا في قلب يتمني فرحك قبل فرحه
+T0227: كندا تفرض عقوبات جديده علي روسيا ردا علي غزو أوكرانيا وتغلق موانئها أمام السفن الروسيه
+T0228: بايدن يأمر الحكومه الأمريكيه بشراء ألف سياره كهربائيه للتفاصيل
+T0229: شركه تطلق إستعراض جديد لأسلوب لعب
+T0230: ننتظر شهر رمضان بفارغ الصبر لوضع اللمسات الفنيه بالمنزل من زينه وفوانيس وغيرها من الديكورات شاركونا صوره لزينتكم الرمضانيه   الحياه حلوه رمضان زينه
+T0231: كلما ا س إزددت يقينا أن الا ق الارزاق تماما هي الله فيها وفيها قال سبحانه وتعالي وإنك لعلي خلق عظيم
+T0232: تعتبر وصفات العرايس من أشهر أطباق بلاد الشام وهي سهله وسريعه التحضير تعلمي طريقه عملها بلحمه الكفته المميزه
+T0233: ستسمح لك في وقت قريب بالتحكم في سجل البحث الخاص بك علي موقعها وتطبيقاتها حيث ستتيح للمستخدمين تعيين حساباتهم للاحتفاظ ببيانات سجل التصفح لمده أشهر أو شهرا أو حتي يختاروا حذفها يدويا يبد أن موضوع حفظ الخصوصيه بدأ يقلق الشركات الكبيره بعد أزمه فيسبوك
+T0234: مارسيلو لا يريد الرحيل عن ريال مدريد
+T0235: المتصفح لمنصه الأندرويد سيحصل علي إختصار يسمح بإغلاق جميع التبويبات دفعه واحده
+T0236: جربيها بطعم البصل
+T0237: اللهم اجعلنا من الذين ذكرت اسمائهم في صحائف المعتوقين من النار اللهم انك عفو كريم تحب العفو ف اعفوا عنا
+T0238: غضب مدفون منذ سنوات ينفجر بوجه النظام الإيراني احتجاجات الغلاء تتسع والأمن يطلق الرصاص علي متظاهرين هتفوا الموت ل خامنئي و رئيسي إيران
+T0239: تناول الأدويه خلال الحمل بين المسموح والممنوع
+T0240: بعض مشتري النفط الآسيويين يخططون لطلب استيراد مزيد من الخام السعودي حتي بعدما رفعت أكبر دوله مصدره في العالم أسعار صادراتها للمنطقه بأكثر من المتوقع
+T0241: العلاج الأول والأمثل للسكري من النوع الأول بصفه دائمه ومن النوع الثاني في حالات محدده تحتوي حقنه أوزمبيك علي الماده الفعاله وتوجد في صوره قلم معد للحقن مباشره وفيما يلي سنشرح بالتفصيل كيفيه عمل هذه الحقنه المعجزه
+T0242: مطالبات جماهيريه بنقل نهائي دوري ابطال اسيا بين الهلال بوهانج علي القناه المفتوحه
+T0243: أظهر مسح نشرت نتائجه اليوم الجمعه أن نمو نشاط القطاع الخاص غير النفطي في الإمارات تسارعت وتيرته في مايو ووصل إلي أعلي مستوي في خمسه أشهر مع استمرار قوه الطلب رغم الضغوط التضخميه
+T0244: الشرطه السودانيه تواجه محتجين والبشير يوجه أصابع الاتهام إلي الإعلام
+T0245: العجز الشديد في السعرات الحراريه قد يزيد البكتيريا الخطره في الأمعاء
+T0246: مرسيدس الجديده تنطلق رسميا بقوه حصان
+T0247: منسق التجمع من أجل السياده نوفل ضو حزب الله لم يعد له أي امتداد سياسي يذكر علي الساحه اللبنانيه لبنان
+T0248: النوايا الطيبه لن تضيع عند الله مهما أساء الآخرون الظن بها محمد متولي الشعراوي
+T0249: رئيس حكومه كردستان يدعو الكاظمي لتشكيل لجنه مشتركه للسيطره علي الوضع الأمني في الإقليم
+T0250: حامل ما هي الإجرائات الصحيه المهمه التي عليك القيام بها قبل وأثناء الحمل صحه صحه المرأه

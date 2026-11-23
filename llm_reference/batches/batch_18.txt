@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0851 to T0900.
+- Each line has the form ID,Category (for example: T0851,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0851 to T0900):
+T0851: أوسع أسماء الله الرحمن وأوسع صفاته الرحمه وأوسع مخلوقاته العرش فاستوي بأوسع أسمائه في أوسع صفاته علي أوسع مخلوقاته فقال الرحمن علي العرش استوي فنسأله أن يرحمنا وإياكم قولوا آمين
+T0852: كل ما تود معرفته عن اليوم ال من الصراع في أوكرانيا روسيا تتعلم من أخطائها وتقفل الموانئ وتدمر البني التحتيه
+T0853: اعتقالات تعذيب إعدامات
+T0854: زبده الفول السوداني غنيه بالدهون الغير مشبعه المفيده لصحه القلب لكن مع تناولها باعتدال والتاكد أن الفول السوداني هو المكون الوحيد لها
+T0855: بورصه الكويت تتباين خلال أسبوع وتراجع طفيف للسيوله
+T0856: نهايه المباراه الهلال التعاون
+T0857: بعض طرازات تواجه خطر الحظر في الولايات المتحده بسبب كوالكوم
+T0858: أسهم المالي ترتفع بمؤشر عمان تعاملات الخميس
+T0859: مقارنه مواصفات نيسان وبورش كايمن المربع نت نيسان بورش
+T0860: تعلن عن شاشه جديده للحواسيب بدقه تستخدم تكنولوجيا وتكلف هذه الشاشه تتميز بإستخدام مصفوفه من مصابيح يعد هذا أعلي بكثير مما تقدمه بعض الشاشات الأخري المتاحه في السوق الشاشه مخصصه للمحترفين والذين يقدرون دقه الألوان والإستفاده منها
+T0861: العراق طائرات تركيه تقصف سلسله جبال متين في دهوك بإقليم كردستان العراق الحدث عاجل
+T0862: صعود جماعي للمؤشرات الكويتيه صباحا والقطاع العقاري يتصدر الارتفاعات
+T0863: تصميم محدث وتكنولوجيا محسنه   سيارات هوندا
+T0864: عن عائشه رضي الله عنها أن النبي صلي الله عليه وسلم كان يعتكف العشر الأواخر من رمضان حتي توفاه الله تعالي ثم اعتكف أزواجه من بعده
+T0865: فان غال يعلن نجاح علاجه من السرطان
+T0866: المربع نت تستعد المملكه العربيه السعوديه وتحديدا محافظه جده لبدء فعاليات معرض جده الدولي للسيارات خلال الفتره من إلي ديسمبر المقبل وذلك داخل أكبر قبه في العالم جده سوبردوم وكأكبر تجمع من نوعه للعلامات التجاريه في المنطقه حيث يقام علي مساحه متر مربع المربع نت
+T0867: إيطاليا تعتمد تدابير ستسمح بزياده حجم المعروض أو تقليص الطلب علي الغاز عند الضروره تحسبا لتراجع في الإمدادات بسبب أزمه روسيا واوكرانيا
+T0868: لا تستحقر احدا و تري نفسك في القمم فكلنا من طين التراب ن اي كل البشر
+T0869: وكاله الطاقه الدوليه روسيا أوقفت إنتاج ما يقرب من مليون ب ي من النفط في أبريل
+T0870: لا تحاول الانتصار في جميع الخلافات حتي لو كنت محقا فأحيانا كسب القلوب أولي من كسب المواقف
+T0871: المركز الأميركي للسيطره علي الأمراض مليون أميركي تلقوا جرعه أولي من اللقاح ضد كورونا واستمرار التطعيم يرفع المناعه ضد الفيروس حتي
+T0872: أدلي بينجامين ميندي بأقواله اليوم امام المحكمه متهم بسبع جرائم اغتصاب
+T0873: من المستحيل أن يذهب لغيرك شيء قد كتبه الله لك فاطمئن ولا تحسد ولا تحقد وعش بقلب أبيض نقي ونيه صافيه وكن مع الله يكن الله معك
+T0874: هل تريد كسب المال من العمل لحسابك الخاص ها هي أفضل الطرق لفعل ذلك
+T0875: توقعات بإبقاء تحالف أوبك علي سياسته الحاليه في الاجتماع المقرر يوم يونيو بحيث يرفع الإنتاج المستهدف في يوليو بواقع ألف برميل يوميا بحسب مصادر لرويترز
+T0876: قالت منظمه الأغذيه والزراعه التابعه للأمم المتحده الفاو إن تراجع صادرات القمح والسلع الغذائيه الأخري من أوكرانيا و روسيا يدفع ما بين ل مليون شخص لبراثن الجوع خلال العام المقبل
+T0877: حملوا التطبيق وتقدر تتصفح السيارات والاجهزه والعقارات وكل شيء معروض للبيع وتقدر تعرض اي شيء عندك للبيع
+T0878: الشيف اختار واحنا ننتظر التحدي تم إختيار أول تحدي مع مقادير الشيف أورفه لي يللي اختارها وهي الجبنه الزرقاء مع الشمندر والشيكولاته الداكنه تخيلوا ماذا سيقدم المتسابقون أطباقهم بهذه المقادير صوتوا الآن علي هذا الرابط حلمك يبدأ من مطبخك ستار شيف
+T0879: ارتفاع الناتج الصناعي في الصين خلال أشهر
+T0880: زيدان ما زلت علي علاقه بريال مدريد أذهب إلي البرنابيو عندما أكون في مدريد في موسم بالتدريبات كنت أعاني من صداع في محاوله تشكيل الفريق
+T0881: اشاعه و ستحصل علي تصاميم جديده في العام وفقا للمحلل الصيني فمن المتوقع أن تقوم شركه آبل بتحديث تصميم حواسيب الخاصه بها في النصف الثاني من العام وسيتم أيضا تبني تصميم جديد في الساعه الذكيه
+T0882: هل ستكون حياتنا مختلفه بعد انتهاء وباء كورونا تابعو المقال التالي  كورونا فيروس
+T0883: تعرف علي يحيي خوجه من المملكه العربيه السعوديه ضمن قائمه إم آي تي تكنولوجي ريفيو لأبرز خبراء الذكاء الاصطناعي العرب
+T0884: اللهم أرنا الحق حقا وارزقنا اتباعه وأرنا الباطل باطلا وارزقنا اجتنابه
+T0885: يعتقدون أن اقتحام مقر حفل سعد لمجرد في بغداد حريه تعبير هكذا جاءت نسبه التصويت علي السؤال الذي طرحته الحدث أمس عبر منصاتها
+T0886: كيف تستطيع أن تقول بأنك تحب شخص واحد بينما هناك عشره آلاف شخص في العالم ستحبهم أكثر إذا قابلتهم قبلا لكنك لن تقابلهم أبدا حسنا لذلك نحن نبذل قصاري جهدنا لكن لا يزال يفترض بنا أن ندرك أن الحب هو مجرد نتيجه إلتقاء فرص تشارلز بوكوفسكي
+T0887: الشرطه الفرنسيه تطلق الغاز المسيل للدموع علي المتظاهرين
+T0888: شكرا لمشاركتك يوجد بهذا الثريد مقال نشرناه يناقش نفس الفكره التي ذكرتها
+T0889: دراسه في أميركا أكدت أن قله النوم تتسبب بتراكم الدهون الضاره حول البطن
+T0890: أعلنت نيسان عن وصول سياره نيسان باترول سوبر سافاري إلي صالات عرضها في الشرق الأوسط   سيارات نيسان باترول
+T0891: نهايه اللقاء بفوز تشيلسي علي بورتو ماونت بن تشيلويل
+T0892: نادي ميلان يحقق الفوز علي تورينو بنتيجه جيرو
+T0893: مراسل الحدث عده قري تابعه لقوات قسد تعرضت لقصف تركي ويؤكد تركز في الشهباء وعفرين
+T0894: حظر تأمين شحنات النفط الروسيه السلاح الأقوي في ترسانه العقوبات الأوروبيه هل يكون النفط العربي أكبر المستفيدين روسيا الحرب الأوكرانيه مستقبل الطاقه
+T0895: الصحه العالميه تدعو لمواصله استخدام لقاح أسترازينيكا لا يوجد ما يدعو للتوقف عن التطعيم به
+T0896: راموس يحسم مستقبله مع باريس سان جيرمان
+T0897: حبه البركه بتساعد علي ضبط مستويات السكر في الدم وبتقوي الذاكره وبتحسن صحه الشعر والبشره حبه البركه ليها فوائد أكتر وبدأ استخدامها قبل سنه الفراعنه بدأوا يدخلوها في العلاج بالطب البديل لأنها غنيه بمعادن وفيتامينات مهمه
+T0898: بعد قليل الاشواط الاضافيه ايطاليا اسبانيا كييزا موراتا
+T0899: إليك أهم أنواع الخرف وطرق علاجه صحتك حياتك
+T0900: ساندويتش البطاطس المقليه الحاره

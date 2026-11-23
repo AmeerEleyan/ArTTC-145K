@@ -1,0 +1,201 @@
+id,main_topic,secondary_topic,language_variety
+S001,Cooking,None,MSA
+S002,Health,None,MSA
+S003,Sports,None,MSA
+S004,Technology,None,MSA
+S005,Religion,None,MSA
+S006,Economy,Politics,MSA
+S007,Science,None,MSA
+S008,Sports,None,MSA
+S009,Health,None,MSA
+S010,Health,None,MSA
+S011,Politics,None,MSA
+S012,Religion,None,MSA
+S013,Thoughts and Wisdom,None,MSA
+S014,Health,Cooking,MSA
+S015,Cars,None,MSA
+S016,Health,None,MSA
+S017,Sports,None,MSA
+S018,Health,Science,MSA
+S019,Sports,None,MSA
+S020,Religion,None,MSA
+S021,Health,Science,MSA
+S022,Technology,Religion,MSA
+S023,Health,None,MSA
+S024,Cars,Science,MSA
+S025,Technology,None,MSA
+S026,Thoughts and Wisdom,Religion,MSA
+S027,Politics,None,MSA
+S028,Economy,None,MSA
+S029,Economy,Technology,MSA
+S030,Economy,Politics,MSA
+S031,Technology,None,MSA
+S032,Health,None,MSA
+S033,Thoughts and Wisdom,None,MSA
+S034,Cars,None,MSA
+S035,Thoughts and Wisdom,None,MSA
+S036,Thoughts and Wisdom,None,MSA
+S037,Economy,Politics,MSA
+S038,Sports,None,MSA
+S039,Sports,None,MSA
+S040,Cooking,None,Mixed
+S041,Cars,None,MSA
+S042,Thoughts and Wisdom,None,MSA
+S043,Technology,Health,MSA
+S044,Science,None,MSA
+S045,Cars,None,MSA
+S046,Health,None,MSA
+S047,Cooking,None,Mixed
+S048,Economy,None,MSA
+S049,Technology,Economy,MSA
+S050,Religion,None,MSA
+S051,Religion,None,MSA
+S052,Technology,None,MSA
+S053,Sports,None,MSA
+S054,Sports,None,MSA
+S055,Sports,None,MSA
+S056,Cooking,None,MSA
+S057,Health,None,MSA
+S058,Economy,None,MSA
+S059,Cars,None,MSA
+S060,Health,Science,MSA
+S061,Cars,None,MSA
+S062,Religion,Thoughts and Wisdom,MSA
+S063,Health,None,MSA
+S064,Science,None,MSA
+S065,Religion,None,MSA
+S066,Cars,None,MSA
+S067,Thoughts and Wisdom,None,MSA
+S068,Cars,None,MSA
+S069,Science,None,MSA
+S070,Technology,Health,MSA
+S071,Economy,None,MSA
+S072,Religion,None,MSA
+S073,Sports,None,MSA
+S074,Cars,None,MSA
+S075,Technology,Economy,MSA
+S076,Health,Politics,MSA
+S077,Politics,None,MSA
+S078,Health,None,MSA
+S079,Religion,None,MSA
+S080,Technology,Thoughts and Wisdom,MSA
+S081,Cars,Technology,MSA
+S082,Sports,None,MSA
+S083,Technology,None,MSA
+S084,Technology,Economy,MSA
+S085,Thoughts and Wisdom,Health,MSA
+S086,Health,None,MSA
+S087,Thoughts and Wisdom,None,MSA
+S088,Thoughts and Wisdom,Religion,Dialect
+S089,Politics,None,MSA
+S090,Technology,Politics,MSA
+S091,Politics,None,MSA
+S092,Cooking,None,MSA
+S093,Politics,None,MSA
+S094,Technology,Economy,MSA
+S095,Health,Science,MSA
+S096,Cooking,None,MSA
+S097,Sports,None,MSA
+S098,Health,Cooking,Mixed
+S099,Politics,None,MSA
+S100,Health,Politics,MSA
+S101,Cooking,None,MSA
+S102,Health,Cooking,MSA
+S103,Cars,None,Mixed
+S104,Health,Science,MSA
+S105,Politics,Economy,MSA
+S106,Health,None,MSA
+S107,Economy,None,MSA
+S108,Cars,None,MSA
+S109,Cars,Technology,MSA
+S110,Economy,None,MSA
+S111,Economy,None,MSA
+S112,Health,Science,MSA
+S113,Science,Technology,MSA
+S114,Cooking,None,MSA
+S115,Economy,Science,MSA
+S116,Technology,None,MSA
+S117,Politics,None,MSA
+S118,Thoughts and Wisdom,None,MSA
+S119,Economy,None,MSA
+S120,Thoughts and Wisdom,Religion,MSA
+S121,Politics,Economy,MSA
+S122,Thoughts and Wisdom,None,MSA
+S123,Health,None,MSA
+S124,Cars,None,MSA
+S125,Health,None,MSA
+S126,Sports,None,MSA
+S127,Sports,None,MSA
+S128,Science,None,MSA
+S129,Technology,Science,MSA
+S130,Politics,None,MSA
+S131,Religion,None,MSA
+S132,Thoughts and Wisdom,Religion,MSA
+S133,Thoughts and Wisdom,Religion,MSA
+S134,Religion,None,MSA
+S135,Health,Science,MSA
+S136,Religion,None,MSA
+S137,Science,None,MSA
+S138,Cooking,Health,Mixed
+S139,Religion,None,MSA
+S140,Sports,Health,MSA
+S141,Health,Cooking,MSA
+S142,Sports,None,MSA
+S143,Technology,None,Mixed
+S144,Health,Technology,MSA
+S145,Sports,None,MSA
+S146,Science,None,MSA
+S147,Cooking,None,MSA
+S148,Religion,None,MSA
+S149,Cooking,None,MSA
+S150,Thoughts and Wisdom,None,MSA
+S151,Economy,Cars,MSA
+S152,Thoughts and Wisdom,Religion,MSA
+S153,Economy,None,MSA
+S154,Science,Technology,MSA
+S155,Cars,Technology,MSA
+S156,Politics,None,MSA
+S157,Technology,None,MSA
+S158,Politics,None,MSA
+S159,Economy,None,MSA
+S160,Thoughts and Wisdom,Religion,MSA
+S161,Economy,None,MSA
+S162,Thoughts and Wisdom,None,Dialect
+S163,Cooking,None,MSA
+S164,Cars,None,MSA
+S165,Health,None,MSA
+S166,Science,Cooking|Health,MSA
+S167,Technology,None,MSA
+S168,Thoughts and Wisdom,None,MSA
+S169,Technology,None,MSA
+S170,Technology,None,MSA
+S171,Politics,None,MSA
+S172,Thoughts and Wisdom,Religion,MSA
+S173,Sports,None,MSA
+S174,Politics,None,MSA
+S175,Health,None,MSA
+S176,Thoughts and Wisdom,None,MSA
+S177,Cooking,None,MSA
+S178,Cars,None,Dialect
+S179,Sports,None,MSA
+S180,Thoughts and Wisdom,Religion,MSA
+S181,Politics,None,MSA
+S182,Religion,None,MSA
+S183,Economy,None,MSA
+S184,Cars,None,Dialect
+S185,Health,None,MSA
+S186,Religion,Thoughts and Wisdom,MSA
+S187,Technology,None,MSA
+S188,Religion,None,MSA
+S189,Cooking,Health,MSA
+S190,Economy,Politics,MSA
+S191,Politics,None,MSA
+S192,Economy,None,MSA
+S193,Cars,None,MSA
+S194,Sports,None,MSA
+S195,Health,None,MSA
+S196,Health,None,MSA
+S197,Thoughts and Wisdom,None,MSA
+S198,Technology,None,MSA
+S199,Religion,Thoughts and Wisdom,MSA
+S200,Cooking,None,MSA

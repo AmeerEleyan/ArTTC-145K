@@ -1,0 +1,47 @@
+{
+  "model": "svm",
+  "seed": 1,
+  "n_test": 21757,
+  "metrics": {
+    "accuracy": 91.11,
+    "macro_precision": 91.11,
+    "macro_recall": 90.96,
+    "macro_f1": 91.02,
+    "weighted_f1": 91.12,
+    "per_class_f1": {
+      "اقتصاد": 91.41,
+      "تكنولوجيا": 91.87,
+      "خواطر واقتباسات": 88.35,
+      "دين": 89.9,
+      "رياضه": 98.19,
+      "سيارت": 96.12,
+      "سياسه": 93.63,
+      "صحه": 84.83,
+      "طهي": 95.05,
+      "علوم": 80.89
+    }
+  },
+  "info": {
+    "train_seconds": 9.428,
+    "inference_cpu_seconds_full": 0.928,
+    "inference_cpu_tweets_per_s": 23456.6,
+    "n_parameters": 2457440,
+    "size_on_disk_mb": 26.5,
+    "vocabulary_size": 245743,
+    "best_ngram_range": "(1, 2)",
+    "best_C": 1.0
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB",
+    "cpu_count": "12",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tensorflow": "2.21.0",
+    "sklearn": "1.6.1",
+    "numpy": "2.4.6"
+  },
+  "saved_at": "2026-11-20 20:45:36"
+}

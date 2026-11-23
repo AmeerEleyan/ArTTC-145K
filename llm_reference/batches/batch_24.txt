@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1151 to T1200.
+- Each line has the form ID,Category (for example: T1151,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1151 to T1200):
+T1151: وول ستريت جورنال ضغوط أمريكيه علي بريطانيا للنظر في صفقه الرقائق الصينيه
+T1152: حقائق ممتعه عن العضلات
+T1153: نيجيريا المعارضه تتهم الحكومه بالتزوير و قتيلا في كادونا
+T1154: آبل لا تزال تخطط علي ما يبدو لإطلاق قاعده الشحن اللاسلكي
+T1155: أقل من ساعه وننطلق في ليله قويه لكل عاشق لسلسله ترقبوا حلقه قويه نضع فيها كل نظرياتنا وتوقعاتنا لجزء مع محمد عبد القادر مؤسس ولا تنسوا بأننا رأينا كل تفاصيل الجزء الجديد ومستقبل السلسله مبكرا
+T1156: تعرف معنا علي المواصفات الكامله للهاتف نوت بلس نوت جالاكسي نوت
+T1157: الدراسات تفشل في تحديد فوائد ومضار السجائر الإلكترونيه
+T1158: أوروبا تدعو لتسريع الجهود للانتهاء من المرحله الانتقاليه في ليبيا
+T1159: جربي عجينه جيب التاجر بأسهل الخطوات السريعه
+T1160: حلول طبيعيه سهله للتخلص من حبوب الذقن المزعجه
+T1161: عااااااااجل قناه السعوديه الرياضيه ستنقل الدوري السعودي الموسم القادم
+T1162: حضري السحلب بالمكسرات في أقل من خمس دقائق واستمتعي بالطعم الرائع الدافئ
+T1163: وقوله يتبعون الشهوات في الموضعين فاتباع الشهوه من جنس اتباع الهوي كما قال تعالي فاعلم أنما يتبعون أهواءهم ومن أضل ممن اتبع واه بغير دي من الله مجموع الفتاوي لإبن تيميه ج ص
+T1164: اودي قد تطرح آخر سياره تعمل بالبنزين في للتفاصيل
+T1165: تحذر من إنخفاض جوده صور أولي الكاميرات المدرجه تحت شاشات الهواتف الذكيه
+T1166: الوحده وقله الحركه تزيدان من خطر الوفاه
+T1167: سلطه السبانخ بالفراوله وجبه سريعه كلها لذه وطعم مميز وشهي جربيها اليوم
+T1168: توقعاتكم سريعا الطائي الاتحاد الهلال ابها
+T1169: لا تدع أي شخص يجعلك تشعر بأنك لا تستحق ما تريد
+T1170: مقارنه كيا كرنفال و هيونداي ستاريا وش الموديل الأجمل برأيك
+T1171: المربع نت كيا تطلق رسميا هويتها واستراتيجيتها الجديده في الشرق الأوسط وأفريقيا بشكل رسمي وهو ما ترافق معه عرض بصري مبهر علي برج خليفه في دبي
+T1172: بحسب الاداره القطريه تريد بيع نيمار في هذا الصيف
+T1173: وفقا لما أوضحه المسرب فأسلوب اللعب في ريميك هو نسخه طبق الأصل من اللعبه الأصليه التي صدرت علي منصه مع بعض التحسينات علي الذكاء الإصطناعي هذا يتعارض مع كلام الاستوديو والذي أوضح أن اللعبه ستقدم تحسينات لأسلوب اللعب مثل الجزء الثاني
+T1174: احتمالات حدوث ركود اقتصادي في الولايات المتحده خلال عام ترتفع إلي مع مذيعه  نور عماشه
+T1175: الوظائف المرهقه تزيد من خطر الإصابه بالسكته الدماغيه
+T1176: قد تشعر بالحزن علي أمر ما وقد تبكي بكاء الطفل وتنام والله لا ينام عن تدبير أمورك تمهل إنه يدبر لك في الغيب أمور إن علمتها لبكيت فرحا
+T1177: تشكيله ارسنال امام واتفورد التوقيت م مكه
+T1178: تهدف أبل إلي إطلاق سيارتها الأولي في   أبل سياره أبل
+T1179: كم مره تضحك في اليوم دراسه الضحك أفضل دواء فهو يقوي جهاز المناعه ويعزز المزاج ويقلل من الألم شاركنا إجابتك
+T1180: قال رسول الله من أحب أن تسره صحيفته فليكثر من الاستغفار رواه الضياء وصححه الألباني
+T1181: تغريده صباحيه المعصراوي عبر
+T1182: كيف يمكن اختراق الطائرات بدون طيار
+T1183: إنفينيتي الشرق الأوسط تطلق حمله عيونهم عليكم في المملكه العربيه السعوديه للتفاصيل
+T1184: دراسه تكشف عن الإختلافات في الدرارات العصبيه بين أدمغه الرجال والنساء التفاصيل
+T1185: كشف الدكتور جاي بتلر من مركز السيطره علي الأمراض بأميركا عن وفاه طفل آخر جراء تفشي مرض التهاب الكبد الغامض ما يرفع الحصيله الوطنيه إلي حالات
+T1186: عندما تصاب بلحظه غرور تذكر أن فايروسا صغيرا لا يري بالعين المجرده يستطيع أن يطرحك أرضا ويجعلك تتأوه لمده أسبوع في فراشك
+T1187: اللهم إنا نعوذ بك من علم لا ينفع ومن قلب لا يخشع ومن دعاء لا يسمع ومن عمل لا يرفع
+T1188: للبصل الكثير من الفوائد وهنا نوضح فوائده لمرضي السكري
+T1189: المرأه ليست مركزا لإعاده تأهيل للرجال الذين نشأوا بشكل سيء فليس من مسؤوليتها إصلاحه أو تغييره أو تربيته المرأه تريد شريكا وليس مشروعا جوليا روبرتس
+T1190: هل يمكن أن يولد الأطفال مصابين بالسرطان
+T1191: شاركنا لأصعب مجموعه في كأس العالم
+T1192: رسميا هبوط نادي بيرنلي إلي التشامبيونتشيب
+T1193: رويترز إلون ماسك يخبر موظفيه بأن لديه شعور سيء للغايه حول الاقتصاد
+T1194: ائتلاف إيثرنت يشيد بوصول إيثرنت و إلي السوق
+T1195: أطعمه لحياه جنسيه أفضل
+T1196: تحويل البول البشري إلي طوب مستدام ما رأيكم تعرف علي طريقه جديده لبناء منزل المستقبل من البول البشري
+T1197: قانون جديد في كاليفورنيا يمنع مولدات الطاقه الصغيره التي تعمل بالوقود عارضه ملاك الكارافانات و ال لأنهم يعتمدون عليها مع هذا القانون أكد علي منعها حتي تلك التي يستخدمها هؤلاء للتخييم او السكن خبر غريب اخبار اقتصاد بيئه طاقه
+T1198: تلوث الهواء يزيد خطر الإصابه بسرطان الحلق
+T1199: مجرد مظهر لتماثل المعلومات عبر الزمان من خلال مبرهنه نوثير حاله حال مبدأ حفظ الطاقه مثلا
+T1200: نتنياهو إسرائيل ستطلق اسم ترمب علي بلده بمرتفعات الجولان

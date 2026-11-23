@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1851 to T1900.
+- Each line has the form ID,Category (for example: T1851,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1851 to T1900):
+T1851: العمل مطلوب في حد ذاته ولو لم يحقق ثمره عاجله لصاحبه فإن حققها فقد فاز بالحسنيين وإلا فحسبه أنه جاهد وسعي وأدي الواجب وأعذر إلي الله
+T1852: جربي ساندويش الكباب المنزلي وقدميه مع صلصه الطحينيه الشهيه
+T1853: تشافي يبرر معاناه برشلونه بحقبه ما بعد ميسي
+T1854: المزود بشاشه إنش لن يصدر باللون الأحمر وفقا لتقرير جديد
+T1855: فوائد الكاكاو المذهله للقلب والدماغ
+T1856: أي من هذه الوجبات الأفضل لكي في العزائم المفاجئه ووصفات أشهي من هنا   الحياه حلوه وجبات وصفات عزائم
+T1857: محمد بن راشد ومحمد بن زايد الإمارات ملتزمه بحمايه كوكب الأرض وازدهار البشريه
+T1858: أكدت أحدث التقارير علي بدء تطوير كاميره أسفل الشاشه بهدف دعم سلسله هواتف العام المقبل
+T1859: إليك في هذا الثريد ملف كامل عن البدائل الأساسيه لبعض المكونات والتي تعطي مفعول وطعم المكون الأساسي لها دون تأثر الوصفه بالطعم أو الرائحه
+T1860: سجلت شركه بريدغ ووتر عائدا بنسبه لصندوق التحوط الرئيسي الخاص بها خلال النصف الأول من مستفيده من تقلبات السوق المتزايده
+T1861: التلغراف سانشو كان هدف ل سولشاير منذ تعيينه مدربا ل اليونايتد عام
+T1862: قال تعالي فكذبوهما فكانوا من لمهلكين المؤمنين
+T1863: قال الإمام ابن رجب رحمه الله ليس الخائف من بكي وعصر عينيه وإنما الخائف من ترك ما اشتهي من الحرام إذا قدر عليه رسائل ابن رجب
+T1864: نادي ارسنال يحقق الفوز علي ساوثهمبتون بنتيجه
+T1865: احذر من دخان السجائر فهو يؤثر علي حده بصرك
+T1866: عاق الوالدين لا تقبل له دعوه
+T1867: علي مدار الخمسين عاما الماضيه أنتجت الأنهار الجليديه المزيد من الجليد في المحيط أكثر من أي وقت مضي ناسا تصدر شريط فيديو يبرز تغير الأنهار الجليديه علي الأرض خلال عاما
+T1868: السعوديه تدعو المواطنين والمقيمين لأخذ الجرعه التنشيطيه من لقاح كورونا
+T1869: رجل و امرأه يفترقان ينفضان الورد عن قلبيهما ينكسران يخرج الظل من الظل يصيران ثلاثه رجلا وامرأه والوقت محمود درويش
+T1870: مجله السيارات الروسيه كوليسا تنشر صورا تخيليه لما قد تبدو عليه فورد إسكيب القادمه أو كما تعرف باسم كوجا في أوروبا وبعض الأسواق الأخري
+T1871: إن كل إنسان يا سيدي بحاجه إلي ملجأ يشعر فيه بالحنان والشفقه ديستوفيسكي روايه الجريمه والعقاب
+T1872: تعرف علي خطوات تنظيف حساس عادم سيارتك بنفسك
+T1873: ومن أحسن قولا ممن دعا إلي الله وعمل صالحا وقال إنني من المسلمين فصلت
+T1874: يقول رسول الله كما جاء في الحديث الصحيح من قرأ آيه الكرسي دبر كل صلاه مكتوبه لم يمنعه من دخول الجنه إلا أن يموت لن تأخد منك أكثر من دقيقه واحده فلا تبخل علي نفسك تقبل الله منا ومنك
+T1875: الجيش الأمريكي يوقع عقدا بقيمه مليون دولار لتعويض صواريخ ستينغر المضاده للطائرات التي تم إرسالها إلي أوكرانيا
+T1876: أومليت بعده وصفات ونكهات
+T1877: ميشيلان تنجح في استخدام العبوات البلاستيكيه بصنع الإطارات
+T1878: فحص دم يتنبأ بالنوبه القلبيه قبل سنوات من حدوثها
+T1879: قد تظنيها للغداء من شكلها ولكنها للتحليه وما في ألذ منها وتحضر من مكونات فقط
+T1880: العمل بدوامات متغيره يسرع الشيخوخه الإدراكيه
+T1881: يارب كن لهم عونا ونصيرا هذه حاله قرابه ألف نسمه يعيشها إخواننا في ريف ادلب ولا حول ولا قوه إلا بالله ساهموا معهم بما تستطيعون حثوا غيركم علي الوقوف بجانبهم انشروا رابط التبرع والدال علي الخير له مثل أجر فاعله
+T1882: أمين عام الناتو يشكر بايدن علي التزام أميركا تجاه الحلف وأعضائه
+T1883: للمه العائله يوم الجمعه تعلمي كيف تحضرين الدجاج علي الطريقه التركيه بأشهي وألذ طريقه
+T1884: تعلن عن لوحه التحكم الميكانيكيه
+T1885: تصريح صادم من الدكتور فاوتشي حول كورونا
+T1886: موتورولا تكشف عن موعد الإعلان الرسمي عن الهاتف
+T1887: حافظي علي صحه أسرتك وتعرفي علي فوائد الفول السوداني وأشياء اخري تحميكي من الإصابه بأمراض كثيره للتفاصيل   الحياه حلوه
+T1888: هاتف القادم يظهر في الحياه الواقعيه ولن يكون قابلا للطي
+T1889: من أخطاء بعض المسلمين تضييع الحقوق الواجبه لآخرين بسبب الحرص علي النوافل والمستحبات وحكم الشرع نا أن النوافل لا يجوز أن تطغي علي حقوق الغير
+T1890: ذلك يتوقف علي سرعتك لو تحركت بسرعه كبيره جدا قريبه من سرعه الضوء فسيمر عليك الزمان ابطأ مقارنه بالزمان علي الأرض أما إذا تحركت بسرعه صغيره نسبيا فلن يحدث للزمان تغير وتباين واضح
+T1891: تقرير جديد يؤكد موعد إطلاق في السوق ويكشف أيضا عن سعر الجهاز
+T1892: رسميا الأوكراني ياروسلاف راكيتسكي ينهي عقده مع زينيت سان بطرسبرج
+T1893: لافروف سياسه الهيمنه لم تعد مجديه وهناك أقطاب أخري بدأت تظهر في العالم روسيا وأوكرانيا
+T1894: لا السماء تطيق شمسين ولا الأرض تطيق سيدين الإسكندر الأكبر امبراطور وقائد عسكري قديم
+T1895: نبيه بري لبنان في العنايه الفائقه والوضع الاقتصادي خطير جدا
+T1896: خوفكم من تقييم الآخرين لكم هو الذي يضطركم إلي أن تظهروا بكل الوجوه ما عدا وجهكم الحقيقي محمد الماغوط
+T1897: من عشاق أكلات السمك خمني نوع السمك في الصوره الحياه حلوه
+T1898: انفجار يستهدف حافله سياحيه في مصر
+T1899: بحشوه الحم المفروم مع الخضار الشهي
+T1900: تركي آل الشيخ يكشف عن حجم مبيعات معرض السيارات بعد افتتاحه بأربعه أيام حيث قال أن مبيعات المعرض تجاوزت مليونا في أيام فقط منذ افتتاحه يوم الخميس الماضي

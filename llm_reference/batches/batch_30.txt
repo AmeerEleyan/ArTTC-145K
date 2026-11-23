@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1451 to T1500.
+- Each line has the form ID,Category (for example: T1451,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1451 to T1500):
+T1451: الغضب مثل السبع إذا أفلته صاحبه بدأ بأكله ابن القيم الجوزي
+T1452: رفع السودان من قائمه الإرهاب قريبا
+T1453: حلبه جده للفورمولا تصميم عالمي علي أرض سعوديه للتفاصيل
+T1454: عند فراغك لا تترك الإستغفار
+T1455: تأخير في موعد إطلاق بطاقه الرسوم إلي سبتمبر
+T1456: قال ما من يوم يصبح العباد فيه إلا ملكان ينزلان فيقول أحدهما اللهم أعط منفقا خلفا ويقول الآخر اللهم أعط ممسكا تلفا
+T1457: اختصاصي أمراض السكري والغدد الصماء إيلي حداد الأطباء توقعوا الموجه الثانيه ل كورونا لعدم وجود علاج أو لقاح وغياب الالتزام الشعبي بالإجراءات الاحترازيه
+T1458: الصندوق الزراعي السعودي يعتمد ميزانيه بمحفظه تمويليه مليار ريال
+T1459: كوريا الشماليه الإعلان عن وفاه شخصا بمضاعفات كورونا
+T1460: كيف تؤثر العزوبيه علي صحتك ترجمه سنان حربه تدقيق عون حداد
+T1461: هل يتساوي حجم قطره ماء وقطره زئبق
+T1462: جاءت أحدث التسريبات بتفاصيل جديده حول كرت الشاشه المرتقب حيث من المتوقع أن يتميز بقوالب مع وذاكره جيجا بايت في علي أن ينطلق رسميا في الأسبوع الثالث من شهر يناير
+T1463: جزء هام لتكوين المياه موجود بالفعل في أواخر حياه النجوم الشبيهه بالشمس
+T1464: رفع تقديراته للخسائر اليوميه لإنتاج النفط الروسي إلي مليوني برميل  النفط روسيا
+T1465: الشرق تستعرض سيره الشيخ خليفه بن زايد آل نهيان الذي يعد واحدا من أكثر الشخصيات السياسيه تأثيرا حول العالم بحسب التصنيفات الدوليه
+T1466: اللهم إنا نسألك زياده في الدين وبركه في العمر وصحه في الجسد وسعه في الرزق وتوبه قبل الموت وشهاده عند الموت
+T1467: تبرعاتكم لاتزال تصل إلي اخوانكم في ادلب عن طريق جمعيه الإغاثه الإنسانيه جعلها الله في موازين أعمالكم عدد النازحين في تزايد يوما بعد يوم آخر احصائيه تقول تجاوزوا ربع مليون نازح أغلبهم بلا مأوي يمكن المساهمه عن طريق الرابط
+T1468: وسط خلافات متفاقمه مليشيا الحوثي تصفي مشرفيها في الحديده
+T1469: موانئ أبوظبي تجمع مليارات درهم جراء بيع حصه من أسهمها
+T1470: علاج مفصل حسب التركيبه الجينيه لشفاء سرطان كلي الأطفال
+T1471: صوره مؤثره عامل نظافه يستغل وقت فراغه بقراءه القرآن تحصد إعجابا كبيرا بالقرآن تحيا قلوبنا
+T1472: عاجل مصادر و تؤكد بأنه لا توجد نيه لدي شركه أمازون للإستحواذ علي شركه الأخبار التي تحدثت عن قابليه الإستحواذ منذ ساعه كانت محض إشاعات بحسب الإشاعه فقد كانت شركه منفتحه لخيار البيع في مايو الماضي وضمن المهتمين كانوا أبل و ديزني و أمازون
+T1473: بحسب روميرو أداما تراوري سينضم لنادي برشلونه
+T1474: اللهم اكفنا بحلالك عن حرامك واغننا بفضلك عمن سواك الجمعه
+T1475: كورونا يجبر الصين علي الاعتذار عن تنظيم كأس آسيا
+T1476: بوجاتي تنتج أول نسخ من شيرون بقوه جديده حصان
+T1477: شراب العرقسوس يقوم بتحفيز خلايا النخاع علي تكوين كرات الدم الحمراء مما يساعد علي علاج حالات الانيميا فقر الدم
+T1478: إختبارات الأداء تظهر أن حواسيب الجديده توفر أداء أسرع بنسبه في المئه
+T1479: قال رسول الله ليس في النوم تفريط إنما التفريط علي من لم يصل الصلاه حتي يجيء وقت الصلاه الأخري صحيح مسلم
+T1480: لبنان المرشح عن دائره الشوف مروان حماده القوي الشبابيه التي لم تتفق مع الأحزاب السياديه سوف تتضامن لإنقاذ لبنان بعد الانتهاء من الانتخابات
+T1481: جريت وول باور كوميرشال في السعوديه مواصفات وصور للتفاصيل
+T1482: يشتكي الأفراد المصابون ب جدري القرود في البدايه من أمراض شبيهه بالإنفلونزا مثل الحمي وآلام العضلات وتضخم الغدد الليمفاويه قبل ظهور طفح جلدي يشبه جدري الماء علي الوجه والجسم
+T1483: لا تنآقش عاشق ولا متعصب فالأول يحمل قلبا اعمي والثاني يحمل عقلا مغلق
+T1484: مصنع جديد في روسيا يقدم أمل كبير لمعالجه أنواع مختلفه من السرطان
+T1485: تعد وصفات السباجيتي من أسهل الوصفات المعده في المطبخ جربي طعمها بالزبده مع قطع من الدجاج الشهي واللذيذ
+T1486: جبن الحلوم المتبل المقلي للفطور
+T1487: تفسير جديد لزياده الوزن برمضان الشمس ونظام
+T1488: محاكمه جديده لنجلي مبارك في قضيه التلاعب بالبورصه المصريه
+T1489: سترتها الصحافيه ملطخه بالدماء فلسطينيون يشيعون الصحافيه شيرين أبو عاقله بسترتها التي قتلت فيها برصاص الجيش الإسرائيلي في مخيم جنين وسط إدانات دوليه لاستهداف القوات الإسرائيليه للصحافيين في فلسطين
+T1490: ليبيا وزير الصحه والمتحدث الرسمي باسم الحكومه الليبيه د عثمان عبدالجليل لن ندخل طرابلس باستخدام القوه ولن نتواجد فيها طالما توجد خلافات ومشاكل
+T1491: كيا الجبر تقدم زيت المحرك مجانا لمن تلقي لقاح كورونا للتفاصيل
+T1492: تقويم الفصل الدراسي الأول لعام ه م
+T1493: قامت شركه تويتر بالاستحواذ علي تطبيق لتعزيز مزايا خدمتها المدفوعه الذي يسمح للمستخدمين متابعه سلاسل التغريدات بطريقه أكثر سلاسه من خلال جمعها بمكان واحد وذلك دون الإفصاح عن قيمه الاستحواذ من الطرفين
+T1494: اخترق حواجز أمنيه مشدده طفل عراقي عمره سنوات يثير حيره الأمن بعد تسلله إلي طائره دون ملاحظته العراق
+T1495: الاتحاد الإفريقي يتراجع عن الانسحاب ويعلق مشاركته في آليه الحوار ب السودان التفاصيل بدقه مع مراسل الحدث محمد عثمان
+T1496: أعلنت وزاره الداخليه السعوديه رفع تعليق سفر المواطنين إلي كل من إثيوبيا وتركيا وفيتنام والهند وذلك بناء علي متابعه الوضع الوبائي لجائحه فيروس كورونا وما رفعته الجهات الصحيه المختصه حيال الوضع الوبائي عالميا
+T1497: هل تحسن المكملات من أدائك الرياضي
+T1498: هجر المسلمون القران إلي الأحاديث ثم هجروا الأحاديث إلي اسلوب المفكرين والمقلدين والجهال وبذلك ضاعت الأمه الغزالي
+T1499: وش السوبر أس يو في الأفضل برأيك
+T1500: الحلقه من برنامج مع القرني والذي يبث يوميا طوال شهر رمضان عبر قناه الساعه عصرا والإعاده فجرا أسعد بمتابعتكم وأسئلتكم في هاشتاق البرنامج مع القرني مشاهده طيبه برعايه رابط الحلقه

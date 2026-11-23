@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0251 to T0300.
+- Each line has the form ID,Category (for example: T0251,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0251 to T0300):
+T0251: إذا ضاعت المرأه ضاع البيت وإذا ضاع البيت ضاع الأولاد وإذا ضاعت البيوت ضاع المجتمع محاضرات في العقيده والدعوه ص العلامه صالح الفوزان حفظه الله
+T0252: للمناسبات العائليه قدمي علي سفره ضيافتك أطيب الحلويات العربيه المميزه واللذيذه
+T0253: موعدنا بعد قليل إن شاء الله وبث مباشر في حلقه جديده وبرنامج السفره البرره واللقاء الاول من سوره النبأ في تمام الساعه الرابعه عصرا بتوقيت مكه المكرمه
+T0254: كشفت بيانات رسميه حديثه ارتفاع الرقم القياسي للصناعات التحويليه والاستخراجيه في مصر من مستوي نقطه خلال مارس مقابل نحو نقطه خلال فبراير بنسبه زياده بلغت نحو
+T0255: كارلو أنشيلوتي خطه إيدن هازارد واضحه جدا فهو باق لأنه يريد إظهار جودته في الموسم المقبل
+T0256: اللهم صل علي محمد وعلي آل محمد كما صليت علي إبراهيم وعلي آل إبراهيم إنك حميد مجيد اللهم بارك علي محمد وعلي آل محمد كما باركت علي إبراهيم وعلي آل إبراهيم إنك حميد مجيد صلوا علي الحبيب محمد
+T0257: يلين الاستثمارات في ميزانيه بايدن للعام ضروريه لمواجهه التضخم
+T0258: اختبار الدم يكشف مبكرا عن احتمال الإصابه بسكري الحمل
+T0259: أنا لا أكرهك أنت فقط لم تعد تؤثر علي كالسابق بالرغم أنني لا ازال أحبك لكن أنت لم تعد تعني لي شيئا
+T0260: هكذا يبدو المشهد بالنسبه للبحاره عند الإبحار في القاره القطبيه الجنوبيه مشهد عظيم ما رأيك
+T0261: أخطاء شائعه في القياده قد تضر بسيارتك
+T0262: يسوق الله لك أحدا من أقصي الأرض فيجمع الله بينكما من غير سابق معرفه ولا ميعاد ثم يقضي الله حاجتك علي يديه وأنت الذي لو طفت الأرض كلها شرقا وغربا ما كنت تدري بمن تنزل حاجتك إنها ألطاف الله التي يدبرك بها من حيث لا تشعر فاطمئن دائما محمد الشعراوي
+T0263: تم إطلاقها احتفاء بالذكري السنويه ال للمنافسه ويقتصر تصنيعها علي وحده فقط   سيارات سكودا
+T0264: احتل برشلونه المركز التاسع في الدوري الإسباني قبل تعيين تشافي حاليا برشلونه في المركز الرابع
+T0265: أعظم طلب أراده موسي
+T0266: نادي ويستهام يحقق الفوز علي واتفورد بنتيجه
+T0267: غنيه بالعناصر الغذائيه العاليه جربيها الان
+T0268: المربع نت أول ظهور للامبورغيني أوروس فيس ليفت بدون تمويهات أثناء اختبارها ومن المتوقع استلامها لمحرك هايبرد جديد بقوه تتخطي حصان وتحديثات خارجيه محدوده المربع نت لامبورجيني أورورس
+T0269: طريقه عمل بسبوسه التمر بدون بيض
+T0270: قال البغوي رحمه الله والمرأه مندوبه إلي الغلظه في المقاله إذا خاطبت الأجانب لقطع الأطماع معالم التنزيل
+T0271: هل العواطف تأتي نتيجه لحكمنا علي الوضع الراهن أو نتيجه لتصور التغيرات التي تحدث داخل أجسامنا ما هي المشاعر ولماذا نشعر بها
+T0272: يقاس العقل بالنقاش وتقاس المحبه بالمواقف ألبير كامو
+T0273: إغلاقات كورونا في مختلف دول العالم للحد من انتشار الوباء أدت إلي زياده في البطاله طويله الأمد وكذلك التقاعد المبكر
+T0274: أطلقت شركه سامسونج تحديث جديد لمستخدمي هاتف تقدم من خلاله تحسينات لميزه المسح ثلاثي الأبعاد لدعم المستخدم بآداء أكثر دقه
+T0275: ليحب أحدكما الاخر ولكن لا تجعلا من الحب قيدا بل اجعلاه بحرا متدفقا بين شواطئ أرواحكما جبران خليل جبران فيلسوف وشاعروكاتب لبناني
+T0276: ال ثقه تحتاج عمر لترسخ والخيبه تحتاج للحظات فقط
+T0277: تناول بذور العنب هي عاده يقوم بها أغلب الناس وان كانت مزعجه فهي علاج لمجموعه من المشاكل بما في ذلك أمراض القلب صحه
+T0278: مصر تبحث مع هيرنكنشت الألمانيه التعاون في مجال الأنفاق والسكك الحديديه
+T0279: قناه تحصل علي حقوق بث التصفيات الآسيويه المؤهله إلي نهائيات كأس العالم
+T0280: سموذي التمر من المشروبات المغذيه المناسبه لكل الأوقات تناوليه بعد الأفطار أوالسحور اطبخ بالبيت خليك بالبيت وصفات رمضان مشروبات رمضان
+T0281: إذا رأي أحدا يطأطئ عنقه في الصلاه يضربه بالدره ويقول له ويحك إن الخشوع في القلب أميرالمؤمنين عمر أبن الخطاب الفاروق
+T0282: إقبال جماهيري كبير علي تذاكر مباراه السعوديه و أوزباكستان في نهائي كأس آسيا تحت عاما يوم الأحد المقبل
+T0283: تنتج أجسامهم مستويات مرتفعه للغايه من الأجسام المضاده تعرف علي المزيد عن أصحاب المناعه الخارقه الذين يهزمون فيروس كورونا
+T0284: أصبحت متلازمه القولون المتهيج تشكل قلقا وتثير تساؤلات عديده عنها مقال نون قد يجيبك عن بعض تساؤلاتك
+T0285: بكتيريا قد تطور مستقبل معالجه مياه الصرف الصحي
+T0286: موديلات مرسيدي اللي توقف انتاجها نهائيا خلال السنوات ال ماضيه
+T0287: تعلمي تحضير أشهي وصفات الأرز للعزومات بالفيديو و الخطوات من مطبخ سيدتي
+T0288: يكثف أعضاء الكونغرس الأمريكي انتقاداتهم لسلوك شبكه التواصل الاجتماعي فيسبوك إلا أنه رغم ذلك لا يستطيع النواب إلغاء أو تعطيل نشاطهم علي المنصه المزيد مع مذيعه الشرق مايا حجيج
+T0289: لامبورغيني سوبر تروفيو تعود مجددا إلي الشرق الأوسط في   سيارات لامبورغيني
+T0290: مرسيدس سي كلاس الجديده بمصابيح أماميه أكبر وأكثر أناقه   سيارات مرسيدس سي كلاس
+T0291: طائر جارح يصطاد سمكه ويحلق بها عاليا باحثا عن مكان آمن ليأكلها هذا الفيديو تم التقاطه في ولايه ساوث كارولاينا الأمريكيه
+T0292: لابورتا الليغا لم تنتهي بعد
+T0293: مبابي والدتي أجبرتني علي التفاوض مع ليفربول
+T0294: كندا تخطط لدعم شركات الإعلام التي تعاني من استنزاف عوائد إعلانات الإنترنت لصالح شركات سليكون فالي الرقميه العملاقه التفاصيل
+T0295: ارتفاع أرباح الدار العقاريه الأوليه في لتصل إلي مليار درهم
+T0296: كيكه الأناناس الشهيه واللذيذه والمحضره بطريقه مميزه وسهله تستطعين تقديمها بمناسباتك المختلفه والمميزه
+T0297: هذا ما توفره حلبه مرسي ياس أيام عطله الأسبوع   سيارات
+T0298: تعلن رسميا أنها ستقوم بالإستحواذ علي شركه
+T0299: العاقل لا يزيده استهزاء غيره به إلا إصرارا علي مبادئه و نفعا لمحاوره حتي يتبين له أو لمخالفيه الحق د طارق الحبيب
+T0300: فيتول أميركا قد تسمح بمزيد من تدفقات النفط الإيراني لهذا السبب

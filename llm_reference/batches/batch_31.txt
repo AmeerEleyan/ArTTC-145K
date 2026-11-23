@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1501 to T1550.
+- Each line has the form ID,Category (for example: T1501,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1501 to T1550):
+T1501: أسعار الهاتف تظهر علي الويب وستبدأ من دولار أمريكي
+T1502: أننا لا يمكن أن نستغني عن وجود البصل في منازلنا علينا أن نعرف الطرق الصحيحه لتخزينه
+T1503: من توقيع محمد العويس مع الهلال
+T1504: الثقه بالله أزكي أمل والتوكل عليه أوفي عمل مصطفي صادق الرافعي
+T1505: خسائر نفط عمان تفوق دولار للبرميل بالعقود الآجله
+T1506: تذكرت حديث النبي وأنا أقرأ هذه التغريده عن ابن مسعود قال كنا مع رسول الله في سفر فانطلق لحاجته فرأينا حمره معها فرخان فأخذنا فرخيها فجاءت الحمره فجعلت تفرش فجاء النبي فقال من فجع هذه بولدها ردوا ولدها إليها
+T1507: أسأل الله في هذه الليله المباركه باسمه الأعظم الأجل الأكرم أن يغفر لي ولكم ولوالدينا جميعا وأن يسعدنا في الدارين اللهم ضاعف لنا حسناتنا وكفر عنا سيئاتنا واعتق من النار رقابنا اللهم انك عفو تحب العفو فاعف عنا لا تنسونا من دعائكم ليله ليله القدر ليله
+T1508: وصول الأمير محمد بن سلمان إلي مصر في جوله تشمل الأردن وتركيا
+T1509: محلل يشير إلي تغير دوره حياه أجهزه الألعاب المنزليه في السوق الأمريكي
+T1510: تارت الفاكهه حلوي مثاليه مع أرتفاع درجات الحراره حضريه اليوم علي طريقه   ودللي شهيتك
+T1511: عصر التنوير وتطور التفكير العلمي
+T1512: ساديو ماني قد يغيب لمده أسابيع بسبب الإصابه مع السنغال
+T1513: تعلمي أصول تحضير البيض المقلي مع الخضار لافطار شهي مع العائله
+T1514: فيات تحقق افضل مبيعات لشركه سيارات في الارجنتين للشهر الاول من العام الحالي وهو يناير متجاوزه في المبيعات جميع شركات السيارات هناك سوق مبيعات
+T1515: قال الإمام ابن باز رحمه الله تعالي ومن أعرض عن الفقه في الدين فذلك من العلامات علي أن الله ما أراد به الخير ولا حول ولا قوه إلا بالله مجموع الفتاوي
+T1516: هل تجارب اللقاحات علي الأفارقه منفذ للعنصريه أم منقذ للبشريه مقال علي الجميع قراءته  عنصريه لقاح
+T1517: أفادت تويوتا أن قيمه حصتها في أوبر بلغت مليار ين منخفضه عن مليار ين العام السابق وذلك بعد أن تخلصت شركه النقل التشاركي الأميركيه من قسم القياده الذاتيه
+T1518: استراتيجيه بورشه الجديده ساهمت في تعزيز أداء الشركه   سيارات بورشه
+T1519: نتيجه الشوط الاول من مباريات الدوري الاوروبي
+T1520: استشاري الأمراض المعديه نزار باهبري العلاج بالبلازما فعال مع سارس لكن لم يحقق نتائج جيده مع كورونا  بالشكل الجديد  أن تعرف أكثر
+T1521: جونسون طموحات الرئيس الروسي فلاديمير بوتين المروعه غيرت الخطوط الجيوسياسيه للقاره الأوروبيه
+T1522: يعتبر من أشهر الشواطئ بالعالم لقربه من مدرج الهبوط لمطار الأميره جوليانا الدولي ويتوافد عليه السياح ل لتجربه مرور الطياره مباشره فوقهم وشعور الهواء والصوت القوي
+T1523: قال الحافظ ابن رجب رحمه الله ذنوب العبد وإن عظمت فإن عفو الله ومغفرته أعظم منها وأعظم فهي صغيره في جنب عفو الله ومغفرته جامع العلوم والحكم
+T1524: قال ابن حجر هذا الحديث فيه إشاره لدخول فاعل ذلك الجنه
+T1525: أعلن بنكا الأهلي المصري ومصر اجتذاب حصيله بقيمه مليار جنيه خلال اليومين السابقين من طرح شهاده ال والتي تمنح عائدا يصرف شهريا
+T1526: دعم أوكرانيا ماليا لتزويد مشترياتها العسكريه وحظر استيراد النفط الروسي محور مناقشات وزراء خارجيه الاتحاد الأوروبي
+T1527: يجب حاليا تخزين اللقاح عند درجه مئويه تحت الصفر فايزر تعلن عن تغيير تركيبه لقاحها لإكسابه مرونه أكبر في عمليات النقل والتخزين
+T1528: فاجئي أحبائك بطبق رائع من ساندويشات الكباب بالصلصه مع مطبخ سيدتي
+T1529: مبيعات العقارات في دبي تبلغ مستوي قياسي مدعومه بزياده الطلب المحلي وإقبال الروس
+T1530: وصفه مشبعه وسهله التحضير
+T1531: أعلي سيارات يابانيه مبيعا في السعوديه لعام
+T1532: أعلنت وزاره الصحه في الهند الأربعاء تسجيل إصابه جديده بفيروس كورونا و وفاه جديده بالفيروس خلال ال ساعه الماضيه حيث تعد أعلي حصيله إصابات يوميه يتم تسجيلها في البلاد منذ نحو أشهر
+T1533: بي ام دبليو الجيل الجديد كليا ينطلق رسميا أسعار ومواصفات وصور
+T1534: دعا مجلس الأمن الدولي الثلاثاء حركه طالبان إلي التراجع بسرعه عن السياسات والممارسات التي تقيد حاليا حقوق الإنسان والحريات الأساسيه للنساء والفتيات الأفغانيات في بيان تم تبنيه بالإجماع
+T1535: رسميا سوني بلايستيشن تستثمر مليار دولار في شركه جنبا إلي جنب مع شركه صاحبه سلسله دعما منهما لمشاريع شركه إيبيك للميتافيرس سوني و يتحدون معا لدعم تكنولوجيا المستقبل فماذا سيكون نتاج هذا التعاون والدعم المستمر يا تري
+T1536: الكرملين لقاء بوتين وترمب قيد التحضير رغم الأزمه الأوكرانيه
+T1537: مهما كانت تكلفه التعليم وبناء المكتبات عاليه ستبقي أرخص كثيرا مقارنه مع تكلفه بقاء الأمه جاهله والتر كرونكايت
+T1538: الرئيس الروسي فلاديمير بوتين نفي بجميع التزاماتنا بشأن صادرات النفط والغاز والغرب صار مستعدا لمفاوضه خصومه ك فنزويلا و إيران لبحث بدائل الطاقه الروسيه
+T1539: لحظه سقوط الرئيس الأميركي جو بايدن من علي دراجته خلال رحله في ولايه ديلاوير أميركا
+T1540: بدعم النفط البنك الدولي يتوقع نموا قويا لاقتصادات دول الخليج
+T1541: أيهما المسؤول عن السرطان البيئه أم سوء الحظ
+T1542: تنازلوا عن دوركم في إصلاح البشر وأصلحوا أنفسكم فقط
+T1543: ذلكم خير لكم ي أيها لذين ءامنو ا إذا نودي للصلو ه من يو م ل جمعه فس عو ا إلي ذك ر لله وذروا ل بي ع ذ لكم خي ر لكم إن كنتم تع لمون
+T1544: س ماذا يجب علي المعتكف التزامه في معتكفه قال ابن باز رحمه الله علي المعتكف أن يلزم معتكفه ويشتغل بذكر الله والعباده ولا يخرج إلا لحاجه الإنسان كالبول والغائط ونحو ذلك أو لحاجه الطعام إذا كان لم يتيسر له من يحضر له الطعام فيخرج لحاجته ولا يجوز للمرأه أن يأتيها زوجها
+T1545: من أكثر المشكلات التي تواجهنا في مثل هذا الوقت من العام هي تعرض بشرتنا للجفاف مع ظهور البثور وحب الشباب لذلك تقدم لك   بعض النصائح للحفاظ علي بشرتك في فصل الخريف   الحياه حلوه
+T1546: بحسب الصحفي أحمد العجلان سيكون بمقدور النجم الدولي محمد كنو المشاركه في المباريات الوديه ل المنتخب السعودي أمام كولومبيا وفنزويلا في المعسكر المقبل حيث أن إيقافه عن المباريات الرسميه فقط
+T1547: أغلي أمنيات أهل القبور صدقه يقول تعالي عن من حضرته الوفاه رب لولا أخرتني إلي أجل قريب فأصدق فإن كان لك من أحباب قد رحلوا فسارع بالصدقه عنهم فهي أجمل هداياك لهم
+T1548: زيت الزيتون غني بمضادات الأكسده التي تبطئ من أثر الشيخوخه علي البشره وتعطي نضاره و حيويه للبشره لذا يستخدم كثيرا في مستحضرات التجميل
+T1549: نظام القادم سيتوفر المزيد من المعلومات عن البطاريه في السماعات الخاصه بك
+T1550: إنفوجرافيك مناطق في دبي تسجل مبيعات ملياريه من العقارات السكنيه

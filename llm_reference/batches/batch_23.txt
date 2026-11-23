@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1101 to T1150.
+- Each line has the form ID,Category (for example: T1101,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1101 to T1150):
+T1101: البنوك الخليجيه تسير علي طريق الانتعاش في بدعم عوامل
+T1102: لا أراكم ظلمه ولا حلت بصدوركم غمه ولا طلبتم من شيئا إلا أتمه
+T1103: أفضل مشروب الصبح علي الريق
+T1104: ارتفاع عدد ضحايا حمي لاسا في نيجريا مقال نون  ترجمه مراجعه
+T1105: د أحمد عيسي المعصراوي ويومه مع القرءان عبر
+T1106: ما هو الزمان بالنسبه لك ما هو تعريفك للزمان
+T1107: الظهور الأول لسياره كيا سول الجديده لعام
+T1108: حلاقه شعر العانه الإصابات أثناءها أكثر مما كنا نتوقع
+T1109: قطع فنيه مصنعه من قطع الغيار المستعمله
+T1110: فيتامين يحتوي علي خصائص مضاده للأكسده مما دفع العديد من شركات مستحضرات التجميل إلي إضافته إلي بعض منتجات التجميل تعرفي علي اهم فوائد فيتامين للبشره والشعر بالمقال التالي صحتك حياتك
+T1111: تخيلي كيف سيبدو التناغم بين مذاق ال بطاطس واللحمه في طبق من المقبلات الفاخره جربي هذه الوصفه اليوم ولا تنتظري أكثر اطبخ بالبيت خليك بالبيت وصفات رمضان مقبلات لحم فطور رمضان رمضان
+T1112: لا فض فوك أسعدك الله وحفظك
+T1113: دجاج مشوي جربيها بتتبيله سهله وشهيه مع خضار البصل والبطاطس اللذيذه
+T1114: إن الله وملائكته يصلون علي النبي يا أيهاالذين آمنوا تسليما صلوا علي الحبيب محمد ليله الجمعه
+T1115: عن سعيد بن يزيد أن رجلا قال يا رسول الله أوصني فقال صلي الله عليه وسلم أوصيك أن تستحي من الله كما تستحي من الرجل الصالح من قومك أخرجه ابن أبي الدنيا في مكارم الأخلاق وصححه الألباني في صحيح الجامع حديث رقم
+T1116: الجامعه العربيه تدعو لتهدئه وحوار جاد بين الليبيين
+T1117: سالم يخلط في كل مكان وزمان
+T1118: عرض إحدي السيارات النموذجيه من فورد رودستر للبيع من خلال دار المزادات الشهيره سوثبي
+T1119: المربع نت سياره تويوتا إل كيو الكهربائيه بالكامل من جناح تويوتا عبداللطيف جميل في معرض جده الدولي للسيارات المربع نت تويوتا معرض جده الدولي للسيارات
+T1120: تويوتا تشوق لنسخه عاليه الاداء من كورولا باسم
+T1121: ننصح باستشاره طبيب مختص أو خبير تغذيه منعا لأي آثار سلبيه قد تحدثها
+T1122: مصورو التجسس يلتقطون صور لنموذج كوينيجسيج ريجيرا الكربونيه في لندن قبل بضعه أيام من عيد الميلاد بدون تمويه
+T1123: شلمبرجير قطاع النفط يتجه لتحقيق أفضل هوامش ربح منذ
+T1124: سباق تسارع بين رام ماموث و كامارو المربع نت رام كامارو
+T1125: قمه إنفستوبيا للاستثمار التي ستعقد غدا في الإمارات ستكون أول قمه اقتصاديه يتم استضافتها في عالم ميتافيرس سيقوم وزير الاقتصاد الإماراتي عبد الله بن طوق بعقد أول مؤتمر صحفي عبر ميتافيرس بحيث يتمكن الإعلاميون من دخول هذا العالم الافتراضي وطرح أسئله علي الوزير
+T1126: وزاره الرياضه غير راضيه عن الناقل ل الدوري السعودي وسيتم طرح كراسه النقل الجديده بعد رمضان
+T1127: طائره تسير علي الطريق   سيارات
+T1128: موقع موتري راح تحصل عندهم جديد ومستعمل وتقدر تعرض سيارتك عندهم عشان تنباع
+T1129: رئيس الوزراء الليبي المكلف فتحي باشاغا يصل بريطانيا في زياره عمل أبحث مع أعضاء البرلمان خارطه الطريق نحو التعافي في البلاد
+T1130: اكتشف من الرابط التالي كيفيه التغلب علي مشكله الشعر الخفيف وزياده كثافته صحتك حياتك
+T1131: تتوفر ب نسخه فقط زوروا الرابط التالي لإكتشافها   سيارات
+T1132: لكزس تنشر صور رسميه ل سيدان كهربائيه جديده و بالرغم من انها تشبه لكن لن تكون بديلتها هذه سيدان كهربائيه جديده من لكزس و ليست بديله لأي سياره من لكزس اخبار
+T1133: يكفي أن تدعو لي أمي لأحس أنني محمي من كل سوء الطاهر بن جلون
+T1134: ارتيتا ضد ايفرتون في الدوري المباريات الخساره عقده
+T1135: تتجه أسهم شركات التواصل الاجتماعي نحو خساره أكثر من مليار دولار من قيمتها السوقيه بعد تحذير شركه المالكه لتطبيق بشأن الأرباح
+T1136: تطبيق سيحصل علي تحديث في الأسابيع القادمه يضيف خيار متابعه البث المباشر بجوده وايضا خيار تحميل الفيديوهات ومتابعتها بدون إتصال بالشبكه بالإضافه الي إمكانيه متابعه عده بثوث بنفس الحساب من عده أجهزه في نفس الوقت
+T1137: لوموند الفرنسيه تركيا تستعد لما بعد أردوغان أيامه معدوده فرنسا
+T1138: لمحت موديل السياره المربع نت
+T1139: في الصباح يرغب الجميع بشرب الشاي والقهوه الدافئه خبراء سيدتي يقدمون لك النصائح للعنايه بالفناجين من أسوء البقع
+T1140: شركه الطاقه الجزائريه الحكوميه سوناطراك توقع عقدا مدته أعوام مع شركه إنجي الفرنسيه لتوريد الغاز بسعر جديد يأتي هذا وسط مراجعه الجزائر لعقود الغاز لجميع عملائها لمواكبه ارتفاع الأسعار في الأسواق العالميه
+T1141: رئيس الامن في المونديال ترغب في التعبير عن آرائك حول قضيه الشواذ فافعل ذلك في مجتمع حيث سيتم قبوله لا تأتوا وتهينوا مجتمعا بأكمله لن نغير الدين لمده يوم
+T1142: اليمن ميليشيا الحوثيين تستولي علي أراضي المواطنين في صنعاء
+T1143: لماذا تكلفه اطلاق الصواريخ من أرخص من ناسا كل ما يجب أن تعرفه حول أول رحله مأهوله لشركه خاصه بإتجاه محطه الفضاء الدوليه  ناسا سبيس اكس
+T1144: مرسيدس قديمه للبيع كيفيه اختيار السياره المناسبه والسعر للتفاصيل
+T1145: لا تنسي من تحب في زحام يومك قل له صباح الخير فقط كفيله بأن تشعل به السعاده بقيه اليوم صباحكم سعاده تملا قلوبكم
+T1146: عند بلوغ سن الشيخوخه ينهار مكون الكولاجين في الجسم ولا يبقي الجسد قادرا علي إفراز المزيد من الأنزيمات المضاده للأكسده مكونات أثبت الخبراء فاعليتها في الحفاظ علي شباب البشرهالعربيه
+T1147: ثلاث طرق لخساره الوزن يجب عليك أن تجربها
+T1148: هذه السياره بمثابه علامه فارقه مهمه في مسيره بولستار   سيارات بولستار
+T1149: المتحدث باسم وزاره الطاقه اللبنانيه لبنان و مصر يوقعان اتفاقيه استيراد الغاز النهائيه في يونيو الحالي
+T1150: جنرال موتورز تعلن إلغاء مشغل الأسطوانات في سياراتها للتفاصيل

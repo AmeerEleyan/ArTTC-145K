@@ -1,0 +1,13 @@
+{
+  "model": "arabert",
+  "device": "cpu",
+  "n_tweets": 500,
+  "repeats": 3,
+  "batch_size": 1,
+  "latency_ms_median": 60.501,
+  "latency_ms_p95": 73.747,
+  "latency_ms_mean": 62.321,
+  "load_seconds": 2.59,
+  "ram_mb_model_loaded": 238.7,
+  "ram_mb_after_inference": 701.9
+}

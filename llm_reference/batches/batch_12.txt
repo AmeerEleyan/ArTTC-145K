@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0551 to T0600.
+- Each line has the form ID,Category (for example: T0551,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0551 to T0600):
+T0551: هل تستطيع البنوك المركزيه العالميه كبح جماح التضخم عبر رفع الفوائد خبير في الأسواق الماليه يحذر من ركود قد يمس سوق الوظائف بنوك مركزيه الفائده التضخم
+T0552: ارنولد أرنولد شوارزنيجر الممثل و السياسي النمساوي الامريكي يتعرض لحادث بسيارته جمس يوكون و يقولون انه بخير الغريب هو طريقه الحادث مع بريوس الخبر و الصور بحسب
+T0553: للستيك مكانه خاصه في قلوب محبي الطعام ولهؤلاء نهديكم وصفه سهله وجديده لستيك اللحم مع الجبن الشهيه من غذي مودك   الحياه حلوه   رمضان
+T0554: عزاؤنا لآل المرزوق الكرام بوفاه الرجل المحسن الفاضل مرزوق عبدالوهاب المرزوق أسأل الله أن يغفر له ويرحمه ويسكنه الجنه ويجعل ما قدم في سبيل الله شفيعا له عند الله
+T0555: هذا الحدث تم بمشاركه أكثر من من عشاق السيارات   سيارات
+T0556: تعاني امرأه مرضا نادرا يجعلها تفقد الوعي كلما حاولت الوقوف لكن الآن وبفضل جهاز جديد يضع زرعه إلكترونيه في نخاعها الشوكي لتنبيه أعصابه تتمكن هذه المرأه من الوقوف والمشي
+T0557: تعلن شركه عن إصدار مبرد وحده المعالجه المركزيه الجديد
+T0558: إننا عندما نربط الأفكار بالأشخاص نحرم أنفسنا من الفكره الجيده حين تأتي من الضد ونتورط في الفكره السخيفه طالما جاءت من صديق مالك بن نبي
+T0559: في تجربه جديده ومميزه يختبر الزميل ريتشي سياره مرسيدس ايه إم جي جي إل بي فورماتيك الجديده كليا للمزيد من المعلومات زوروا الرابط التالي   سيارات مرسيديس بنز
+T0560: الإعلان رسميا عن في حدث شاشه بحجم انش مع دعم اللمس ودعم دولبي فيجين ودولبي اتموس بطاريه تستمر حتي ساعه الإعلان عن القلم الذكي يمكن حفظه في لوحه المفاتيح منفذ
+T0561: سعر برميل النفط العماني ينخفض دولار
+T0562: كلف بوضع قانون كامل للأحوال الشخصيه عام م وأوفد إلي مصر مده سنه فدرس مشروعات القوانين الجديده للمواريث والوصيه وسواها وقد أعد مشروع قانون الأحوال الشخصيه كله وصار هذا المشروع أساسا للقانون الحالي
+T0563: ليبيا وزير الداخليه بالحكومه المكلفه ل العربيه فتحي باشاغا دخل إلي طرابلس
+T0564: طفره في تحديد خطر إصابه الرجال بمرض سرطان البروستات عن طريق الفحص الجيني
+T0565: كيف تحولت وسائل التواصل الاجتماعي إلي وسيله لنشر الشائعات حول كورونا  أن تعرف أكثر
+T0566: أفلا يتدبرون القرآن قال ابن بيره رحمه الله ومن مكائد الشيطان تنفير عباد الله عن تدبر القرآن لعلمه أن الهدي واقع عند التدبر ذيل طبقات الحنابله لإبن رجب
+T0567: موتي ولا أحد هنا يرثي لنا قم وارثنا يا آخر الأحياء أحمد مطر
+T0568: الخارجيه الأميركيه يجب العوده للاتفاق النووي قبل حيازه إيران قنبله نوويه
+T0569: إن في السماوات والأرض لآيات للمؤمنين الجاثيه
+T0570: من المقرر أن تصل هذه التحفه إلي السوق في أوائل عام   سيارات رينو كادجار رينو
+T0571: علم الفلك والطب النفسي الغبار الدماغي والغبار الكوني
+T0572: طرق يمكنك من خلالها استخدام الوعي التام لإصلاح دماغك والحد من التوتر تعرف عليها عبر المقال
+T0573: يمكن أن يظهر الفحص سلبيا عند شخص مصاب في حال كانت كميه الفيروسات دون االحد الذي يكشفه التحليل وهذا أمر مقلق جدا د حكيم جاب الله الرئيس السابق لمعهد باستور كوريا فيروس كورونا
+T0574: تشكيله يوفنتوس اتلانتا الرسميه
+T0575: قال بوتين خلال الجلسه العامه لمنتدي سان بطرسبورغ الاقتصادي نسمع جميعا عن تضخم بوتين المزعوم خطواتنا لتحرير دونباس لا علاقه لها بذلك  روسيا التضخم
+T0576: اللهم إن مساجدنا أظلمت وشهر رحماتك الفضيل قد دنا فلا تحرمنا سماع تراتيل التراويح ولا بكاء الإمام في تهجده ولا رؤيه المصلين يصطفون كالبنيان المرصوص في تبتلهم ولا تحرمنا من عمره تعدل حجه مع نبيك اللهم اصرف عنا الوباء يا ارحم الراحمين
+T0577: التبادل التجاري بين مصر و السعوديه نما في عام وسجل مليار دولار بحسب بيانات هيئه الإحصاء السعوديه
+T0578: هل تعلمون أن هناك أشخاص يتقاضون رواتبهم في ناسا مقابل عدم فعل أي شيء أشياء لا تعلمها عن وكاله الفضاء ناسا  ناسا الفضاء
+T0579: الظلم يجعل من المظلوم بطلا وأما الجريمه فلابد من أن يرتجف قلب صاحبها مهما حاول التظاهر بالكبرياء عمر المختار قائدومجاهد ليبي
+T0580: أعظم تهديهالك الدنيا إنك تتحب من أول تعامل ناس ماتعرفهاش ولا تعرفك وتحبك وتبقي مهتمه تعرفك أكتر إن يكون أول انطباع عنك إنك خفيف وطلعت أجمل مما تخيلوا
+T0581: مودريتش يتوعد مانشستر سيتي ب التاريخ
+T0582: دع الماضي يمضي وأحاديث الناس تمضي فهل سمعت بشخص ربح سباقا وهو ينظر خلفه من روائع ما قرأت
+T0583: شباب الأهلي بقياده عموري يقسو علي الغرافه أهداف المباراه
+T0584: استمتعوا بألذ أطباق الدجاج مع وصفه سهله وبسيطه من   لتحضير كرات الدجاج مع الكريمه وابهروا بها الجميع علي مائده الإفطار رمضان كريم
+T0585: الطبيب في علم الوبائيات د عبد الكريم قزيز جدري القرود لا ينتشر بين الناس بشكل كبير
+T0586: هيئه السوق الماليه توافق علي زياده رأسمال أرامكو السعوديه
+T0587: هي مجرد اتفاق بين علماء الرياضيات لكي يتم تعريف القواعد الخاصه بالعد لكل عدد صحيح طبيعي فلا نبقي في كل مره في حاجه إلي استثناء من القائمه إذا كان وهي النتيجه البديهيه حسب تعريف حيث إذا فإن
+T0588: الوضع الليلي أخيرا يصل بشكل رسمي للواتساب حدثوا البرنامج و فعلوا الوضع الليلي في هواتفكم
+T0589: قدمي اليوم أشهي الأكلات علي طريقه   المميزه وجربي حمص بالروبيان المره لذيذه اليوم
+T0590: قدميها كضيافه شهيه ومحببه للجميع
+T0591: جآني وآنآ تآيب عن آلعشق وآلحب مليت آححب ولآا بقآالي ليآقهه يقولي آحبكك وآناا آقوول يآارب تبقي علآقتنآ مجرد صصصدآقهه
+T0592: الأولويه للعاملين في المجال الطبي وكبار السن بدء حمله تطعيم شامله ضد كورونا في الاتحاد الأوروبي
+T0593: اكسروا هدوء الليل صوت استغفاركم فهناك رب كريم غفور رحيم يقول استغفر الله الذي لا اله الا هو الحي القيوم واتوب اليه
+T0594: فيديو إمرأه بعمر ال تسمع لأول مره في حياتها
+T0595: تحقيق يؤكد أنه لا توجد رقاقات التجسس في اللوحات الأم لخوادم آبل وأمازون
+T0596: تعرف علي كيفيه تغيير إطارات سيارتك بنفسك بشكل صحيح
+T0597: تشكيله تونس مالي الرسميه
+T0598: إن تعبت في الخير فإن التعب سيزول والخير سيبقي وإن تلذذت بالآثام فإن اللذه ستزول والآثام ستبقي
+T0599: أبرزهم نجل راشد الغنوشي إحاله قياديين بحركه النهضه الإخوانيه للمحاكمه بقضيه مكافحه الإرهاب في تونس
+T0600: أ ف ب عن دبلوماسي فرنسي مفاوضات الاتفاق النووي مع إيران وصلت إلي طريق مسدود

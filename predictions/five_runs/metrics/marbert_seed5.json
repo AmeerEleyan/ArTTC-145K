@@ -1,0 +1,43 @@
+{
+  "model": "marbert",
+  "seed": 5,
+  "n_test": 21757,
+  "metrics": {
+    "accuracy": 93.9,
+    "macro_precision": 93.88,
+    "macro_recall": 93.78,
+    "macro_f1": 93.82,
+    "weighted_f1": 93.9,
+    "per_class_f1": {
+      "اقتصاد": 92.93,
+      "تكنولوجيا": 93.09,
+      "خواطر واقتباسات": 94.13,
+      "دين": 93.38,
+      "رياضه": 99.08,
+      "سيارت": 96.96,
+      "سياسه": 95.39,
+      "صحه": 89.65,
+      "طهي": 96.59,
+      "علوم": 87.07
+    }
+  },
+  "info": {
+    "train_seconds": 1232.382,
+    "train_peak_gpu_mb": 3141.7,
+    "epochs_trained": 4,
+    "best_epoch": 3
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA A100-SXM4-80GB, 81920 MiB",
+    "cpu_count": "12",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tensorflow": "2.21.0",
+    "sklearn": "1.6.1",
+    "numpy": "2.4.6"
+  },
+  "saved_at": "2026-11-22 12:44:46"
+}

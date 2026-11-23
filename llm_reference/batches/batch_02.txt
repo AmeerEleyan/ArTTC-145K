@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0051 to T0100.
+- Each line has the form ID,Category (for example: T0051,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0051 to T0100):
+T0051: مارسيلو و رودريغو علي طريقه كريستيانو رونالدو في التدريبات
+T0052: خبرينا شو اسمه ببلدك وكيف بتسويها
+T0053: أفضل يوم في حياتي تشافي سيمونز أعتقد عندما وقعت مع باريس سان جيرمان
+T0054: لا تفوتك أشهي كريب بأربع وصفات مميزه وسهله في التحضير مع مطبخ سيدتي
+T0055: قررت تركيا منع اللاجئين السوريين المقيمين علي أراضيها من زياره بلدهم خلال عطله عيد الأضحي المقبل ويأتي بعد قرار آخر صدر منذ أيام ويهدف للحد من عدد السوريين في أحياء المدن التي يعيشون فيها التفاصيل
+T0056: تقتضي الثقه الصفريه بصفتها مفهوما أمنيا التحقق من كافه المستخدمين حتي أولئك الموجودين داخل الشبكه التجاريه للمؤسسه قبل السماح لهم بالدخول
+T0057: لماذا الثلج أبيض
+T0058: هدد إيلون ماسك اليوم الاثنين بالتراجع عن عرضه البالغ مليار دولار لشراء شركه تويتر بسبب اتهامه الشركه برفض تزويده بمعلومات حول الحسابات المزوره إليك قصه تلك الحسابات
+T0059: القرآن الكريم لم ينزله الله ليتلي علي الأموات بل ليحكم الأحياء ولم ينزله لتزدان به الجدران بل ليزدان به الإنسان
+T0060: يوم الأم هكذا يبدأ وهكذا ينتهي خبرينا أي مرحله من اليوم هي الأكثر مشقه بالنسبه إلك
+T0061: رسميا تأهل جزر القمر وساحل العاج وغينيا الاستوائيه لدور بعد نتائج مجموعه الجزائر
+T0062: هل هناك علاقه بين كثره التجشؤ و القلب اكتشف الإجابه من هنا صحتك حياتك
+T0063: بعد أن أدركت تأثيراته السلبيه والمعاناه التي تتكبدها الإناث منه وعندما حان الوقت المناسب قررت إنشاء مركز في أميركا لتقديم الرعايه الصحيه لمواجهه الختان عند الإناث نتعرف علي الدكتوره السودانيه الأميركيه نوال نور مع أعمالها ومساعيها
+T0064: تبدأ اليوم في تمام الساعه عصرا بتوقيت السعوديه أولي حلقات برنامج مع القرني نظهر لكم يوميا في عصر شهر رمضان أسعد باستقبال استفساراتكم ومشاركاتكم التي سنعلق عليها في حديثنا علي هاشتاق البرنامج مع القرني
+T0065: فكرت بالدنيا وأثر ماهي بشي مدري علام الناس تركض وراها من خلقت الدنيا لأيامنا ذي والناس تطرد رزقها ماكفاها
+T0066: من أكبر أخطائي أني كنت أمر علي لحظات الفرح مرورا عابرا وأعيش الحزن بكل مشاعري سومرست موم
+T0067: رئيس البرلمان عقيله صالح يدعو رئيس الحكومه المكلف فتحي باشاغا ورؤساء المؤسسات السياديه للدوله إلي حضور اجتماع هام يوم الثلاثاء المقبل بمدينه سرت
+T0068: بحسب لن يستمر ماوريسيو بوكيتينو كمدرب لنادي باريس سان جيرمان في الموسم المقبل
+T0069: تسريب مازدا موديل فيس ليفت للتفاصيل
+T0070: تشكيله ليستر سيتي توتنهام الرسميه
+T0071: الليكيب باريس قدم راتب مليون في السنه لميسي
+T0072: لعشاق الحلويات الخليجيه نقدم اليوم حلوي خليه النحل بالشيكولاته بخطوات سهله ومقادير مجربه من مطبخ منال العالم   الحياه حلوه   رمضان
+T0073: احتمال وجود حياه فضائيه في أربعه عوالم في نظامنا الشمسي ترجمه وسام برهوم تدقيق راما الهريسي مراجعه أكرم محيي الدين
+T0074: قال الإمام الشافعي رحمه الله تعالي أصل العلم التثبت وثمرته السلامه وأصل الورع القناعه وثمرته الراحه وأصل الصبر الحزم وثمرته الظفر وأصل العمل التوفيق وثمرته النجح وغايه كل أمر الصدق حليه الأولياء
+T0075: علاج حبوب البشره بدون آثار
+T0076: بألذ وأسرع الطرق حضري الليزي كيك وفق هذه الوصفه الشهيه من اطبخ بالبيت خليك بالبيت حلويات وصفات رمضان رمضان
+T0077: ماريوت أكدت أنها تعرضت لخرق آخر للبيانات كشف عن معلومات الموظفين والعملاء البيانات التي تم تسريبها بحجم غيغابايت تشمل بعض تفاصيل بطاقات الائتمان والمعلومات السريه بحسب تصريحات للمتحدث الرسمي ل ماريوت لموقع ذا فيرج القتني
+T0078: بياض اللثه حاله منتشره تعرفوا علي سببها ومدي خطورتها من هنا
+T0079: تعرفي كيف تساعدك الأطعمه الغنيه بالبوتاسيوم علي مكافحه ضغط الدم المرتفع
+T0080: أحاول دائما أن أركز علي إحسان اليوم لا ندم الأمس ولا قلق الغد أحمد الشقيري
+T0081: السياسيون يريدون وضع حد للسرعه علي الأوتوبان
+T0082: الأمم المتحده تدعو المغرب والجزائر وموريتانيا والبوليساريو إلي اجتماع في ديسمبر
+T0083: تشكيله مانشسترسيتي امام بيرنلي التوقيت م مكه
+T0084: توقعاتكم لقرعه كأس العالم
+T0085: شركه جوجل تبدأ بإختبار توصيل القهوه بإستخدام الطائرات بدون طيار في أستراليا
+T0086: ثاني ل الجزائر عن طريق بلايلي د
+T0087: شركه توقف معظم أنشطتها التجاريه الرئيسيه بعد الحظر الأمريكي
+T0088: استحوذت القابضه أحد صناديق أبوظبي السياديه علي شركه الأدويه التركيه بيرجي ميفار غروب بهدف تعزيز أعمالها بقطاع خدمات الرعايه الصحيه وعلوم الحياه
+T0089: بإمكانك وباستخدام مكونات متوفره في المطبخ تقديم أسهل طبق من المقبلات مثل كرات التونه بالجبن الشهيه تتبعي طريقه التحضير من الرابط التالي
+T0090: قد تقوم بتزويد شركه بتكنولوجيا القياده الذاتيه الخاصه بها
+T0091: الماركا مانشستر سيتي يريد علي الأقل مليون يورو لبيع برناردو سيلفا
+T0092: بعد أن كانت بدايه تكنولوجيا المستشار الروبوتي بسيطه للغايه في المجال المالي ومقتصره في فوائدها واستخدامها علي مديري الثروات من البشر أصبح استخدامها اليوم متاحا للجميع وتوسعت قدراتها بشكل كبير فماذا عن إمكانات هذه التكنولوجيا الواعده
+T0093: أعدي ما ترغبين به من أكلات خفيفه لرجيمك المثالي
+T0094: تذوقي الطعم الهندي في الحلوي مع وصفه جذور اللوتس المكرمله اللذيذه   الحياه حلوه وصفات
+T0095: لاتتردد في العوده إلي الله مهما لوثتك الخطايا والذنوب فالذي سترك تحت سقف المعصيه لن يفضحك وانت تحتاج جناح التوبه درر
+T0096: ربما بالظلم تستطيع ان تملك كل ماتريد ولكن بدعوه مظلوم واحده تفقد كل ماملكت
+T0097: فوائد صحيه لشرب الماء بالعسل بعضها مثير للدهشه
+T0098: السيدات الحواسيب في مختبر وكاله ناسا للدفع النفاث
+T0099: مورينيو يعود لملعب إنتر من أجل إبعاده عن اللقب
+T0100: غايه الأدب أن يستحي المرء من نفسه أولا

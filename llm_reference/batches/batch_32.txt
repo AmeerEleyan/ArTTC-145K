@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1551 to T1600.
+- Each line has the form ID,Category (for example: T1551,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1551 to T1600):
+T1551: صح عليك سياره تعتبر اسطوره مثل و
+T1552: اليمن ماذا تعرف عن بعثه الأمم المتحده لدعم اتفاق الحديده أونمها
+T1553: وزير يمني ل أحكام الانقلاب باطله ومشروعه مدمر
+T1554: علوم إنسانيه العلماء يستخدمون حركه الهاتف ليخمنوا أنواع الشخصيه  ترجمه ريم الخلاوي تويتر مراجعه المقال نجلاء أحمد
+T1555: تناول أكثر من عبوتين من أحد المشروبات الغازيه للكولا يرفع إلي أكثر من الضعف لاحتمالات الإصابه بأمراض فشل الكلي المزمنه
+T1556: معظم دول الاتحاد الأوروبي أغلقت حدودهم أمام الجميع باستثناء المسافرين للضروره هكذا بدأت الكثير من دول العالم في تطبيق إجراءات صارمه مع تفشي تحورات جديده ل كورونا
+T1557: تلغراف مانشستريونايتد هو النادي الوحيد المهتم بالتعاقد مع فرينكي دي يونغ في هذا الصيف
+T1558: بعد النفط والغاز العقوبات الغربيه تطال الذهب الروسي بعد حظر صادرات موسكو فهل سيدفع هذا القرار روسيا لإيجاد أسواق بديله ما قد يؤدي لوجود سوق موازيه للذهب
+T1559: المشكله ليست العالم المشكله هي انت في علاقتك بالعالم الامر الذي يخلق مشكله وتلك المشكله إذ تمتد تصير مشكله عالميه كريشنامورتي
+T1560: المربع نت انطلاق أودي إيه موديل فيس ليفت بتحديثات خارجيه جديده للشبك والمصابيح وتحديثات داخليه مماثله للتصميم والشاشات اللمسيه الترفيهيه في الأمام والخلف كما حصلت علي نسخه هورش جديده أكثر فخامه لمنافسه مرسيدس مايباخ إس كلاس بقاعده عجلات أطول ومساحه داخليه أوسع
+T1561: التغيير كبير هذه المره المصنع مختلف و المنصه الشاص سيختلف بالكامل
+T1562: سعه ذاكره أدمغتنا أكبر ب مرات مما كنا نعتقد التفاصيل
+T1563: هل تخفض ممارسه تمارين التنفس ضغط الدم
+T1564: س يوقظك الحنين ذات يوم و ستبكي كثيرا حين تجد المقعد الذي إنتظرتك عليه فارغ
+T1565: كييف سقوط لوغانسك هل أنهت روسيا نصف الحرب في أوكرانيا
+T1566: البرلمان العربي انتخاب البحرين في مجلس حقوق الإنسان انتصار للدبلوماسيه العربيه
+T1567: علي الإنسان أن يكون رحيما لأن الرحمه تجمع بين البشر و أن يكون أديبا لأن الأدب يوحد القلوب المتنافره تولستوي
+T1568: قائمه أعظم محركا تركت بصماتها في عالم صناعه السيارات منذ اختراعها   سيارات محرك
+T1569: يارب في ذه الساعه أسالك الراحه لكل مسلم ضاقت عليه دنياه وذرفت عيناه يا الله أفرح قلوبا أنهكها التمني وبشر أصحابها بفرح لايذكرهم بوجعهم واسعد قلوبهم وأسعدنا بصحبتهم
+T1570: اتفاق الحديده مفتاح السلام
+T1571: تقول غاده السمان لغسان كنفاني أعلم أنك تفتقدني لكنك لا تبحث عني وإنك تحبني ولا تخبرني وستظل كما أنت صمتك يقتلني جاء رد غسان كنفاني ولكنني متأكد من شيء واحد علي الأقل هو قيمتك عندي كل ما بداخلي يندفع لك بشراهه لكن مظهري ثابت
+T1572: الإعلان رسميا عن مع شاشه بحجم إنش وكاميرا أماميه منبثقه بدقه
+T1573: عند إضافه الحليب للشوكولاته فإنه يقلل من قدره الجسم علي امتصاص مضادات الأكسده المسماه الفلافونويد مما يقلل من فوائدها الصحيه
+T1574: شاهدوا مميزات جولف جي تي آي الجديده لعام علي الرابط التالي   سيارات فولكس واجن
+T1575: هل انت نباتيه اذا لا تفوتي تجربه هذه الوصفه
+T1576: سهم جي إف إتش يرتفع بعد توضيح جديد بشأن الاستحواذ علي الخليجي التجاري
+T1577: أعلنت شركه كوالكوم عن تغيير أسماء معالجاتها الأسماء الجديده ستكون أقصر و أبسط و أسم الشركه لن يكون جزء منها مع بقاء تسميه و ستتوقف الشركه عن إستخدام ثلاث أرقام للمعالجات و ستنتقل لإستخدام رقم واحد للمعالج و رقم اخر لجيل المعالج
+T1578: آبل تصلح مشكله الخصوصيه في ولكن الأخطاء لا تزال موجوده
+T1579: لا تهدر وقتك في الشرح والإيضاح الناس يسمعون فقط ما يريدون سماعه باولو كويلو
+T1580: الإسلام لا يعارض العلم الصحيح ولا الفن النافع ولا الحضاره الخيره إنه دين سهل رحب مرن علي الطنطاوي
+T1581: الاقتصاد البريطاني سجل العام الماضي أعلي معدل نمو منذ الحرب العالميه الثانيه بعد انكماشه في ديسمبر بوتيره أقل من التوقعات
+T1582: أن تكون بين الناس إنسانا وأن تثبت علي إنسانيتك للأبد بصرف النظر عن الظروف وألا يتسلل إليك اليأس وألا تفقد فؤادك هذا هو المعني الذي تدور حوله الحياه وهذا مكمن خطرها
+T1583: الله يرحمه ويغفر له ويسكنه فسيح جناته
+T1584: ألفا ظبي القابضه تستثمر مليار درهم في صندوق ألفا ويف فينتشرز الذي أطلقته شركتا شيميرا كابيتال و ألفا ويف جلوبال
+T1585: ثمره استثمارات فورد المتواصله في عمليات ونماذج المحاكاه حول العالم   سيارات فورد
+T1586: تعرفوا علي مايكل نيكلسون
+T1587: بارك الله في جهودكم ما قصرتي محبه للخير وفقكم الله لطاعته
+T1588: المربع نت استطاعت مصر نقل مركب الشمس الخاصه بالملك خوفو من الأهرامات إلي المتحف المصري الكبير في مركبه كبيره يمكن التحكم بها عن بعد والتي استقدمتها وزاه الآثار من بلجيكا لنقل المركب الضخم مره واحده دون تفكيكها وجهزت المركبه بهيكل حديدي لحمايه المركب المربع نت مصر
+T1589: البطوله المستعصيه علي الألمان ستخضع أخيرا سيفوز مدرب ألماني ب كأس الاتحاد الإنجليزي للمره الأولي في التاريخ منذ انطلاق المسابقه في من يحقق اللقب توخيل أم كلوب
+T1590: قالوا لأن الذي شغلكم عن دين يضمن لكم ميعادا خالدا ونعيما باقيا و الدنيا التي صرفتكم بزينتها وزخرفها وشهواتها وعلي فرض أنكم تمتعتم بهذا في الدنيا فهل يقارن بما أعد للمؤمنين في الآخره من النعيم المقيم الذي لا يفوتهم ولا يفوتونه
+T1591: سيقضي الله أمرا كنت تحسبه مستحيلا
+T1592: أربعه من بين كل عشره ألمان لديهم احتياطيات ماليه لا تزيد عن ألف يورو و ليس لديهم أيه احتياطيات ماليه  ألمانيا
+T1593: تشكيله المنتخبين مصر السودان
+T1594: دراسه نشرتها مجله ذا بي إم جي الطبيه المتخصصه حذرت من عاده يوميه يقوم بها الأفراد قد تكون قاتله وتتسبب بوفاه مبكره
+T1595: شركه تتطلع للإطاحه بشركه سامسونج من المرتبه الأولي بحلول العام
+T1596: قال رسول الله من قال لا إله إلا الله مخلصا دخل الجنه الألباني ت صحيح الجامع صحيح
+T1597: موقع ينشر قائمه أكثر شحنات هواتف في هاتف ب مليون جهاز هاتف ب مليون جهاز هاتف ب مليون جهاز هاتف ب مليون جهاز هاتف ب مليون جهاز
+T1598: سجل بنزيمه أهداف في مباريات الأدوار الإقصائيه ب دوري أبطال أوروبا هذا الموسم وهو أكبر عدد أهداف للاعب في موسم واحد بهذا الدور بالتساوي مع كريستيانو رونالدو في موسم
+T1599: استقاله محقق العنف في غزه غزه
+T1600: سئل الإمام الشافعي ما أعظم عمل يتقرب به العبد إلي الله فبكي رحمه الله ثم قال أن ينظر الله إلي قلبك فيري أنك لاتريد من الدنيا والآخره إلا هو

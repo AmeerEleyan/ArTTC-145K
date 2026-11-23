@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1801 to T1850.
+- Each line has the form ID,Category (for example: T1801,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1801 to T1850):
+T1801: سيقوم بحجز المواعيد من أجلك في المستقبل والمزيد
+T1802: البروتين يعيد للشعر حيويته وهنا نوضح ماسك بروتين طبيعي يمكنك عمله لشعرك
+T1803: كن طيبا ولا تحاول أن تخبر أحدا بأنك طيب ليو تولستوي
+T1804: نهايه المباراه عمان قطر
+T1805: الرئيس التنفيذي ل بنك كريدي سويس نري أن آسيا لديها فرص هائله ونحن ملتزمون بزياده الاستثمار في القاره ما يجعلها في صلب استراتيجيه النمو التي وضعها البنك
+T1806: كشفت جوجل عن أول نسخه من نظام القادم حيث ستكون موجهه للمطورين في الوقت الحالي حتي شهر مارس مع إطلاق نسخه أخري للمطورين قبل إطلاق إصدارات بيتا التجريبيه
+T1807: المربع نت ستيلانتس تكشف عن محرك جديد كليا بشكل طولي يحمل اسم هوراكان وهو محرك سلندر توين تيربو موجه لموديلات جيب جراند واجونير الفاخره ودودج تشارجر وتشالنجر وسيتوفر المحرك بنسختين الأولي بقوه حصان وعزم نيوتن متر والثانيه بقوه حصان وعزم نيوتن متر
+T1808: من عمل صالحا من ذكر أو أنثي وهو مؤمن فلنحيينه حياه طيبه ولنجزينهم أجرهم بأحسن ما كانوا يعملون النحل
+T1809: أشاد الملياردير الاميركي إيلون ماسك بالعمال الصينيين في تصريحات له هذا الأسبوع منوها بموهبتهم وأخلاقياتهم في العمل بينما انتقد بعض أفراد القوه العامله الأميركيه
+T1810: ما الذي تعرفونه عن الأمن السيبراني مقال مهم تابعوه الأمن السيبراني بين حمايه شركات التأمين نفسها من حوادثه وإصدار عقودها التأمينيه من تلك الحوادث لزبائنها  الأمن السيبراني
+T1811: نيوزيلندا تفرض إغلاقا لمده أسبوع في مدينه أوكلاند بعد اكتشاف إصابه جديده بكورونا وخضوع بقيه مناطق البلاد لقيود أقل صرامه
+T1812: الشرعيه تحكم قبضتها علي مرتفعات جديده في جبل العتيم بمديريه باقم بصعده اليمن
+T1813: تاليسكا بعد الخساره من الاتحاد تعرضنا لكارثه ركله الجزاء وثانيا كارثه طردي حيث أنه لم يتم طردي طوال مسيرتي أبدا بهذه الطريقه
+T1814: ساعه أبل في حاجه للتحرر من أيفون
+T1815: سبورت ايطاليا برشلونه قدم عرض جديد من اجل رافينها والإداره واثقه من التعاقد معه
+T1816: تفاهم سوداني أمريكي حول تعويضات ضحايا الإرهاب
+T1817: لابورتا عدم تجديد عقد ميسي هو أفضل مافعلناه ل النادي
+T1818: اللهم اكفنا بحلالك عن حرامك واغننا بفضلك عمن سواك
+T1819: أعدي كيك البرتقال والمكسرات وقدميه لأحبائك لضيافه مميزه
+T1820: صباح الخير ما أشهي هذا الفطور من أول شخص تتمني تناول الفطور معه بعض الانتهاء من جائحه كورونا منشن له
+T1821: مع بدء حملات التطعيم في جميع دول الاتحاد الأوروبي ال فرض تدابير العزل في معظم دول الاتحاد تفسد فرحه أعياد الميلاد ورأس السنه
+T1822: صلاه الصدريين تؤرق الإطار التنسيقي والحشد الشعبي يستعد للاستعراض وسط تزايد إشارات الرفض الدولي لحكومه الإطار العراق
+T1823: تعرفي علي بعض الاستخدامات المبتكره للمايكرويف من خلال الرابط التالي مطبخ سيدتي
+T1824: الحبهان الهيل غني بمضادات الأكسده كما أن خواصه المضاده للالتهابات تجعل منه علاجا فعالا لالتهاب الحلق كما أنه يخفف الألم المصاحب أيضا
+T1825: أبتسم فالحياه جميله حين يخذلك شخص سيقوم بأسعادك شخص أخر حين تخسر الفرص ستأتي لك فرص أكثر وحين تعمل خيرا سيعوضك الله خيرا كثيرا محمد الشعراوي
+T1826: التاريخ القديم فالحقائق المتعلقه بالعديد من الأشخاص الذين عاشوا منذ اختراع الكتابه حتي سقوط روما سنه م شحيحه خصوصا في المناطق الواقعه إلي الشرق من اليونان
+T1827: س حكم إقامه صلاه العيد في المساجد قال العلامه ابن عثيمين رحمه الله تكره إقامه صلاه العيد في المساجد إلا لعذر لأن السنه إقامه العيد في الصحراء مجموع الفتاوي
+T1828: قد تحصل علي تمويل بقيمه مليار دولار من أجل التنافس مع شركه
+T1829: الهند تسجل أعلي حصيله عالميه في إصابات ووفيات كورونا لليوم الثالث علي التوالي والنظام الصحي يواجه نقصا حادا في الأكسجين
+T1830: أول ماتأخد من الدنيا شهقه هواء و أول من تتركه من الدنيا زفير هواء هذا هو العدل إعاده ما أخذت
+T1831: عاجل ارتفاع إصابات مرض جدري القرود في البرتغال إلي حاله مؤكده
+T1832: توتير يطلق اول حمله من نوعها في الشرق الأوسط وشمال أفريقيا تغريدات المصعد
+T1833: مشاهد لانطلاق أول رحله تجاريه من مطار صنعاء إلي العاصمه الأردنيه عمان بموجب اتفاق الهدنه الأمميه اليمن
+T1834: نادي دورتموند يحقق الفوز علي بيلفيلد بنتيجه
+T1835: انت اي نوع كارديو تفضل
+T1836: ممرضات فرنسيات يسخرن من رداءه معدات الوقايه وعدم كفاءتها في الحمايه من عدوي كورونا  أن تعرف أكثر
+T1837: يمكنك الآن تقسيط سياره نيسان باترول بدون مرابحه أو بدون دفعه أولي للتفاصيل
+T1838: بعد تصريحات لافروف عن أصول هتلر اليهوديه إسرائيل تصفها بالفضيحه وتطلب اعتذرا روسيا وموسكو ترد النازيون الجدد يحكمون كييف أوكرانيا روسيا
+T1839: العلم يتخطي الجرافين وهو يتطلع الآن لمستقبل أفضل مع ماده البوروفين
+T1840: غيابات ابرز اللاعبين ل مباراه البرازيل و الارجنتين
+T1841: البنك الدولي يخفض توقعاته لنمو الاقتصاد العالمي في إلي من توقعات شهر أبريل الماضي البالغه
+T1842: المدير التنفيذي لوكاله الطاقه الدوليه فاتح بيرول ل بلومبرغ أسعار النفط سترتفع في الصيف بسبب موسم القياده والرحلات
+T1843: لا تحمل الكره الأرضيه فوق رأسك بل تفاءل وأحسن ظنك بخالقك وتوكل علي مدبر أمرك ومالك عمرك سبحانه وكرر وأفوض أمري إلي الله وأبشر بما يسرك
+T1844: قال الله فاصبر لحكم ربك ثم ماذا ثم تنهدت وقالت لعله إبتلاء من الله ليري ما في قلبي من صبر فإذا رضيت رضي عني وقد رضيت يا الله اللهم نسألك هدوء النفس وطمأنينه القلب وانشراح الصدر وتوفيقا يرافق خطانا وسعاده تملأ قلوبنا
+T1845: يفترش الرصيف ولا يجد قوت يومه مأساه طبيب عراقي مشهور يعيش مشردا في شوارع بغداد ما قصته العراق
+T1846: دراسه استجابات الأجسام المضاده لدي متعافي كورونا استمرت شهور
+T1847: جربوا هذه الوصفه اللذيذه
+T1848: المربع نت هذه السيارات غير مسموح للأفراد استيرادها في السعوديه المربع نت السعوديه سيارات
+T1849: فالله تعالي يريد أن يرحم نبيه وأن يريحه دعك منهم وفوض أمرهم إلينا فنحن أعلم بما يصفون أي بما يكذبون في حقك
+T1850: ريفيان تواجه جمس همر في سباق التسارع لتتويج البيك أب الأعلي أداء

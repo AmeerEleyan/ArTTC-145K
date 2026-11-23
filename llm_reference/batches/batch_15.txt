@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0701 to T0750.
+- Each line has the form ID,Category (for example: T0701,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0701 to T0750):
+T0701: عندما تواجهك مشكله فهونها بتذكر ثلاث أنها مؤقته أنها مقدره أنها سوف تهديك أجرا إذا صبرت
+T0702: أحبوا أيامكم الهادئه ليس بالضروره أن تكون سعيده ومليئه بالتفاصيل يكفي الهدوء والسلام
+T0703: ولي العهد يؤكد لرئيس أوكرانيا استعداد السعوديه للعب دور الوساطه مع روسيا
+T0704: أولادك صداع في الدماغ إذا كانوا حولك وجع في القلب إذا غابوا عنك أنيس منصور
+T0705: لكزس مرسيدس أس كلاس أو بي ام دبليو الفئه السابعه
+T0706: نهايه المباراه المغرب فلسطين
+T0707: الأسماك كالسلمون والسردين غنيه بدهون الأوميغا التي تمتلك خصائص مضاده للإلتهاب و قد تساعد بتقويه المناعه والحمايه ضد الأمراض المزمنه
+T0708: لخفض ضغط الدم هذا أفضل نظام غذائي
+T0709: الطعميه المصريه قدميها علي وجبه الفطور الصباحي
+T0710: تعرف علي أغلي دول من حيث أسعار البنزين المربع نت سيارات بنز ن
+T0711: المحلل السياسي محمد زنكنه اختراق واضح لحدود وسياده العراق وهذا اتفاق قانوني يسمح بتوغل الجيش التركي داخل الأراضي العراقيه
+T0712: وضعيه نومك قد تسبب لك الكوابيس و الأحلام السيئه ما الذي يؤثر في أحلامنا حقائق قد تتفاجأ بمعرفتها  العلميه
+T0713: السنيوره ل نصر الله يتصرف ك مرشد ل لبنان
+T0714: فيه ناس يفضلونه علي القير الأوتوماتيكي
+T0715: استشاري أمراض المناعه معز بخيت فلورونا ليس مرضا جديدا والإصابه بالإنفلونزا وال كورونا معا أمر وارد
+T0716: موانئ بحريه عده بين جميع دول البحر الأسود وبحر آزوف تمتلكها أوكرانيا والتي تعد ذات أهميه استراتيجيه أوروبيا وعالميا فما هو الواقع الاقتصادي لكييف الآن
+T0717: برشلونه يواجه رايو فايكانو علي ملعب كامب نو في الجوله الأولي من الدوري الإسباني
+T0718: صور تجسسيه ل جمس كانيون نسخه وهو بيك اب متوسط الحجم
+T0719: دعت جمهوريه مصر  لعقد اجتماع طارئ لمجلس جامعه الدول  علي مستوي المندوبين وذلك للتباحث حول التطورات الجاريه في أوكرانيا
+T0720: أجهزه استشعار داخل هاتفك تساعد علي اختراقه مقال نون يستعرض كيف تجعل هاتفك أكثر أمانا  ترجمه مراجعه
+T0721: زيني الطبق بالبقدونس
+T0722: تلغراف يرغب العديد من لاعبي مانشستريونايتد في أن يتولي ماوريسيو بوكيتينو تدريب النادي بالموسم المقبل
+T0723: ابن سينا فارما تدعو عموميتها للانعقاد لمناقشه زياده رأس المال عبر أسهم مجانيه
+T0724: كاس افريقيا غينيا غامبيا م تعليق احمد عبده
+T0725: أربعه تعديلات بسيطه لسيرتك الذاتيه ستساعدك علي الحصول علي اهتمام مدير التوظيف مقال نون  ترجمه نجود الغامدي مراجعه
+T0726: هل يمكن إزاله لحميه الأنف بدون جراحه اكتشف الإجابه من هنا صحتك حياتك
+T0727: إليكم أهم مزايا محركات الديزل دوراتورك من فورد   سيارات فورد
+T0728: الخبير في الشان الأميركي و العلاقات الدوليه إيهاب عباس العلاقات الأميركيه الإسرائيليه تشهد مزيدا من التوتر فيما يتعلق بالملف الإيراني
+T0729: ماذا تعرف عن مرحله ما قبل السكر
+T0730: الرئيس الموريتاني يقود مسيره ضد النزاعات العرقيه
+T0731: حضري عصير طبيعي لذيذ وصحي من الأناناس والليمون بخطوات بسيطه مطبخ سيدتي
+T0732: الأستاذ في الأكاديميه العليا للدراسات الاستراتيجيه والأمنيه د معتصم عبدالقادر الحسن المؤسسه العسكريه السودانيه مشهود لها بتسليم السلطه في تجارب سابقه
+T0733: لعشاق الوصفات الحاره جربتها ولن تندمي
+T0734: وزيره الطاقه الأميركيه إنتاج النفط والغاز الأمريكي سيواصل الارتفاع
+T0735: تقرير طبي حديث الأطفال في اليمن ومواليد جدد يعانون من سوء التغذيه الحاد وأمراض القلب والفشل الكلوي والالتهاب الرئوي وغيرها من الأمراض المهدده للحياه وأحيانا يتشارك السرير مريضان أو ثلاثه والبعض قد يفقدون حياتهم في غضون أسبوع ساهم في إغاثتهم
+T0736: آمال لعلاج الأمراض العصبيه بدون جراحه
+T0737: درع الدوري الالماني قبل مواجهه بايرن ميونيخ شتوتغارت
+T0738: صور مركز الراحمون في اندونيسيا الذي تبرعتم به في رمضان الماضي ان فاتتك الفرصه العام الماضي لاتفوتك في هذا المشروع الذي يجمع عده صدقات جاريه مسجد جامع وفصول تعليميه وحلقات تحفيظ لكتاب الله رابط التبرع
+T0739: ظهرت الدراسات أن عصير الرمان يحمي الكبد ويطرد السموم من الجسم ويقوي المناعه حضريه لعائلتك بأقل الخطوات وأسرع وقت وبالصحه والعافيه
+T0740: وداعا للأرق في أسبوع السر في النظاره
+T0741: فورد تضيف الوان جديده علي اكسبديشن موديلات الاول احضر داكن و الآخر لون رمادي او معدني داكن و كذلك ازرق سماوي داكن
+T0742: منها إرضاء الأخرين علي حساب طاقتك وسعادتك عادات سيئه تستنزف طاقتك وتجعلك تشعر بالتعب تخلص منها لتصبح أكثر نشاطا  سعاده حياه إرهاق تعب توتر اجهاد
+T0743: عن نظرتها
+T0744: فولكسفاجن تتوقع ان تستمر ازمه نقص قطع التصنيع لغايه عام و تأثيرها قد يستمر معها من ارتفاع اسعار و نقص في عدد الانتاج فولكسواجن
+T0745: تقرير مقلق للغايه هبوط إنتاج السيارات في بريطانيا إلي أدني مستوي منذ عام
+T0746: الهند الأولي عالميا و السعوديه الثالثه عربيا أكثر الشعوب امتلاكا ل العملات المشفره
+T0747: تبدأ الترقيات بمجموعه من العجلات مقاس بوصه ملفوفه بإطارات مكتنزه مقاس بوصه
+T0748: تعرف أكثر علي أفضل الطرق لتنظيف الرئه بشكل طبيعي صحتك حياتك
+T0749: هو في الحقيقه سؤال يعود الي زمن طويل جدا نجده مثلا عند ديكارت الذي شك في أن هناك عبقري شرير يتلاعب بدماغه ويجعله يشعر بما يشعر عني أنا فلا يمكن لأحد أن بجد الجواب القاطع لكن باتباع مبدأ شفره اوكام فسافضل الاعتقاد بأن هذا العالم هو حقيقي واننا ندرس الحقيقه في الحقيقه
+T0750: لا أعلم بالضبط صراحه ما هو السبب لكنني ارجح أنه جاء من ما نسميه مبرهنه الطاقه الحركيه في الميكانيكا الكلاسيكيه وهو أن فرق الطاقه الحركيه للجسم بين نقطتين و يساوي مجموع شغل القوي المطبقه عليه اثناء حركته من إلي ويمكن أن نبرهنه من قانون نيوتن

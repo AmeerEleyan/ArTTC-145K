@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1351 to T1400.
+- Each line has the form ID,Category (for example: T1351,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1351 to T1400):
+T1351: الجهاز اللوحي الهجين سيصل في المستقبل القريب
+T1352: طرح تيكوم سجل نجاحا حيث شهد طلبا قويا مع تسجيل اكتتاب الأفراد في الدوله تغطيه بواقع مره وهي أعلي نسبه تغطيه في تاريخ الاكتتابات العامه في سوق دبي المالي  بورصه دبي
+T1353: جربيها بطعم البروكلي الشهي
+T1354: حفل توقيع عقد شراكه بين نادي الاتحاد ومجموعه تأجير   سيارات
+T1355: أعظم سوره في كتاب الله برنامج ذكريات الصحابه رابط الحلقه كامله مشاهده طيبه أسعد بإشتراككم في القناه عائض القرني
+T1356: اشاعه سيصل للسوق يوم أكتوبر والهاتف لن يصل حتي شهر نوفمبر حسب الاشاعات سيتم عرض كل من و للطلب المسبق في سبتمبر و سيتوفر الهاتف في أكتوبر و في نوفمبر
+T1357: تشكيله الفريقين مانشستريونايتد بيرنلي
+T1358: هذا الفيديو من شيكاغو حيث درجه الحراره ما يقارب ونتيجه لإحتكاك الثلج والكهرباء أدي ظهور هذا الضوء
+T1359: الرئيس التنفيذي ل الساحل يستقيل من منصبه
+T1360: نيسان الجديده قير يدوي و محرك توين توربو حصان و مقاعد قماش نيسان
+T1361: سؤال هل فتح الثلاجه في الغرفه سيساعد علي تبريدها الجواب علي موقعنا
+T1362: التهديد الإيراني محور لقاء بوتين ونتنياهو إيران
+T1363: ملعب المباراه قبل أقل من ساعتين علي بدايتها السعوديه أوزبكستان
+T1364: القراءه جعلت دونكيشوت إنسانا محترما لكن تصديقه ما قرأ جعله مجنونا برنارد شو
+T1365: استغلي المساحات بمنزلك بهذه الطريقه لتحصلي علي شكل جمالي ولا أروع
+T1366: برودرايف هانتر أول سياره خارقه لجميع التضاريس بقوه حصان وسعر مليون دولار
+T1367: حقيقه لاتجهد نفسك فلا يحسن تقدير جهدك وقتك و تضحيتك سوا من ركب عظامك المائتان ف دعك من المخلوق و توجه للخالق فلسفه
+T1368: رغم انتمائها لشجره الكاري إلا أنها لا ترتبط اطلاقا ببهارات الكاري الشهيره تعرف علي ورق الكاري وفوائده الصحيه المذهله بالمقال التالي صحتك حياتك
+T1369: أدري غيره بالبلد مليون واحد بس هذا بعيني يسوي له بلد
+T1370: طارق التايب منع حضور الجماهير في مباراه الاتحاد والنصر قرار مفاجئ وظالم للاتحاد النصر هو المستفيد من هذا القرار
+T1371: قوات الاحتلال الإسرائيليه تعتقل فلسطينيا في جنين
+T1372: جول ميلان مهتم بالتعاقد مع ماريو جوتزه من أيندهوفن
+T1373: هل تستخدم التلفون عند النوم
+T1374: المربع نت أفادت مصادر بأن شفروليه ستقدم تحديثات لسيارتي تاهو وسوبربان تشمل قفل تفاضلي محدود الانزلاق يعزز من أدائها علي الطرق الوعره بالإضافه إلي ثلاثه خيارات طلاء جديده وشاشه عدادات جديده للسائق إنش المربع نت شفروليه
+T1375: بعد استقاله جونسون مرشحين لخلافته علي زعامه حزب المحافظين أبرزهم وزير الدفاع بن والاس ومصير القط لاري يشغل رواد مواقع التواصل في بريطانيا بريطانيا
+T1376: بنوك مركزيه تجتمع هذا الأسبوع وعليها التعامل مع التضخم الفيدرالي الياباني البريطاني
+T1377: دراسه أجراها باحثون في معهد العلوم الطبيه الحيويه بولايه جورجيا الأميركيه أشارت إلي أن العالم يحتاج في مواجهه فيروس كورونا المستجد إلي علاجات تقلل من خطر مضاعفات الإصابه بالوباء إلي جانب اللقاحات
+T1378: مراسل  في واشنطن طلال الحاج فايزر تعلن اعتزامها طلب الحصول علي ترخيص طارئ للقاح كورونا بعد ثبوت فاعليته بنسبه
+T1379: لاتبتعد تماما فتصبح قابل للترك ولاتقترب للحد الذي يصلون فيه لسقف الاكتفاء كن متزنا فالإعتدال لايخذل
+T1380: مستعدين لإعلان الفائز معنا بجهاز الأبيض اللؤلؤي وكفر سواروفسكي باقي فيه فرصه قبل الإعلان للدخول في السحب وبإذن الله يكون من نصيبكم
+T1381: تعرف علي المعدل الطبيعي لسكر الدم وأسباب زيادته وكيفيه تجنب مخاطره
+T1382: ألبرتا المقاطعه الكنديه المنتجه للنفط تسجل أول فائض مالي لها منذ أعوام عقب ارتفاع أسعار النفط والغاز في الأشهر الأولي من العام
+T1383: لا تنس الدعاء آخر ساعه في نهار يوم الجمعه فإن الله سميع قريب مجيب
+T1384: بالتزامن مع مؤتمر وارسو التجمع من أجل إيران يفضح ممارسات الملالي
+T1385: هواوي تكشف عن أحدث جهاز قابل للارتداء
+T1386: توصل فريق من الباحثين بجامعه ويك فورست بولايه نورث كارولينا الأميركيه إلي طريقه جديده لعلاج الأورام السرطانيه الصلبه مثل أورام الثدي والقولون من خلال توصيل جرعه من ماده يطلق عليها اسم إيه أر إل داخل الخلايا السرطانيه لعمل تحفيز مناعي ضد الخلايا السرطانيه
+T1387: المربع نت سيارات توقف إنتاجها خلال
+T1388: مبيعات السيارات الأوروبيه الجديده انكمشت للشهر العاشر علي التوالي مع استمرار معاناه القطاع من أزمات سلسله التوريد التي تغذي التضخم القياسي وتهدد بإبعاد المشترين
+T1389: ما لا يرتاح له قلبك لا تثق به أبدا فالقلب أبصر من العين نجيب محفوظ
+T1390: الأوروبيون يهددون بإجراءات قانونيه ضد بريطانيا لخرقها اتفاق بريكست
+T1391: تشمل ضيقا في التنفس وآلاما في الصدر والتعب دراسه جديده تكشف أعراض فيروس كورونا عند الأطفال وتطالب بسرعه تطعيمهم
+T1392: لا تعش حياه لا تشبهك ولا تقل كلاما لا يمثلك ولا تقبل أن تشارك بمعركه ليست لك وكن أنت دوما والسلام زياد الرحباني
+T1393: المربع نت صور من فعاليات معرض اوتوفيل الرياض المقام حاليا في ميدان ديراب بالرياض في الفتره بين إلي يناير المربع نت اوتوفيل الرياض
+T1394: تونس ترفع حاله التأهب علي الحدود مع ليبيا
+T1395: الدوري الايطالي يوفنتوس نابولي م يوتيوب تعليق فهد العتيبي
+T1396: إذا كانت البدايات وحدها جميله دعنا نبدأ مجددا دعنا نبدأ مرارا وتكرارا دعنا لا ننتهي أبدا دعنا لا نتوسط ولا نتعمق ولا نمل فننتهي دعنا نبدأ ثم ننسي أننا بدأنا ونعيد البدايه وننسي إلي اللا نهايه ديستوفيسكي
+T1397: يعتبر مخدر الشبو من أكثر أنواع المخدرات المنتشره في الفتره الأخيره والخطيره أيضا وحرصا منا علي سلامتكم سوف نسلط بعض الضوء علي أبرز المعلومات بهذا المخدر في المقال التالي صحتك حياتك
+T1398: رئيس الإمارات يصدر قانونا بشأن حوكمه الشركات العائليه في أبوظبي
+T1399: تحذير لا تستخدم المضادات الحيويه لعلاج الالتهابات التنفسيه العاديه التفاصيل
+T1400: لماذا بعض الناس المبدعين أكثر جاذبيه

@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1951 to T2000.
+- Each line has the form ID,Category (for example: T1951,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1951 to T2000):
+T1951: المجله الطبيه الأميركيه العلاج بالبلازما أزاح جهاز التنفس عن مصابي كورونا  أن تعرف أكثر
+T1952: كوريا الشماليه تسجل وفاه إضافيه بسبب حمي وسط تفشي كوفيد في البلاد
+T1953: موقع يديك علي مقود السياره المربع نت
+T1954: من اشتغل بتفقد اللفظه وطلب السجعه نسي الحجه علي بن ابي طالب
+T1955: اليمن المحلل الاقتصادي عبدالحميد المساجدي الدعم الخليجي المستمر بقياده السعوديه أوقف انهيار الاقتصاد اليمني
+T1956: إذا كنت تعاني من ارتفاع السكر في المنزل تعرف علي العلاجات الممكنه لتلك الحاله من هنا
+T1957: اول ل السعوديه عن طريق الشهري
+T1958: قد يستهين البعض بقدره الأطفال علي التمييز بين الإجابات التي يتلقونها عندما يخطر في بالهم تساؤل معين وربطها بالمصدر الذي تأتي منه حتي وإن كانت أعمارهم لا تتجاوز سنوات لكن الأبحاث تشير إلي أنهم يتمتعون بمواهب مبدعه تخالف هذا الظن
+T1959: بعد أسبوع من إعلان صندوق النقد أن باكستان وافقت علي رفع الدعم للنفط وقطاعات الطاقه
+T1960: قال ربك هو علي هين هين كلمه تهز الكيان وتنفض الوجدان تحيي في النفس الأمل وتنزع عنها اليأس والإحباط أن يشفيك ربك من مرضك أليس عليه هين أن يفرج عنك كربك أليس عليه هين أن يكفيك ما أهمك أليس عليه هين فكيف يحبطنا اليأس وتقهرنا الهموم
+T1961: مديره صندوق النقد الدولي كريستالينا غورغييفا أوضاع اقتصاد مصر تزداد سوءا وعدد كبير من الناس معرضون للخطر وعلينا التأكد من استمرار توفير الحمايه الاجتماعيه للوصول إلي هؤلاء الأشخاص والاقتصاد في حاجه لمواصله الإصلاحات
+T1962: سكاي بايرن ميونيخ سيوافق علي بيع ليفاندوفسكي إذا رفع برشلونه عرضه إلي مليون يورو
+T1963: الصومال مقتل جندي في بونتلاند
+T1964: حقائق عن سرطان الرئه
+T1965: تعرفي علي سر تتبيله السجق وطريقه تحضيره في حلقه اليوم من أكل شوارع تابعونا للمزيد من الأكلات المميزه والوصفات اللذيذه من المطبخ العربي   الحياه حلوه وصفات
+T1966: شيفروليه سيلفرادو الجديده تطل مع تجهيزات أكثر تطورا و سيتم استبدال ميزات الباب الخلفي بأقفال ونوافذ كهربائيه بشكل قياسي و إضافه زر التشغيل بالدفع كميزه قياسيه عبر التشكيله الكامله لسياره سيلفرادو تتميز قمره القياده الجديده بشاشه لمس مركزيه ملونه جديده موجهه أفقيا
+T1967: قد لا نري أهميه هذه المعادله من النظره الأولي لكن من خلالها اكتشفنا لأول مره وبشكل نظري وجود الثقوب السوداء إنها ما يسمي متريه شفارتزشيلد التي تصف انحناء الزمكان بجوار جسم دائري كتلته وشعاعه تم اشتقاقها من معادلات آينشتاين سنه
+T1968: ارتفعت أسعار النفط خلال تعاملات اليوم الإثنين مع تقييم المستثمرين لاحتماليه ارتفاع الطلب في المدي القريب وسط مخاوف من أن التشديد النقدي في الولايات المتحده قد يؤدي إلي ركود
+T1969: أسأل الله أن يشفيه شفاء لا يغادر سقما وان يلبسه ثوب الصحه والعافيه عاجلا غير آجل
+T1970: بطاطس مشويه بالثوم والأعشاب طبق جانبي مميز ويناسب معظم الأطباق الرئيسيه
+T1971: مزارع يوثق لحظات مخيفه لدخوله في عاصفه ترابيه ضربت أميركا وهو يقود مركبته
+T1972: أدي إستخراجه إلي تضرر أكثر من هكتار من أراضي الغابات وأكثر من هكتار من الأراضي الزراعيه الاستخراج غير القانوني للعنبر في أوكرانيا يؤدي إلي كارثه بيئيه
+T1973: من المقبلات الساخنه السريعه توست بالأفوكادو والريحان قدميها كطبق جانبي مميز لضيوفك وشاركينا رأيهم بالطعم الفريد
+T1974: المتحدث باسم خارجيه أميركا واشنطن تنتظر ردا بناء من إيران بشأن إحياء الاتفاق النووي
+T1975: فاتي كنت أصلي كثيرا بعد الإصابه التي تعرضت لها
+T1976: نهايه اللقاء بفوز بايرن ميونيخ علي دورتموند بنتيجه ريمونتادا ليفاندوفسكي غوريتسكا هالاند
+T1977: فقدان الوزن يعتقد أن البكتين والألياف الغذائيه الموجوده في الفطر الأسود تساعد في منع السمنه وتشجع علي إنقاص الوزن عن طريق منع امتصاص الدهون
+T1978: لتجنب تجاعيد البشره امتنع عن هذه العادات إهمال تنظيف البشره مساء الإفراط في الضغط عليها لدي تطبيق مستحضرات التجميل عدم استخدام واقي الشمس الضغط علي البثور والحبوب التدخين
+T1979: هل بإمكان العلم أن يثبت أنك واقع في الحب
+T1980: ناسا تطلق مركبه فضائيه مهمتها إبعاد الكويكبات عن الاصطدام المحتمل بالأرض في أول مهمه من نوعها للدفاع عن الكوكب
+T1981: نصائح هامه للحفاظ علي بطاريه السياره وإطاله عمرها للتفاصيل
+T1982: أصدرت وكاله الأمن القومي الأميركيه تقريرا يتضمن أحدث إرشاداتها ونصائحها لحمايه الشبكات من الهجمات السيبرانيه
+T1983: مجلس الشيوخ الأميركي عقوبات الإرهاب علي إيران والحرس الثوري كانت ضروريه للتحقق من التعامل بين طهران و بكين
+T1984: إن الحق جل وعلا و الجبار الذي يجبر كسر عباده الشعراوي العشر الاواخر من رمضان اللهم يا جبار اجبرني جبرا يتعجب منه أهل السماوات والأرض جبرا يليق بعظمتك وقدرتك وكرمك يارب
+T1985: دماغ طفلك خمس أساطير شائعه
+T1986: الاسعار المذكوره هي للفئه القياسيه من كل موديل
+T1987: رسميا مانشستر سيتي يعلن في بيان رسمي عن مغادره الارجنتيني أغويرو الفريق نهايه الموسم ولن يتم تجديد عقده مع الفريق
+T1988: قدميها مزينه بالشوكولاته المبشوره لمزيد من الطعم الغني تعلمي كيف تحضرين فطيره الموز بالكراميل وش تطبخون يابنات
+T1989: هل الصابون يقتل حقا من الجراثيم
+T1990: التضخم في ألمانيا يسجل أعلي مستوي منذ توحيد البلاد عام
+T1991: مع كل التحديات الموجوده في   حققت مجموعه ال الموجوده معنا في هذا الفيديو الأفضليه لعام   سيارات
+T1992: عتاد الكاميرا الاساسيه في هاتف وقدره تقريب وتقريب سلس
+T1993: مشروع الراحمون لكفاله الأيتام ألبانيا البوسنه كوسوفا كفاله اليتيم دك بالشهر دك في السنه للمساهمه
+T1994: مايكروسوفت ستستبدل وحدات التي تعاني من مشكله ومضان الشاشه للعملاء
+T1995: قال عبد الله بن مسعود رضي الله عنه لا تسأل الرجل عما في قلبه لك ولكن انظر ما في قلبك له فإن لك في قلبه مثل ذلك شعب الإيمان
+T1996: رضي الله عنهم ورضوا عنه اللهم اجعلنا منهم
+T1997: هل التوائم تكون متطابقه عندما تتشارك بمشيمه واحده في الرحم حقائق وأساطير حول التوائم  العلميه
+T1998: الإمارات ترحب بدعوه المملكه لعقد قمتين خليجيه وعربيه
+T1999: الجماهير السنغاليه طوال المباراه
+T2000: أحمد الله حمدا كثيرا علي خروج كتاب الجدول المفصل وهو كتاب جامع للقراءات العشر برواياتها بطريقه الجدوله أفردنا القراءات رأسيا وقارنا بينها أفقيا واستخدمنا فيها رموزا تختصر الأحكام نحو إب اختصار الابدال و إم اختصار الإماله و صل اختصار الصله و نق اختصار النقل

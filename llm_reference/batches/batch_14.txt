@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0651 to T0700.
+- Each line has the form ID,Category (for example: T0651,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0651 to T0700):
+T0651: الكشف عن حجم شاشه أجهزه القادمه حسب المسرب فحجم الشاشه لأجهزه سامسونج القادمه كالتالي هاتف بشاشه هاتف بشاشه هاتف بشاشه
+T0652: ماذا سوف يحصل لك اذا توقفت عن ممارسه الاستمناء
+T0653: الضرر ما كان عن غير قصد والضرار ما كان عن قصد قال لاضرر ولا ضرار
+T0654: نبارك لسمو الشيخ محمد بن زايد آل نهيان انتخابه رئيسا لدوله الإمارات العربيه المتحده من قبل المجلس الأعلي للاتحاد ونسأل الله تبارك وتعالي أن يسدد خطاه ويوفقه لما يحبه ويرضاه وأن يكون عهد خير ونماء وازدهار للإمارات وشعبها الكريم
+T0655: تلقت شباك مانشستر يونايتد أهدافا أكثر من أي موسم اخر في تاريخ البريميرليغ
+T0656: المربع نت بعض المعلومات عن فورد مافريك اصغر وارخص بيك اب فورد المربع نت فورد
+T0657: إذا كنت تخطط للتسوق عبر الإنترنت فعليك القيام بذلك من جهاز الكمبيوتر الخاص بك وليس من هاتفك لكن لماذا لماذا لا ينبغي أن تستخدم هاتفك للتسوق عبر الإنترنت
+T0658: رساله إلي الحياه لن أموت هكذا بكل بساطه سأرهق الجميع واعيش جميع الأشياء بحذافيرها سأحدث أمرا يجعلني في قائمه اللامنسيين لن تطمس هويتي مرتين
+T0659: بسبب الأزمه الأوكرانيه ستاربكس تلحق ب ماكدونالدز وتغادر روسيا تاركه خلفها فرعا
+T0660: بورصه قطر تغلق التعاملات مرتفعه بدعم قطاعات
+T0661: بعد ان حجزت المملكه العربيه السعوديه الف سياره من لوسيد الف منها تم شرائها هذه السيارات الكهربائيه ستكون من ضمن السيارات الحكوميه المستخدمه كدعم من السعوديه للطاقه النظيفه وستصنع هذه السيارات في السعوديه و بالمناسبه المملكه تملك شركه لوسيد
+T0662: مرتزقه تركيا في مرمي التفجيرات
+T0663: انا كتبتها تخطئ بس ما بعرف كيف طلعت تخطأ واياكم يارب
+T0664: ساندويش السلامي مع الفلفل الأحمر والجبن
+T0665: يقول أحدهم سألت والدتي ذات يوم ماهو الحب ف ابتسمت وأجابت و الذي بيني وبينك ولم أجد من يومها إجابه أصدق منها
+T0666: نسخه من هواتف جالكسي و تحصل علي تحديثات شهر يونيو الأمنيه
+T0667: ستبدأ شركه رينو بطرح عروض شاحنات رينو الكهربائيه بالكامل بدءا من عام   سيارات
+T0668: مراجعه هاتف سامسونج جالكسي
+T0669: شرب المشروبات ذات السعرات الحراريه المنخفضه مثل القهوه والشاي بدلا من المشروبات السكريه قد يساعدك في تخفيض الوزن والتحكم به لكن شريطه عدم إضافه السكر أو الكريما لها صباح الخير
+T0670: صح كلامك خصوصا ان الراحه في فورتشنر الجيل الثاني ليست جيده بصراحه
+T0671: اشياء مهمه يجب معرفتها قبل الذهاب الي طبيب الجلديه
+T0672: لاعبي الهلال والنصر في المطار
+T0673: مراسله الحدث عروب عبدالحق الملكه إليزابيث تتغيب عن قداس عيد الشكر بسبب وعكه صحيه بعد مشاركتها في فعاليات اليوم الأول
+T0674: ترمب يهدد ب محو إيران
+T0675: وأضاف وزير النفط الكويتي محمد الفارس هذا يعني أن دول أوبك بلس تستعيد جزءا كبيرا من حصصها الإنتاجيه خلال الأشهر القادمه بما يقارب مستويات ما قبل تفشي جائحه كورونا مطلع عام  النفط الكويت
+T0676: حاله ذعر بين مستثمري بيتكوين بسبب تذبذب مثير لعمله مشفره أخري
+T0677: صلاح منفتح علي فكره الانضمام إلي الدوري الإسباني ويفضل ريال مدريد تحديدا إن فشل تجديد عقده مع ليفربول كما أن المصري لا يمانع فكره الانتقال إلي ناد آخر في الدوري الإنجليزي
+T0678: يفتقد الخبز الأبيض للألياف وهي المسؤوله عن الإحساس بالشعور بالشبع استبدلي الخبز الأبيض بخبز القمح الكامل صباح الخير
+T0679: إزاله الحواجز الأسمنتيه من محيط البرلمان اللبناني لبنان
+T0680: يارب هو وقلبه وشعوره لي
+T0681: ماهي ببتيدات الكولاجين وما فوائدها وما المقدار الذي يجب أن تتناوله منها يوميا
+T0682: سبحان الله والحمدلله ولا إله إلا الله والله أكبر اللهم اغفرلي اللهم ارحمني اللهم ارزقني
+T0683: مدير الصحه العالميه بحثت في بكين سبل التعاون حول أصل كورونا استنادا إلي العلم والأدله
+T0684: المزيد من الألعاب المجانيه في شهر أغسطس لمشتركي
+T0685: تغريده جديده من الشركه الصينيه للألعاب تلمح لإصدار اللعبه المشهوره علي الأندرويد قريبا وحسب الصوره المنشوره اللعبه راح تصدر في تاريخ يوليو
+T0686: تقرير سماعه لن تأتي بمستشعر لمعدل نبضات القلب و درجه حراره الجسم ذكرت شائعه سابقه بأن السماعه ستحتوي علي مستشعر قياس معدل ضربات القلب ودرجه حراره الجسم وبحسب الإعلامي أبل تختبر هذه المميزات داخليا علي نماذج أوليه ولن تتوفر الميزات في إصدار هذا العام
+T0687: نادي الاتفاق يحقق الفوز علي ابها بنتيجه
+T0688: تاليسكا نجم النصر بهذا الموسم في الدوري السعودي مباراه هدف اسيست
+T0689: لاعب يوفنتوس الجديد لوكاتيلي
+T0690: تصميم ومواصفات الهاتف الاقتصادي تظهر قبل الإعلان الرسمي وسيضم مواصفات تقنيه تشمل معالج ثماني النوي من فئه وذاكره عشوائيه بحجم فضلا عن شاشه تمتاز بدقه وبطاريه بسعه وثلاث كاميرات في الخلف وبدقه ميغابكسل للكاميرا الأساسيه
+T0691: نوعي بتقديم وصفات الطبخ اللذيذه لعائلتك وحضري كباب بالصينيه علي طريقه الطاهيه سوزان شحاده
+T0692: آيكيا تنضم للمتخارجين من روسيا وتعرض مصانعها للبيع
+T0693: استشاري أمراض المخ والجهاز العصبي معز بخيت عقار ريميدسفير يعطي نتائج مبشره في علاج كورونا بعد اختباره بعده مراكز عالميه
+T0694: في أمان الله
+T0695: هل سبق وان سمعت بمنظمه ويكيليكس الغامضه تحدثنا عنها بعمق في بودكاست نون من اعداد
+T0696: مراجعات عرب هاردوير دا أخف وأرفع لابتوب في العالم يمتلك هذا الصغير بروسيسور الأحدث من فهل تفوق علي ما يقابله من نفس الفئه من و من إنتل تعرف من خلال المراجعه
+T0697: مصورو التجسس يلتقطون صور لنموذج أولي من بي إم دبليو المحسنه ذو مظهر رياضي مع أجزاء بيرفورمانس في الطريق ل بي إم دبليو الفئه المحسنه اخبار
+T0698: ما الأطعمه التي تزيد حب الشباب ترجمه محمد طوسون تدقيق غزل الكردي
+T0699: مرض الفيبروميالجيا مرض غامض يهاجم جسمك بدون مقدمات ويصيب فئه كبيره جدا ولكن تعاني منه النساء بشكل أكبر وأصعب تعاوا نتعرف معنا وبالفيديو علي أعراضه التي تشير لإصابتك به صحتك حياتك
+T0700: جائزه أفضل الأفضل عن فئه تصميم المنتجات في حفل توزيع جوائز ريد دوت لصالح مازيراتي   سيارات مازيراتي

@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1301 to T1350.
+- Each line has the form ID,Category (for example: T1301,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1301 to T1350):
+T1301: جربي كيكه الشوفان بمكونات بسيطه وطعم خفيف ولذيذ
+T1302: قال رسول الله إن الصدقه لتطفئ عن أهلها حر القبور وإنما يستظل المؤمن يوم القيامه في ظل صدقته الألباني ت السلسله الصحيحه
+T1303: بيع كل نسخات جي تي آر نيسمو و نيسان تؤكد ذلك نيسان
+T1304: مشهد يخطف الأنفاس يظهر رحله هجره الفراشات
+T1305: تحسن المناعه تتحكم في الشهيه والوزن وتلعب دورا كبيرا في صحه ووظيفه البكتيريا المعويه تعالوا لنتعرف علي فوائد الألياف  العلميه  الألياف المناعه صحه
+T1306: والاخلاق هي سر الجمال الذي غفل عن ا الكثير
+T1307: عباس يعلن حل المجلس التشريعي
+T1308: تعرف علي أهميه زيت الفرامل والتوقيت الأفضل لتغييره
+T1309: طاقم تحكيم نهائي كأس الملك ماتيو لاهوز حكم ساحه باو سيبيريان حكم مساعد إيكر فرانسيسكو حكم مساعد محمد الهويش حكم رابع ريكاردو دي بورغوس تقنيه الفيديو الهلال الفيحاء
+T1310: عليك بالحلم وكظم الغيظ لتنال محبه رب العالمين فالله يحب الحلم والأناه ففيهما قره العين وسعاده الدارين
+T1311: كيف يمكننا التواصل معك
+T1312: من الأشخاص حصلوا علي قروض الشراء الآن والدفع لاحقا في حين يعتقد حوالي أنهم سيجربون الخدمه في غضون عامين التفاصيل
+T1313: الحصار الروسي للوانئ أحد الأسباب تهديد كبير يواجهه الأمن الغذائي العالمي بسبب الحرب في أوكرانيا روسيا
+T1314: وزير الري المصري يبحث مع الغذاء العالمي سبل تعزيز التعاون
+T1315: شاهد القوه العسكريه الروسيه الضاربه وآلياتها في أوكرانيا روسيا
+T1316: عن علي رضي الله عنه قال قل اللهم اهدني وسددني واذكر بالهدي دايتك الطريق والسداد سداد السهم مختصر مسلم
+T1317: بضغطه زر وبمبلغ يسير توقف وقفا تجري به حسناتك في حياتك وبعد مماتك بل ويشملك بإذن الله قوله أنا وكافل اليتيم كهاتين في الجنه وذلك بالمساهمه في وقف من يؤويني لبناء وحده سكنيه وقفيه للأيتام فلا تفوت الفرصه المتجر
+T1318: مؤسس ورئيس مجلس إداره داماك العقاريه الإماراتيه حسين سجواني ل الشرق الاستثمارات الروسيه لا تمثل نسبه كبيره في مبيعات الشركه وأتوقع جذب دبي استثمارات صينيه كبيره بعد رفع قيود كورونا في بكين
+T1319: علي الرغم من الفوائد الصحيه الرائعه لزيت الزيتون إلا أن الإكثار منه يمكن أن يتسبب في أضرار مختلفه تعرف أكثر علي أضرار زيت الزيتون من هنا صحتك حياتك
+T1320: من هي المجموعه السريه المسؤوله عن الموافقه علي استخدام لقاحات كورونا في أميركا
+T1321: القهوه التركيه السهله حسب الأصول
+T1322: تريد تجنب سعرات حراريه زائده فمن المفضل تجنب المايونيز لأن مقدار ملعقه طعام منه تحتوي علي حوالي سعره حراريه
+T1323: أربع أشياء كفيله بطرد الراحه النفسيه العيش في الماضي القلق من المستقبل مقارنه نفسك مع الآخرين السلبيه و التشاؤم
+T1324: تطبيق سيحصل أخيرا علي ميزه تسجيل المحادثات هذا الشهر
+T1325: قال النبي أيما امريء مسلم أعتق امرءا مسلما كان فكاكه من النار نيئا لكم بعتق خالد الحربي جزاكم الله خيرا كل من ساهم
+T1326: لاكازيت و اولاس
+T1327: الماركا طريق ريال مدريد إلي نهائي دوري ابطال اوروبا قوبل بثلاثه أنديه مملوكه من قبل دول بتمويل كبير باريس سان جيرمان تشيلسي الان مانشسترسيتي
+T1328: إشاعه شركه تستعد للكشف عن هاتف قام موقع بنشر صوره للهاتف توضح وجود ثلاث كاميرات في الخلف و الكاميرا الأماميه في زاويه الشاشه ومن المتوقع أن يتم إطلاق الهاتف خلال الشهر الحالي
+T1329: السودان التوقيع علي الاتفاق السياسي بين المجلس العسكري وقوي التغيير
+T1330: تعد إنفلونزا الطيور أو الإنفلونزا الطيريه عدوي فيروسيه تصيب الطيور والبشر وحيوانات أخري وتمثل سلاله أكثر أنواع الفيروس شيوعا تصيب معظم أنواع الفيروس الطيور إصابه قد تكون قاتله وتنتقل بسهوله إلي البشر والحيوانات
+T1331: كن مفتاحا للخيرات مغلاقا للشرور
+T1332: سنشهد بدايه إنتاج هذه السياره في أواخر عام زوروا الرابط التالي لرؤيه المزيد   سيارات
+T1333: إبراهيما كوناتي رابع لاعب من ليفربول يسجل في مباراتي الذهاب والإياب من ربع نهائي دوري أبطال أوروبا بعد بيتر كراوتش ضد آيندهوفن صلاح ضد مانشستر سيتي وروبرتو فيرمينو ضد بورتو ليفربول بنفيكا
+T1334: مسؤول عراقي يحذر من التقشف في حال عدم إقرار مقترح قانون الأمن الغذائي
+T1335: عظم الله أجركم دكتور محمد وغفر الله لوالدكم الرجل الصالح العم إبراهيم العوضي عزاؤنا لكم وإخوانكم الكرام عبدالرحمن وخالد وخليل والعائله الكريمه
+T1336: من توكل علي الله قوي لا يضعف ومن اهتدي بهداه عزيز لا يذل ومن وثق بتدبيره حكيم لا يضيع
+T1337: كييف الكاتبه السياسيه مايا خضرا طلب فنلندا و السويد بالانضمام إلي حلف الناتو علي الطريق الصحيح وسيتم بحثه بشكل رسمي وتركيا هي العائق الوحيد
+T1338: دمار وخراب يعم مدينه بورودينكا الأوكرانيه بعد القصف الروسي أوكرانيا روسيا
+T1339: قال شيخ الإسلام ابن تيميه رحمه الله كل لفظ بغير قصد من المتكلم لسهو وسبق لسان وعدم عقل فإنه لا يترتب عليه حكم انتهي من مجموع الفتاوي
+T1340: الدوامه الترابيه أو الدوامه العفريته يتراوح حجمها من نصف متر عرضا وأمتار قليله طولا إلي أكثر من أمتار عرضا وأكثر من متر طولا  دوامه
+T1341: مجره تمنحك الفرصه لابتكار أفضل النصوص من أفضل محتوي عربي علي الإنترنت رشح نفسك الآن لوظيفه كاتب محتوي لوسائل التواصل الاجتماعي اطلع علي المؤهلات والمهام المطلوبه عبر الرابط
+T1342: سجل أبطال دوري ابطال اسيا
+T1343: الإعلام الإسرائيلي يكشف هويه القائد الإيراني لصواريخ حزب الله إيران لبنان
+T1344: الولايات المتحده الأمريكيه ترفع الحظر عن شركه مقابل غرامه ماليه قدرها مليار دولار
+T1345: سمير جعجع للحدث لا يمكن استمرار فريق إيران بالسيطره علي البرلمان اللبناني
+T1346: أكل بروتين علشان ما تحس بالجوع بالدايت
+T1347: قيلوله الظهريه تحسن من القدره الذهنيه لبقيه اليوم ودراسه حديثه بينت أن دقائق أعطت أفضل فوائد القيلوله حاول الا تزيد علي دقيقه
+T1348: مره تغطيه اكتتاب الأفراد في طرح علم بسوق الأسهم السعوديه وبإجمالي طلبات تجاوزت مليار ريال
+T1349: ساندويش الدجاج بالفطر والبصل لوجبه خفيفه وسريعه
+T1350: احدي صالات عرض كاديلاك عام سيارات

@@ -1,0 +1,14 @@
+{
+  "model": "bilstm",
+  "device": "gpu",
+  "n_tweets": 500,
+  "repeats": 3,
+  "batch_size": 1,
+  "latency_ms_median": 21.826,
+  "latency_ms_p95": 23.705,
+  "latency_ms_mean": 22.245,
+  "load_seconds": 1.93,
+  "ram_mb_model_loaded": 538.9,
+  "ram_mb_after_inference": 1133.3,
+  "gpu_name": "NVIDIA A100-SXM4-40GB"
+}

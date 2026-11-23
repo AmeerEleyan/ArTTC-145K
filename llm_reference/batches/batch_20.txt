@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0951 to T1000.
+- Each line has the form ID,Category (for example: T0951,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0951 to T1000):
+T0951: يسعدني أن أكون معكم الليله بمشيئه الله في برنامج الفرصه بقناه الواقع مع الإعلامي ناصر الغامدي وحديث عن ملهم العالم في تمام ال مساء
+T0952: وصفاتكم المفضله بشكل جديد استمتعوا ب  علي
+T0953: هل الاستحمام في الصباح الباكر يعزز من صحه أمعائك أشياء اجعلها من أولوياتك كل صباح لتعزيز صحه الأمعاء
+T0954: تمتعي بطعم أكلات الدايت من المطبخ الآسيوي
+T0955: تؤكد لنا رسميا قدوم الهاتف في الشهر المقبل
+T0956: البلازما الغنيه بالصفائح الدمويه دواعي الاستخدام والأعراض الجانبيه
+T0957: تقرير بدء ظهور المعلومات عن معالج
+T0958: صور حيه ل لكزس الجديد
+T0959: الاسعار متوقع ان تكون كمتوسط الف ريال سعودي هذه تجربه كامله علي موقعنا
+T0960: أسوأ ابتلاء هو ابتلاء التفكير أن تكون شخص تحليلي بشكل مفرط مدمن بالتفاصيل وتسأل نفسك في كل موقف ألف سؤال عقلك مرهق وتزيده بالتفكير
+T0961: في صوره تعرفوا إلي هذه الأسطوره منذ إطلاقها وأخبرونا بالجيل المفضل لديكم
+T0962: كتاب العقل سيرتك الذاتيه تأليف البروفيسور ديفيد إيغلمان مكتبه جليس
+T0963: تأمل اسم الله الباسط سبحانه يا الله
+T0964: جربي كيك اللوز والشوفان الخفيف وقدميه مع فنجان من الشاي
+T0965: هل دق ناقوس الخطر علي الماء في الشرق الأوسط كيف سيعاني من شح الماء في السنوات القادمه
+T0966: تشكيل تشيلسي لمواجهه آرسنال في قمه الجوله بالدوري الإنجليزي تشيلسي آرسنال
+T0967: الحدث تسلط الضوء علي سيناريوهات عده ما بعد الانتخابات أبرزها الشلل التام في المؤسسات الدستوريه اللبنانيه والفراغ في رئاسه مجلس النواب
+T0968: مضادات الأكسده لعلاج حب الشباب والتهاباته  التهاب صحه
+T0969: شهر سبتمبر شهر التوعيه من سرطان الأطفال إليكي أفضل الأطعمه لوقايه طفلك الحياه حلوه   أكل صحي وقايه
+T0970: في مقابله خاصه مع الحدث والده الضحيه نيره أشرف التي قتلت أمام جامعه المنصوره في مصر كل ما قاله المتهم أمام المحكمه كذب بهدف تضليل العداله في القضيه
+T0971: الجزائر الرئيس المؤقت يدعو إلي المشاركه في الحوار حول الانتخابات
+T0972: النسخه الجديده من البطاقه ستأتي علي رقاقه مع دعم خطوط عوضا عن مثل الإصدار الأصلي و ستأتي مع معالج عوضا عن وستكون موجهه لمنافسه علي الفئه الاقتصاديه
+T0973: الجيل الجديد تصميم ابداعي ومقابله مع كبير المصممين في لكزس يشرح التصميم الجديد لكزس تصميم فن هنا كل التفاصيل
+T0974: أحمد الجارالله قرارات الحكومه تعويم للرئيس أو رغبه عليا إذا كانت لدي الحكومه المستقيله القدره علي إقرار هذه المشاريع الكبري التي طال انتظارها فلماذا استنكفت عندما كانت أصيله عن العمل طوال السنوات الماضيه ولماذا تقاعست عن ممارسه صلاحياتها وعطلت البلاد
+T0975: حمدا لله عمرا ودهرا إن صلح الحال أو ساء
+T0976: السعوديه وروندا تبحثان سبل تعزيز العلاقات الثنائيه
+T0977: لعشاق التشيز كيك وجب عليكم تحضير هذه الوصفه
+T0978: تسديدات أسينسيو لا تصد في تدريبات المنتخب الأسباني
+T0979: يقول النبي إن أردت أن يلين قلبك فأطعم المسكين وامسح برأس اليتيم الآن يوجد أيتام فقدوا والدهم ويعيشون في ظروف صعبه ومصاعب الحياه تواجههم ساهم بتبرعك لهم لإعانتهم وكفالتهم في هذا الشهر الفضيل للتبرع لهم عبر منصه إحسان الرسميه
+T0980: الجميل أن القارئ من أوروبا مقدونيا هذا نور الله ينتشر وسيظل ينتشر والله متم نوره ولو كره الكافرون
+T0981: مصر تستعد لإصدار أول سندات مصريه باليوان في السوق الصينيه
+T0982: السياره نزلت من فتره كلامك صحيح و لكن الخبر يقول ان مرسيدس قدمت اصدار خاص من اسمه
+T0983: باعت مليون نسخه هذا العام بحسب
+T0984: رسن تغلق أول جوله استثماريه ب السعوديه لقطاع التأمين الإلكتروني ب مليون ريال
+T0985: الله يعطيكي العافيه ويحفظ اسرتك
+T0986: التهابات المسالك البوليه هي عدوي تحدث بسبب دخول البكتيريا مثل التي توجد بالمنطقه الشرجيه لمجري البول وهي أكثر شيوعا في النساء
+T0987: اختصاصي الفيروسات والأمراض التنفسيه محمد الطراونه من المبكر التعامل مع كورونا كمرض متوطن مثل الإنفلونزا
+T0988: أطلقت منظمه الاتصالات البرازيليه اقتراحا عاما حول توحيد شاحن مشترك يو أس بي سي وجعله إلزاميا لجميع الهواتف الذكيه التي يتم بيعها في البلاد علي خطي الاتحاد الأوروبي الذي أقر قانونا بشأن هذا الأمر في وقت سابق
+T0989: قراءه سوره الكافرون بالطريقه الصحيحه للشيخ الأستاذ الدكتور أحمد عيسي الم عبر
+T0990: رئيس ديوان المظالم يوجه بتشكيل فريق لدراسه تحويل جميع المحاكم الإداريه إلي رقميه
+T0991: أجمل الوجوه في الصباح ليست أحلاها خلقه وإنما أكثرها ابتسامه صباحكم مبتسم صباح الخير مطبخ سيدتي
+T0992: سلسله عائله اجهزه التي سوف يتم اطلاقها بالسوق السعودي ارتق إلي التحدي
+T0993: تحافظ علي صحه الجهاز الهضمي وتقلل مستويات السكر في الدم إليكم فوائد فاكهه الكاكا
+T0994: أطلقت شركه بلو أوريجين رحلتها السياحيه الثالثه إلي الفضاء مع اللاعب السابق لفريق كره القدم ومضيف برنامج مايكل ستراهان إضافه إلي خمسه مرافقين آخرين في مهمه الصاروخ رقم
+T0995: لا أذكر قط أنني عاتبت أحدا أترك الناس علي سجيتهم من أحسن أحسنت إليه ومن أساء عذرته وإن كررها رحلت عنه بكرامه علي الطنطاوي
+T0996: طريقه معرفه عمر الإطارات تحقق من الجدران الجانبيه بحثا عن علامات التشقق خاصه إذا كان عمر إطارات سيارتك من إلي سنوات وتحقق من وجود تشوه في المداس حيث يمكن أن يشير ذلك إلي الإستهلاك أيضا
+T0997: إذا تسلل إليك الحزن فتأمل في وجوه الأطفال حيث البسمه الصادقه والضحكه الجميله والأرواح البريئه شاهد لعبهم وشجارهم وتصالحهم وابتسم
+T0998: ما هو عمي الألوان
+T0999: واذكروا نعمه الله عليكم باللسان حمدا وثناء وبالقلب اعترافا وإقرارا وبالأركان بصرفها في طاعه الله بن سعدي
+T1000: فورد توروس الجديده كليا المخصصه لمنطقه الشرق الأوسط والتي تم تطويرها للحفاظ علي مكانتها الأسطوريه التي تستمر بخط تراث العلامه في المنطقه وتمزج فورد توروس بين الاتصال السلس والأداء العالي علي الطرقات والتصميم العصري الأنيق سيارات

@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0001 to T0050.
+- Each line has the form ID,Category (for example: T0001,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0001 to T0050):
+T0001: ما أنبل القلب الحزين الذي لا يمنعه حزنه من أن ينشد أغنيه مع القلوب الفرحه جبران خليل جبران
+T0002: ضيفوا لمسه من الألوان و الفيتامينات مع سلطه قوس قزح المغذيه
+T0003: لم يكن الكون مظلما
+T0004: خلال مأدبه عشاء ترحيبيه في مدريد الرئيس الأميركي جو بايدن يكسر البروتوكول عندما صافح ملكه إسبانيا وليس الملك فيليبي السادس عكس ما تفرضه المراسم في مثل هذه المناسبات
+T0005: ما هو إرتفاع ضغط الدم وأعراضه وكيف يمكنك أن تحمي نفسك منه
+T0006: فيما يلي تقرير سريع عن سلالات الفيروس التاجي الرئيسيه التي يجب معرفتها والأمور المختلفه فيها وما إذا كانت تشكل تهديدا للجهد المستمر لتطعيم أكبر عدد ممكن من الناس  ترجمه محمد أحمد بصل تدقيق نايا بطاح
+T0007: لافروف واشنطن قوضت النظام الدولي
+T0008: المعالج القادم مع قد يكون أقوي من
+T0009: أرونا خبرتكم ودقه ملاحظتكم   سيارات
+T0010: تدقيق ماجده زيدان تدقيق نسمه عادل
+T0011: تعرف علي أسعار سيارات جي ايه سي السيدان في المملكه للتفاصيل
+T0012: مقال نون اكتشاف ماده جديده لتثبيط الالتهابات العصبيه دواء الهايمكرومون عاده ما يصفه الأطباء لتخفيف التشنجات إذ أن له القدره علي تثبيط الاستجابه المناعيه في الخلايا النجميه في الجهاز العصبي المركزي  ترجمه سهام الشريف مراجعه أنفال السويد
+T0013: عن أنس قال صلي الله عليه وسلم من أحب أن يبسط له في رزقه وينسأ له في أثره فليصل رحمه صحيح مسلم
+T0014: الدينار الكويتي يتراجع أمام عملات ويرتفع مقابل اليورو وحيدا
+T0015: أيش رأيك بكوب منعش مثله بالصباح الباكر خبرينا رأيك بكومنت لنطلعك علي الطريقه
+T0016: نحن نحب الاستمتاع ببعض الفواكه مع حراره الصيف
+T0017: مفاجأه الزواج في سن متأخره يأتي بأطفال أقل عدوانيه
+T0018: المربع نت فورد تخسر مليار دولار مليار ريال من قيمتها السوقيه خلال دقائق من تداولات اليوم في البورصه بعد إعلانها عن خفض الإنتاج مجددا لبعض أهم موديلاتها خلال الأسبوع القادم وأبرزهم إكسبلورر ورينجر وبرونكو وإف وموستنج ماخ إي للنقص المستمر في أشباه الموصلات
+T0019: تسريب صوره تمثل تصميم هاتف جوجل بكسل القادم
+T0020: لم يعد كما كان مالذي تغير أصبح لا يعرف النبره الحزينه في صوتي أصبح يفوتني
+T0021: استشاري الأمراض المعديه عبد الله الحقيل من سكان لندن تعرضوا لإصابه ب كورونا وأصبح لديهم مضادات للفيروس ومستويات المناعه لدي المجتمعات تتحسن مع مرور الوقت
+T0022: جهاز الواقع المحاكي كان من احد الاشباء المميزه في جناح
+T0023: أنا الوطن لا غربوك المقفين وأنا الوفاء لا خان من هو أمنته
+T0024: الحمد قيد للنعمه الشعراوي
+T0025: ياجبار جبرا يعيد للقلب حياته وللفؤاد سكينته وللحياه بهجتها يارب
+T0026: اشاعه الجيل المقبل من سوبارو سيحصل علي محرك بقوه حصان
+T0027: سوره الفجر بيان أحكام التجويد للشيخ الأستاذ الدكتور أحمد عيسي المعصراوي عبر
+T0028: الجزائر ترقب حول مضمون مبادره لم الشمل التي أطلقها الرئيس تبون وتسريبات قد تشمل معارضين في الخارج
+T0029: الحميه الشبيهه بالصيام تقلل مخاطر الإصابه بأمراض مزمنه
+T0030: طرحت فورد إصدار هيريتيج إديشن للاحتفال بمرور عاما علي إطلاق شاحنات يتضمن نسخه حديثه من عروض الطلاء الخارجي بدرجات ألوان في السبعينيات والثمانينيات وتتميز بالأسلوب الكلاسيكي
+T0031: هذه الأنواع من الأسماك هي أفضل مصادر فيتامينالعربيه
+T0032: الرباعيه الدوليه خطوات لإيقاف دعم إيران للمليشيات الحوثيه
+T0033: رئيس معادن الموارد المعدنيه غير المستغله بالسعوديه تقدر ب تريليون دولار
+T0034: حذر روبرت هابيك وزير الاقتصاد وحمايه المناخ الألماني من خطر حدوث اضطرابات وانقطاعات متتاليه في عمل مرافق الطاقه في مجال الخدمات العامه مع استمرار قطع إمدادات الغاز الروسي وأشارهابيك الذي يشغل كذلك منصب نائب المستشار إلي أنه بعد التخفيض الأخير في
+T0035: أفضل الصلوات عند الله صلاه الصبح يوم الجمعه في جماعه وصححه الالباني في صحيح الجامع
+T0036: الإسكان المصريه تبحث الموقف التنفيذي للمشروعات بالعاصمه الإداريه
+T0037: جوجل تتوقف عن جمع بيانات البحث في الصين في ضربه موجعه لمشروع
+T0038: أحماض أوميغا الدهنيه تقلل من خطر الإصابه بنوبه قلبيه مميته
+T0039: قال العلامه الفوزان حفظه الله الدنيا إذا زالت يعوض الله عنها لأن الرزق بيد الله لكن الدين إذا زال ماالذي يعوضه شرح رساله الدلائل ص
+T0040: كيكيه غنيه باللوز والمنجا اللذيذه حضريها علي طريقه الطاهيه منار مجدي وفاجئي صغارك بها اطبخ بالبيت خليك بالبيت وصفات رمضان حلويات كيك الأطفال رمضان
+T0041: نيسان تحصل علي نسخه نيسمو جديده مخصصه للسباقات للتفاصيل
+T0042: أنت الذي تلون حياتك بنظرك إليها فحياتك من صنع أفكارك فلا تضع نظاره سوداء علي عينيك
+T0043: مزيد من الأكلات السحريه للدايت الحياه حلوه
+T0044: ارتفعت الثروات حول العالم بنحو تريليون دولار بزياده بلغت بنهايه لتصل إلي تريليون دولار أعلي مستوي لها علي الإطلاق بحسب التقرير السنوي لشركه بوسطن الاستشاريه
+T0045: سكاي سبورت من المتوقع إعلان تجديد عقد نوير ومولر مع بايرن ميونيخ حتي عام الايام القليله القادمه
+T0046: بريطانيا تنصح سفنها بتوخي الحذر في مضيق هرمز
+T0047: الوزراء السعودي يقر نقل أصول مؤسسه تحليه المياه للصندوق السيادي
+T0048: قائد في الجيش اليمني سندخل إلي عمق صعده إذا أفشل الحوثيون مشاورات السويد
+T0049: هوندا ستستعرض سيفيك الجديده في معرض طوكيو الذي سيقام في يناير ولكن مع ارتدائها للتمويهات بدون الكشف رسميا عنها
+T0050: إذا نظرنا سريعا في تاريخ ماسك سنجد أن التزامه بحريه التعبير كان أقل من المتوقع ربما يرغب في القدره علي التفوه بأي شيء يريده لكنه يغضب عندما يعارضه الآخرون بآراء مخالفه لتفضيلاته

@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1201 to T1250.
+- Each line has the form ID,Category (for example: T1201,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1201 to T1250):
+T1201: الأس يو في الكوريه التي حملت شعار مرسيدس المربع نت
+T1202: الحدث تدخل مناطق توزيع المساعدات في ماريوبول الأوكرانيه وترافق عمليات النزوح عبر بيرديانسك أوكرانيا روسيا
+T1203: وفقا للعلماء لا أمل في انتهاء هذا الوباء العالمي إلا بوجود تطعيم كفء  العلميه  كورونا فيروس
+T1204: أوزورتما من الوصفات ذات الاسم المختلف والطعم اللذيذ وتدخل البندوره واللحمه في مكوناتها الأصليه جربوها علي طريقتنا   الحياه حلوه وصفات
+T1205: حازت سياره هيونداي سانتافي علي لقب سياره الدفع الرباعي الكبيره لهذا العام
+T1206: ربنا لا تزغ قلوبنا بعد إذ هديتنا
+T1207: بخطوات سهله وبأقل مجهود حضري ساندويشات بيتزا الدجاج الشهيه
+T1208: بعد رحيله عن ريال مدريد مارسيلو لن يتوقف عن لعب كره القدم
+T1209: أنصت بارك الله فيك فاصبر علي ما يقولون وسبح بحمد ربك قبل طلوع الشمس وقبل غروبها ومن آناء الليل فسبح وأطراف النهار لعلك ترضي
+T1210: دائما يظهر الصدق في افعالك وليس في اقوالك
+T1211: رسميا تم اختيار فهد العتيبي لديربي جده بين الاتحاد و الاهلي
+T1212: هل تتحول صفقه تويتر إلي نقمه علي إيون ماسك وثروته التفاصيل
+T1213: طب اكتشاف خليه جديده بإمكانها معالجه القلب اكتشاف علمي مهم يمكننا من إيجاد طرق جديده لمعالجه أمراض القلب  ترجمه أحمد محمد الغامدي مراجعه سندس المذلوح تويتر
+T1214: أبرز علامات تلف المساحات الأماميه للسياره للتفاصيل
+T1215: وزير النفط ألف برميل يوميا نصيب الكويت من اتفاق أوبك
+T1216: نصائح الخبراء لاستخدام منشطات الذهن بطرق آمنه
+T1217: طبقا جانبيا رائعا من السلطه مع الفاصولياء البيضاء
+T1218: أمن الدوله السعودي تصنيف أفراد و كيانا علي لائحه الإرهاب لدعمهم ميليشيا الحوثي
+T1219: جربي في منزلك تحضير خبز سميط التركي وشاركينا رأيك بالطعم
+T1220: الكاتب الصحافي طوني بولس تصرف حزب الله تجاهي هو سياسي كيدي وموجه يفترق لتطبيق القانون اللبناني وبمثابه محاوله للتستر خلف القضاء تمهيدا لاستهداف صحافيين وإعلاميين وقناه الحدث تفوقت في نقل الكلمه الحره في لبنان وكشفت أفعال حزب الله في تجاره وتهريب المخدرات وهو ما لا يريده
+T1221: في النشره الصباحيه نحضر لك الأكثر تداولا ليصبح الأكثر تفاعلا
+T1222: تويتر تتيح إبقاء المساحات المسجله للأبد مع أخر تحديث صدر للتطبيق علي أجهزه ال أصبح بإمكان المستخدمين إبقاء المساحات المسجله للأبد سابقا المساحات المسجله كانت تظل لمده يوما
+T1223: لو أمكننا فقط تجميد اطفال كاسحاق نيوتن وغاوس وآينشتاين وتسلا وأرخميدس وغيرهم ثم نعيد ذلك ليحظي هؤلاء بأطول عمر ممكن لأجل حضارتنا لكنا في إزدهار علمي
+T1224: بتروجلف توقع مذكره تفاهم مع شركه تعمل في مجال النفط والغاز
+T1225: أيهما الأفضل بالنسبه لك حبوب منع الحمل أم اللصقه الجلديه إليك أسئله عليك طرحها علي نفسك قبل اختيار وسيله منع الحمل التي تناسبك
+T1226: تحجز المراتب الثلاثه الأولي لنفسها في قائمه هواتف الأندرويد الأسرع علي منصه
+T1227: قال الله ثم لتسألن يومئذ عن النعيم كانوا يأكلون التمر وخبز الشعير وينامون علي الحصير ونزلت فيهم ثم لتسألن يومئذ عن النعيم فماذا نحن فاعلون
+T1228: صحيفه سودانيه نقل قيادات في حزب البشير إلي مزارع خاصه السودان
+T1229: من هونغ كونغ إلي نيويورك الأسواق لا تنام تابعوا تغطيه يوميه لأهم مستجدات الأسواق الآسيويه وتحركات التجاره العالميه مع من الاثنين إلي الجمعه صباحا بتوقيت السعوديه علي قناه الشرق
+T1230: دراسه حديثه نشرتها وسائل إعلام يابانيه وترجمتها وكالات روسيه كشفت طريقه جديده يمكن أن تنتقل بها عدوي فيروس كورونا المستجد المسبب لمرض كوفيد
+T1231: لطف الكلمات يخلق الثقه ولطف التفكير يحل كل صعوبه ولطف العطاء يخلق الحب لاوتسو
+T1232: واشنطن مصادر الحدث تقديرات إسرائيليه ببقاء نحو ألفي إسرائيلي في اسطنبول بعد التحذيرات الأخيره الحدث عاجل
+T1233: لهذا السبب يجب وقف التدخين قبل أسابيع من الجراحه
+T1234: نائب وزير الخارجيه الصيني سنواصل تعزيز العلاقات الاستراتيجيه مع روسيا والقفزه في التجاره بين الدولتين تظهر المرونه الكبيره والديناميكيه الداخليه للتعاون الثنائي
+T1235: هل إستمعتم للحلقه الأولي من بودكاست نقطه قمنا بإنتاجه لكم للتتعرفوا علي العلومات الطبيه الجديده  بودكاست نقطه
+T1236: أدويه تناولها يحافظ علي صحتك لكنها قد ترفع سكر الدم الكورتيكوستيرويدات أدويه القلق واضطراب فرط الحركه ونقص الانتباه والاكتئاب حبوب منع الحمل أدويه ارتفاع ضغط الدم أدويه الكوليسترول جرعات عاليه من أدويه الربو الايزوتريتنون لعلاج حب الشباب شراب السعال وفقا ل
+T1237: كانت له أسبابه شوبنهاور فقد كانت أمه لا تطيقه وكان هو لا يطيقها بسبب علاقاتها العاطفيه المتعدده بعد موت أب شوبنهاور منتحرا كما ترجح الروايات وكانت تعامله معامله السيده لرجل غريب عنها وليس معامله الأم لطفلها وربما كان هذا هو سبب حقده علي النساء
+T1238: تعد من أصعب الدهون التي يمكن خسارتها إليك وصفه غذائيه سريعه وسهله للتخلص من دهون البطن الكرش
+T1239: ما حكم الصيام وما مرتبته في الإسلام حكمه الوجوب بالنص والإجماع ومرتبته في الدين الإسلامي أنه أحد أركانه فهو ذو أهميه عظيمه في مرتبته في الدين الإسلامي الشرح الممتع
+T1240: صلاح أهل التمكين في أربعه أشياء إقام الصلاه وإيتاء الزكاه والأمر بالمعروف والنهي عن المنكر جامع المسائل لابن تيميه ج ص
+T1241: في دقيقه فقط حضري المافن علي سفرتك
+T1242: اختصاصي الأمراض الصدريه أسامه مختار شاحنات مبرده تنقل جثث ضحايا كورونا من مستشفيات نيويورك إلي المدافن  أن تعرف أكثر
+T1243: الانديه المحتمله ل مواجهه مانشستر يونايتد باريس سان جيرمان أتليتكو مدريد بنفيكا سبورتينغ لشبونه انتر ميلان سالزبورغ
+T1244: وجبه سريعه من السلطات السهله التحضير والطيبه المذاق
+T1245: الإمارات ادعاءات مندوب الوفاق الليبيه باطله ومغلوطه  كورونا
+T1246: الباحثه في البيولوجيا الجزيئيه عليه كيوان فايزر لقاح آمن وفق نتائج التجارب السريريه وأخذ الجرعتين يحفز الجسم علي إنتاج أجسام مضاده ل كورونا
+T1247: الغثيان من أهم الأعراض التي تظهر علي الحامل وتؤثر عليها بشكل كبير تعرفي علي علاج غثيان الحمل من هنا
+T1248: قالوا لأن الحق تبارك وتعالي أراد من ذه المسأله العبره والعظه وجعلها للمؤمنين وسيله إيضاح فليس المراد أن ينزل الله بهم العذاب إنما أن يعلمهم ويعطيهم درسا في حفظ أعراض المؤمنين
+T1249: لجان تنسيقيات المقاومه في السودان تعلن تسيير تظاهرات شعبيه اليوم صوب القصر الرئاسي في الخرطوم
+T1250: من تقديم لينغارد في نادي ويستهام علي سبيل الإعاره حتي نهايه موسم

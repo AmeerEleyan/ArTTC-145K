@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1601 to T1650.
+- Each line has the form ID,Category (for example: T1601,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1601 to T1650):
+T1601: نصيحه أسبوع تغليف قالب الكيك يجب الحرص علي دهن قالب الكيك بالكميه المعقوله حتي لا يلتصق بالقالب بإمكانك استخدام الزبده أو الدقيق والزيت كيك نصائح مطبخ سيدتي خبز حلويات حلي وصفات
+T1602: حقائق غذائيه وفوائد صحيه لحليب الشوفان النباتي تعرف عليها
+T1603: تسريب عن ساعه المرتقبه تنطلق ب شاشه منحنيه بحجم إنش كثافه عرض بيكسل لكل إنش رقاقه معالج مساعد شاشه لرصد معدل ضربات القلب مستشعر الذي يعرض التخطيط الكهربي للقلب معايير لمقاومه الماء
+T1604: طريقه تحضير الماسك نمزج دقيق الشوفان مع العسل والليمون للحصول علي عجينه ذات قوام متجانس نترك العجينه علي اليدين ونتركها لمده دقيقه نغسل اليدين بالماء الفاتر
+T1605: كشفت شركه نيسان موتور المحدوده عن خطط لإنشاء شركه جديده من خلال دمج شركتين تابعتين لها هما أوتيك اليابان ونيسمو المحدوده وسيتم تأسيس الشركه الجديده في أبريل
+T1606: التوجه الفني وتصميم بيئات العالم في هي أحد أفضل أعمال السنه بدون جدال لا تنسوا قراءه مراجعتنا
+T1607: مخترع أول هاتف محمول في العالم مارتن كوبر والذي يبلغ عاما قدم نصيحه للمستخدمين بعدم الإفراط في استخدامه معربا عن دهشته للوقت الذي يهدره مستخدموه حيث اخترع كوبر في عام هاتف وهو أول هاتف محمول في العالم
+T1608: إن أردت أن تعيش حبا عميقا عليك أن تجمع وتحتفظ وتدخر العسل لأجله راينر ماريا ريلكه
+T1609: مقال نون القلق المرتبط ببدايه أسرع لمرض الزهايمر قد يعجل القلق من تطور القصور الإدراكي البسيط محولا إياه الي مرض الزهايمر فقد بينت الاشعه الدماغيه للمرضي الذين تطور لديهم القصور الادراكي إلي مرض زهايمر  ترجمه احمد بن خالد الوحيمد مراجعه ثريا البرقان
+T1610: بالفيديو أستمتعي بصينيه الباذنجان علي طريقه ماجي
+T1611: وصلنا لدبي لتجربه فورد برونكو الجديد كليا معلومات بسيطه عن المحرك وفئات
+T1612: ستره هزازه تقنيه جديده لإنقاذ ضحايا النوبات القلبيه
+T1613: قال ابن القيم رحمه الل تعالي اشتر نفسك اليوم فإن السوق قائمه والثمن موجود والبضائع رخيصه كتاب الفوائد ص
+T1614: استخدام أشعه الشمس لتنشيط تدفق التيار الكهربائي في ماده جديده
+T1615: قطعت روسيا إمدادات الغاز إلي كل من بولندا وبلغاريا وفنلندا وهولندا والدنمارك حتي الآن
+T1616: وفر وقتك وجهدك في البحث عن أحدث أخبار تقنيات عالم الذكاء الاصطناعي واشترك في نشره الخوارزميه من إم آي تي تكنولوجي ريفيو لتصلك أبرز التحديثات كل يوم علي بريدك الإلكتروني
+T1617: لا تذكر الآخرين بالمعروف الذي أسديته لهم فالمعروف الحقيقي يتم دون مقابل ودون ضغط ودون غرض ودون إلزام
+T1618: الطبيب المختص في علم الوبائيات عبد الكريم قزيز المتحور مو غير مقلق لأنه لا يسبب زياده في الإصابات أو الوفيات
+T1619: لا تكن ممن يجمع علم العلماء و حكم الحكماء ويجري في الحق مجري السفهاء
+T1620: يساهم تناول الطعام والشراب الصحي في الحفاظ علي صحه الإنسان بشكل عام وصحه القلب والأوعيه الدمويه بشكل خاص والوقايه من الأمراض الخطيره ويستعرض الكونسلتو في الانفوجراف التالي أبرز المشروبات المفيده لصحه القلب وفقا لموقع
+T1621: مزارع رسائل المضايقه هي مجموعات احترافيه تعمل بشكل منسق علي نشر محتوي استفزازي غالبا علي شكل دعايه موجهه علي شبكات التواصل الاجتماعي
+T1622: كلنا شاهدنا السائل الوردي في أسفل العلبه عندما نشتري قطعه من اللحم المعلب أو الهامبرغر المعلب أو مجموعه من شرائح اللحم المعلبه رد الفعل الأول للمستهلك أن يفترض أنه دم وهو بالفعل يشبه الدم ويوجد في اللحوم النيئه
+T1623: إذن فهم المقصرون
+T1624: تشكيله الاتحاد امام الفتح التوقيت م مكه
+T1625: تشكيله الفريقين الهلال الشباب
+T1626: كيف تصبح مطور تطبيقات أندرويد إليك هذه النصائح من إم آي تي تكنولوجي ريفيو العربيه
+T1627: منها البطيخ والتوت أطعمه للسيطره علي سكر الدم
+T1628: ومن شد علي يدك في الوقت الذي افلتها الجميع شد عليه بقلبك
+T1629: الجيش البريطاني يدق ناقوس خطر قال قائد الجيش البريطاني إن بلاده وحلفاءها يواجهون لحظه بعد اندلاع الحرب الروسيه الأوكرانيه فقد صرح الجنرال باتريك ساندرز أنه يجب فعل كل ما هو ممكن لتفادي حرب عالميه ثالثه وكان ساندرز تولي منصبه في مايو الماضي وكانت أول
+T1630: وصول تحديثات شهر أغسطس الأمنيه لهاتف
+T1631: المربع نت انطلاق هوندا سيفيك هاتشباك الجديده بلغه تصميم مشتركه مع نسخه السيدان ومواصفات داخليه تشمل شاشه أو بوصه لنظام المعلومات الترفيهيه ولوحه عدادات رقميه أو إنش وستتوفر السياره بمحرك لتر سلندر بقوه حصان وعزم نيوتن متر المربع نت هوندا
+T1632: العراق عمليه أمنيه للقضاء علي داعش
+T1633: قال أبو ريره رضي الله عنه إذا مات الميت قالت الملائكه ما قدم ويقول الناس ما ترك الزهد لأبي داود السجستاني
+T1634: بعد أكثر من حادث إطلاق نار جماعي منذ بدايه العام مظاهرات حاشده في أميركا رفضا لحمل السلاح و بايدن للكونغرس افعلوا شيئا
+T1635: تسريب جديد يؤكد قدوم بمعالج سنابدراجون
+T1636: الداخليه المصريه مقتل من حركه حسم وإصابه ضابط في اشتباكات مع الشرطه مصر
+T1637: موسكو الباحثه في العلاقات الدوليه لانا بدفان روسيا كانت تتوقع فرض عقوبات أوروبيه علي قطاع النفط لكن الغاز غير المعادله
+T1638: أودي السعوديه تتيح خدمه جديده لزبائنها   سيارات أودي
+T1639: لا تتألم لمن تغيرو عليك فقد تغيرو لانك اشبعتهم حبا حتي اكتفوا فلسفه تزعجني بقدر صدقها
+T1640: وزاره التعليم في السعوديه تبدأ إعداد خطه مرحليه للتحول الي المناهج الرقميه بدءا من العام المقبل حيث يواصل فريق التطوير الإستراتيجي جهوده للتحول إلي المناهج الرقميه واستبدال الكتب الورقيه بالاجهزه الذكيه وفق خطه تبدأ من العام الدراسي المقبل وزاره التعليم
+T1641: ارتفاع أرباح علم الفصليه ب إلي مليون ريال
+T1642: في يوم من الأيام سيتخلي عنك الجميع ويأتي رسول يشفع لك فلا تنسي الصلاه عليه
+T1643: كشفت الأبحاث أن المراهقين الذين يقضون المزيد من الوقت علي الوسائط الرقميه هم أكثر عرضه للإحباط والاكتئاب لماذا ترتفع معدلات الاكتئاب بسرعه كبيره بين المراهقات
+T1644: كيف تساهم شركات التكنولوجيا في تشكيل مستقبل الرعايه الصحيه بقلم ملاك عابد الثقفي
+T1645: شاركونا في التعليقات المربع نت سيارات
+T1646: تشواميني بقميص ناديه الجديد ريال مدريد
+T1647: الاتحاد ينتظر خدمه الفيصلي للاقتراب من اللقب الغائب
+T1648: تقرير أبرز معلومات عن قانون نزع ملكيه العقارات للمنفعه العامه ب دبي
+T1649: شركه تطلق قرص الألعاب الصلب ذو المكونات الطرفيه للربط السريع
+T1650: من أذكار الصباح

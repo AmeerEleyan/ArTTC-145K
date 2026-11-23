@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0351 to T0400.
+- Each line has the form ID,Category (for example: T0351,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0351 to T0400):
+T0351: متي تتوقعون أن تصدر تسلا الطرازين الجديدين من سيارتي إس وإكس   تيسلا تيسلا إس تيسلا إكس
+T0352: مدير عام إداره المشاريع البحريه والمباني والبنيه التحتيه في أرامكو السعوديه ل الشرق الشركه ستطرح مشروعا متنوعا بين مشاريع النفط والغاز والبنيه التحتيه وفي المقاولات والإنشاءات والمشاريع اللوجستيه
+T0353: كوزمين مدربا للشارقه الاماراتي
+T0354: أخبار عرب هاردوير كشف وزير الحج والعمره السعودي الدكتور توفيق الربيعه عن إطلاق خدمه إلكترونيه للتقديم علي العمره بعيدا عن الوسطاء ويمكن التقديم عليها من خارج السعوديه وذكر إن تأشيره الزياره للعمره تصدر خلال ساعه وتم تمديد فترتها من شهر إلي أشهر دون قيود علي المعتمرين
+T0355: صوره قديمه ل رولز رويس في جده عام المربع نت رولزرويس تاريخ جده
+T0356: مليار دولار قيمه صادرات مصر البتروليه خلال عام
+T0357: أطلقت الهند التي لديها ثاني أكبر عدد من حالات الإصابه بكوفيد في العالم واحده من أكثر حملات التطعيم طموحا في آسيا وذلك بهدف تلقيح مليون شخص بحلول أغسطس ولتحقيق ذلك تستخدم الحكومه نظاما يسمي كو وين لإداره اللقاح فما هو هذا النظام وهل ينجح
+T0358: آبل تهيمن علي سوق سماعات الأذن اللاسلكيه الحقيقيه في العام بفارق كبير عن أقرب منافسيها
+T0359: أكثر ما يجعل السجائر التقليديه خطره ليس النيكوتين بل دخان هذه السجائر ما هو تأثير السجائر الإلكترونيه علي الرئتين
+T0360: لا يليق بالفاضل أن يقطع صلته و رحمه الشعراوي اللهم وانت صاحب الفضل الاعظم والرحمه الواسعه لا تقطع عنا فضلك ورحمتك لسوء ما عندنا وتقصيرنا ساعه استجابه رمضان الجمعه
+T0361: اشترت شركه صافولا للوجبات الخفيفه كامل أصول الشركه المصريه البلجيكيه للاستثمارات الصناعيه بقيمه مليون جنيه تعرف علي استثمارات المجموعه في مصر من وليد فطاني الرئيس التنفيذي لمجموعه صافولا
+T0362: بالفيديو تعرفي علي الطريقه الأفضل لتقطيع الكيك
+T0363: من فوائد زيت السمسم يخلص الجسم من السموم مناسب لمرضي الضغط المرتفع يمنع إنتشار خلايا السرطان في الجسم
+T0364: قاعده عجلات اطول من الجيل السابق ب سم و وهي منصه كذلك اخف وزن ب كغ عن الجيل السابق الخلفيه اقصر ب سم طول السياره اجمالا لم يتغير عن الجيل الحالي
+T0365: رئيس مركز العلاجات المناعيه في جامعه جورج تاون سمير خليف طفرات الفيروسات تحدث بشكل عشوائي ومستمر والتحورات قد تقلل من انتشار كورونا
+T0366: ميزان المدفوعات المصري يحقق فائضا ب مليون دولار خلال أشهر بالكامل
+T0367: سامسونج أعلنت عن تجاوز مبيعات تلفازها من فئه لأكثر من مليوني جهاز منذ الجهاز ذو التصميم المميز تمكن من بيع مليون وحده في فقط في قفزه كبيره لمبيعات هذه الفئه
+T0368: ساندويش السجق بالبصل وصفه سهله لذيذه وسريعه التحضير جربيها اليوم
+T0369: خالص العزاء لفضيله الشيخ أ د أيمن سويد في وفاه والدته أسأل الله تعالي أن يغفر لها ويرحمها رحمه واسعه ويسكنها الفردوس الأعلي في صحبه الحبيب المصطفي
+T0370: له طعم منعش ولا أطيب منه
+T0371: نصف نهائي دوري ابطال آسيا الهلال السعودي النصر السعودي اولسان الكوري بوهانغ الكوري
+T0372: أرسل الله محمد رحمه للعالمين ومن الرحمه أن من صلي عليه صلاه واحده صلي الله عليه بها عشرا اللهم صل وسلم علي نبينا محمد يوم الجمعه
+T0373: المربع نت حافظت كاديلاك اسكاليد علي تفوقها في مبيعات فئه الإس يو في الفاخره في الولايات المتحده لتسجل نسخه خلال الربع الأول من العام بينما باعت بي إم دبليو نسخه من موديل إكس وباعت مرسيدس نسخه من جي إل إس وباعت لينكون نسخه من نافيجيتور
+T0374: تخطط شركه آبل لدعم هاتف العام المقبل بتصميم يحاكي هاتف لكن بحجم أصغر وسعر أقل
+T0375: أصبح كيليان مبابي ثاني لاعب يسجل هدفا قبل بلوغه عاما في الدوريات ال الكبري خلال آخر عاما بعد راؤول غونزاليس
+T0376: التعاون يفرط في تقدمه ويخسر من الدحيل في الوقت القاتل
+T0377: خلص تقرير صحافي نشرته الغارديان البريطانيه إلي أن الاقتصاد العالمي يشهد جمله من التغيرات الجوهريه التي ستؤدي إلي تحول جذري وكبير في مساره وذلك بعد عامين من الفوضي الكبيره التي شهدها الاقتصاد
+T0378: الإعلان رسميا عن السماعات اللاسلكيه مع تصميم مقاوم للماء
+T0379: نحن نتقابل مع الناس كل لحظه ولكننا لا نتقابل مع أنفسنا إلا نادرا
+T0380: التقي ليفربول مع بنفيكا مرات في المسابقات الأوروبيه انتصر في منها مقابل للنادي البرتغالي ليفربول خسر آخر مباريات أمام بنفيكا في البرتغال وآخرها موسم في الدوري الأوروبي دوري أبطال أوروبا
+T0381: منتخب مصر الي نصف نهائي اولمبياد اليد
+T0382: اليمن مقتل وجرح أكثر من ألفي مدني بالألغام التي زرعتها الميليشيات الحوثيه في تعز
+T0383: بعد مضي أول أسبوع من رمضان إلي أين تتجه أسواق الأسهم
+T0384: نصف المكاتب العائليه التي تتعامل مع غولدمان ساكس تريد إضافه عملات رقميه إلي مجموعه استثماراتها التفاصيل
+T0385: نهايه المباراه المثيره بالتعادل بين الفتح و الاتحاد بنتيجه بيتروس البريكان بن دبكه رومارينهو كورنادو حمدالله
+T0386: التبرع بالدم صحه لك ولهم تعرف علي أهم الاستعدادات قبل التبرع بالدم
+T0387: من المتوقع أن يواجه بعض أكبر مديري الاصول في العالم قيودا جديده علي سداد فوائد السندات الحكوميه الروسيه المقومه بالروبل مع مذيع الشرق محمد فتحي
+T0388: دي ماريا يضع وشم بطوله الكوبا
+T0389: هكذا تقيس تدفق الدم لديك بهاتفك الذكي
+T0390: كالفين فيليبس أنا سعيد بالانضمام إلي مانشسترسيتي السيتي أثبت مره أخري أنه أفضل فريق في انجلترا بتشكيله رائعه ومع مدربه بيب جوارديولا الذي يعتبر الأفضل في العالم
+T0391: شاومي تطلق جهاز في الصين معالج الرام التخزين دعم دعم أصوات و مدخل سعر الجهاز دولار
+T0392: الهاتف سيصل قريبا مع ماسح ضوئي ثلاثي الأبعاد
+T0393: السناتور تشاك شومر زعيم الديمقراطيين في مجلس الشيوخ الأمريكي سنضيف بنودا إلي حزمه مساعدات بقيمه مليار دولار ل أوكرانيا للسماح للولايات المتحده بمصادره أصول مملوكه لمقربين من الرئيس الروسي فلاديمير بوتين وإرسال العائد من أموال بيعها مباشره إلي أوكرانيا
+T0394: أطعمه تحميك من النوبات القلبيه
+T0395: قراءه في تطورات أسواق الغاز لا سيما تداعيات قطع الغاز الروسي عن أوروبا مع ضيف  طارق الرفاعي حاروته
+T0396: ناشطون ليبيون ينقلون عبر الحدث مطالب الشارع الليبي الثائر ليبيا
+T0397: تقارير صحفيه تتحدث عن تطور كبير في مجال صناعه الطائرات المقاتله بدون طيار
+T0398: صوره مسربه تستعرض لنا الهاتف ذو الكاميرا ذات التقريب البالغ
+T0399: حضري معكرونه باللبن علي طريقه عضوه مطبخ سيدتي ارسلوا لنا وصفاتكم الشهيه وسنقوم بنشرها علي موقع مطبخ سيدتي اطبخ بالبيت
+T0400: يتوقع محللون أن يقرر البنك المركزي المصري رفع أسعار الفائده في اجتماع الخميس كم النسبه التي تتوقعها

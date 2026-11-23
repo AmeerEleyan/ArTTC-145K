@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1251 to T1300.
+- Each line has the form ID,Category (for example: T1251,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1251 to T1300):
+T1251: أراوخو مدافع برشلونه ينهمر في البكاء أثناء توقيع عقده الجديد مع الفريق
+T1252: هدف التعادل لليفربول عن طريق جوتا
+T1253: توخيل قبل مواجهه إيفرتون لامبارد سيظل أسطوره تشيلسي
+T1254: تسريب مواصفات كاميرا وستلتقط فيديوهات بمعدل إطار في الثانيه
+T1255: قبل نشر آينشتاين للنسبيه الخاصه سنه كان الزمن مطلقا لا يعتمد علي سرعه أو موضع المراقب الذي يقيسه وكأن هناك ساعه كونيه مطلقه تحدد الزمن في الكون ككل لكن أحد اغرب نتائج آينشتاين هي اكتشافه أن الزمن لسبب ما يختلف باختلاف المراقبين
+T1256: معاينه سريعه لجهاز المحمول
+T1257: تطبيق يحصل علي دفعه جديده من الميزات
+T1258: تحاول التخلص من وزنك الزائد تفشل في كل مره انتبه سببا خفيا يمنعك من التخلص من الوزن الزائد
+T1259: البرلمان العربي يطالب بالالتزام باتفاق الرياض وتوحيد صفوف اليمنيين لمواجهه انقلاب الحوثي
+T1260: السعوديه علي وشك شراء حصه مليار ريال من مكلارين للتفاصيل
+T1261: لو تكرر الذنب مائه مره أو ألف مره أو أكثر وتاب في كل مره قبلت توبته وسقطت ذنوبه شرح مسلم للإمام النووي
+T1262: متي كانت آخر مره تصفحتم فيها جريده ورقيه شاركونا باستطلاع النشره الصباحيه
+T1263: من خطف العروس الي تبادل الزوجات تعرف علي اغرب الممارسات الجنسيه من ثقافات مختلفه حول العالم
+T1264: يقول اختصاصيو الخصوبه بهيئه الإخصاب البشري والأجنه إن تجميد النساء للبويضات في سن صغير يوفر فرصه أفضل لإنجاب طفل لجوده البويضات لذا من المرجح أن تؤدي للحمل عندما تستخدمها النساء بالتلقيح الاصطناعي في وقت لاحق بينما بويضات فوق الأربعين تكون رديئه الجوده
+T1265: نادي ميلان متصدر الدوري الايطالي
+T1266: بعد تهديد واضح من شركه أبل هيونداي تعيد صياغه البيان المتعلق بالسياره الكهربائيه الجديده   سيارات هيونداي أبل
+T1267: مكلارين تكشف عن ارتورا بلاتينيوم بنسخه واحده مميزه كهديه لملكه بريطانيا اليزابيث الثانيه بمناسبه مرور سنه علي استلامها الحكم اخبار
+T1268: شكرا لكل من شارك في هاشتاق التوحيد اولا كتب الله أجركم وبارك فيما كتبتم فقد قمتم بأشرف الأعمال وأعظمها فالدعوه إلي التوحيد هي مهمه الأنبياء والمرسلين عليهم الصلاه والسلام
+T1269: مراسله الحدث راغده بهنام القضيه الأوكرانيه علي رأس نقاشات قاده قمه مجموعه السبع في ألمانيا
+T1270: إليكم أهم الألعاب التي جاءت في حدث لعبه تجربه أكشن من منظور الشخص الأول تعتمد علي اللعب التعاوني وبناء مستوطنتك الخاصه بالإضافه لتقديم بعض الشخصيات ذات الخصائص المميزه والتي تساعدك في مواجهه الأعداء الأكثر صعوبه اللعبه قيد التطوير للحاسب الشخصي
+T1271: والي ولايه غرب دارفور خميس أبكر يطالب السلطه المركزيه في الخرطوم بالكشف عن الطرف الثالث الذي يؤجج الصراع في الولايه السودان
+T1272: فيديو روبوت مستوحي من النسر يرفرف بجناحيه المغطاه بالريش فما هي مهمته
+T1273: التأمينات السعوديه مليار ريال مصروفات المنافع التأمينيه خلال يناير
+T1274: شركه تشوق لحدث الكشف عن سلسله هواتف في سبتمبر القادم
+T1275: تريدين أطفالك أن يحبوا السبانخ جربي وصفه بوراني السبانخ وصفات الأكل طبخات
+T1276: فول مدمس بصلصه الدقوس الحاره نقدم لك من مطبخ سيدتي أشهي وصفات الفطور الصباحي الشهيه من وصفات الفول المدمس الحار صباح الخير
+T1277: ليس لي ولي غير الله فالولي و القريب الذي ينصر الإنسان في ضعفه وإن استصرخه جاء لينقذه الحمدلله الشعراوي
+T1278: الخبير في الشؤون الأوروربيه والسياسه الخارجيه بيتر كليبي هناك انقسام بين الأغلبيه في البرلمان البلجيكي إزاء معاهده تبادل السجناء بين بلجيكا و إيران
+T1279: مصر إحاله المتهم بقتل الطالبه نيره أشرف في المنصوره لمحكمه الجنايات
+T1280: الشخص الذي يتسم بالحلم والثبات الانفعالي ويملك نفسه في مواقف الشده وعند الغضب هو أسعد انسان في العالم لأنه يملك أهم أركان القوه النفسيه
+T1281: خطط روسيا لمواصله اجتياح أوكرانيا تواجه تكلفه مرتفعه بوتيره متسارعه بسبب التأخير الناجم عن مقاومه أقوي من المتوقع من قبل القوات الأوكرانيه روسيا وأوكرانيا
+T1282: تشكيله الفريقين يوفنتوس فياريال التوقيت م مكه
+T1283: هكذا أعلن نادي الفتح عن تشكيله الفريق ضد الهلال
+T1284: نادي الهلال هو أول فريق يتوج بالدوري السعودي للمحترفين ل مواسم متتاليه الهلال الفيصلي
+T1285: أميركا عبوات تفاح محفوظه وراء الإصابه ببكتيريا قاتله
+T1286: وصلت أفينتادور إس إلي علامه فارقه ببيعها سياره   سيارات لامبورجيني
+T1287: قال شيخ الإسلام رحمه الله لا ريب أن في النساء من و أعقل من كثير من الرجال الفتاوي
+T1288: بورشه تجري تحديثات علي بعد ما يقرب من عاما علي إنتاجها   سيارات بورشه بورشه
+T1289: مليون سعودي مصابون أو مهددون بالسكري والضغط
+T1290: مدير فورد السابق يشيد بلكزس أل أس
+T1291: وما كان الله معذبهم وهم يستغفرون قال الحسن البصري لاأظن أن الله يعذب رجلا استغفر فقيل لماذا قال كيف يلهمه الاستغفار ويريد به أذي
+T1292: عشر نصائح لتوفير استهلاك الوقود أثناء قياده السياره
+T1293: اختطاف تونسيين في مدينه الزاويه الليبيه
+T1294: إذا كنت تعاني من إفراط تناول الطعام وتريد التخلص منه تابع المقال التالي طرق بسيطه لوقف الإفراط في تناول الطعام
+T1295: ليس حبا ذلك الذي كل هدفه الامتلاك ولكن الحب هو المشاركه في الميول والرغبات والإحساس بأن ذات من تحبه لا تقل أهميه عن ذاتك
+T1296: قال عبد الله ابن عون رحمه الل يا إخوتاه أوصيكم بثلاث قراءه القرآن ولزوم السنه والكف عن الناس تاريخ دمشق
+T1297: قيل لابن عباس غلا السعر قال أرخصوه قال كيف قال لا تشتروا قاعده عظيمه في التجاره
+T1298: إن كنت من مستخدمي أجهزه أبل فعليك تحديث أنظمه التشغيل حالا لتمنع أي هجمات سيبرانيه عليك وهذا حسب طلب شركه أبل نفسها إليك هذا الدليل لخطوات التحديث
+T1299: غالبا أنت مأهول بالسكان والأسماء و الحيوات بما تختزله من ذكريات هينه وأخري لاسعه غالبا أنت الكره الأرضيه يعيش فيك العالم خياله المجنح
+T1300: بورصه الكويت تلزم الشركات المدرجه بقوائم للأشخاص المطلعين

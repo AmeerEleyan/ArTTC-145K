@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1051 to T1100.
+- Each line has the form ID,Category (for example: T1051,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1051 to T1100):
+T1051: ألمانيا تحذر من تصعيد عسكري وإيران تخشي الغزو
+T1052: مانشستر يونايتد لم يعد الفريق الإنجليزي الوحيد المهتم بالتعاقد مع دي يونغ تشيلسي يراقب وضع الهولندي مع برشلونه
+T1053: عرض تمويل سانج يونج ريكستون بدون دفعه أولي أو رسوم إداريه للتفاصيل
+T1054: تجربتنا للغه العربيه و اللهجه الخليجيه مع المساعد الصوتي أليكسا
+T1055: عاجل آبل تخطط إستبدال معالجات اجهزه الماك من شركه إنتل بمعالجاتها الخاصه وتطور حاليا علي الاقل معالجات للماك والمعالج الأول بيكون مبني علي معالج واللي بيتوفر في الآيفون القادم مع تقنيات اضافيه للحمايه وال ومعالجه الرسوميات والإعلان الرسمي في يونيو في مؤتمر
+T1056: نفسيا نحتاج لشخص يكون المحتوي و لكن حين نخذل ف أي علاج يخرجنا فلسفه
+T1057: كل ما هو معقول هو حقيقي وكل ما هو حقيقي هو معقول جي دبليو إف هيجل
+T1058: رومانو لدي ماريو جوتزه ثلاثه أنديه تريد التعاقد معه بنفيكا فرانكفورت إنتر ميامي
+T1059: اللهم إني أستودعك اهلي ووالدي واحبتي وجميع ما أنعمت علي في مكان غابت عنه عيني وعينك لم تغب فاحفظنا حفظا يليق بعظمتك فأنت خير الحافظين إداره الحساب الجمعه
+T1060: مكن تطبخي إيه بلحم الحمل برجر ومناقيش وشوربه تعرفي علي أشهي وصفات لحم الحمل الحياه حلوه
+T1061: يبدو أن التكنولوجيات الناشئه مثل الشرائح التي تزرع في الدماغ والنظارات الذكيه في طريقها لاستبدال الهواتف الذكيه آجلا ليس عاجلا
+T1062: تقول أنك تحب الأزهار ثم تقطفها تقول بأنك تحب الكلاب ثم تضع حبلا حول عنقها يقودها تقول بأنك تحب الطيور ثم تسجنها في قفص تقول بأنك تحبني حينها أخاف جان كوكتو
+T1063: إن الله وملائكته يصلون علي النبي يا أيها الذين آمنوا تسليما المولد النبوي الشريف
+T1064: اهدنا الصراط المستقيم أنت بحاجه إلي هذا الدعاء في كل وقت ولهذا تكرر في الصلاه في كل ركعه بحاجه إلي الهدايه في العقائد والأخلاق والآداب وكل شؤون الحياه الزم هذا الدعاء وتدبره
+T1065: ما سبب ألم الأسنان المفاجئ حال احتساء كوب من القهوه الساخنه أو شراب شديد البروه مقال نون
+T1066: الإحسان بأجمل صوره فقد هذا الفيل قدمه وتم تركيب قدم إصطناعيه له إحسان
+T1067: تهدف شركه زيرو ماس إلي استخدام طرق مستدامه لإنتاج مياه الشرب و الماء اللازم للإنتاج الزراعي عبر انتزاع بخار الماء في الهواء بالاعتماد علي الطاقه الشمسيه
+T1068: عمل الطبيب لساعات طويله يجعله في وضعيه السكران ويهدد حياه المرضي
+T1069: تعرفي علي رجيم الزبادي والليمون لنسف الدهون في منطقه البطن خليك بالبيت مجله الجميله رجيم دايت
+T1070: تعرف علي الخطوات الصحيحه لإزاله بطاريه السياره
+T1071: دودج ماقنوم الجيل الاول و الجيل الاخير الجيل الاخير كان عباره عن كرايسلر دودج تشارجر و لكن بتصميم واقن او بكس رغم ان ال كانت تقدم واجن في اوروبا لكن ماقنوم لم تباع في اوروبا و العكس صحيح دودج كرايزلر
+T1072: لايبزيغ يهزم فرايبورغ ويتوج ب كأس ألمانيا للمره الأولي في تاريخه
+T1073: وزاره الخارجيه الروسيه قالت إن الوزير سيرغي لافروف أبلغ الأمين العام للأمم المتحده بأن بلاده مستعده لتنسيق الجهود لخفض مخاطر حدوث أزمه غذاء عالميه وأن موسكو ملتزمه بالوفاء بشحنات الحبوب والأسمده التي تصدرها
+T1074: أن تحب أحدهم هو أن تمرر أصابعك بخفه خلال روحه حتي تجد الجرح الأكبر فيها وبرفق تسكب حبك في هذا الجرح كيث ميللر
+T1075: هل تحب معرفه قصص تأسيس شركات السيارات   سيارات قصص
+T1076: أمراض جلديه تنتشر في الشتاء منها التينيا
+T1077: جربي مع مطبخ سيدتي مذاق أشهي وصفات المقبلات الساخنه من الشوربات اللذيذه تعلمي طريقه العمل السهله بطعم الكريمه الغنيه وقدمي الشوربه بجانب الأطباق الرئيسيه المفضله للعائله
+T1078: دراسه أميركيه ارتفاع انبعاثات ثاني أكسيد الكربون يقلل قدره الإنسان علي اتخاذ القرار والتفكير المعقد  أن تعرف أكثر  بالشكل الجديد
+T1079: عالم الأوبئه الأميركي بيتر هوتيز يحذر سيكون هناك كوفيد وكوفيد ما لم نفهم تماما أصول كوفيد
+T1080: بكم تعبي الجينيسس تانكي لتر شوف الفيديو
+T1081: اتفاق علي لجنه أفريقيه دوليه ولا إجراءات أحاديه هل تنفرج أزمه سد النهضه  كورونا
+T1082: عباقره الإسلام الأربعه يشيدون بالإمام البخاري وصحيحه عائض القرني
+T1083: البطاطس بالبشاميل من الوصفات التي نفضلها جميعا كما أنها خفيفه ولذيذه وسهله المضغ لأطفالك الصغار جربيها مع مطبخ سيدتي وتمتعي بمذاق ولا أحلي
+T1084: بقيت لامبورغيني ودوكاتي في عائله مجموعه فولكس واجن وستتولي أودي المسؤوليات الإداريه لشركه بنتلي اعتبارا من مارس   فولكس واجن بنتلي أودي لامبورغيني دوكاتي
+T1085: تخطط العملاق الكوري سامسونج لدعم هواتف و القادمه بمعالج الذي يرتكز علي كرت شاشه
+T1086: وشاشه واسعه تغطي لوحه القياده بالكامل وتدعم الواقع المعزز مع نظام قياده ذاتيه بالكامل
+T1087: كوني متجدده دائما وقدمي علي سفرتك اليوم الكبسه مع كرات اللحم الشهيه
+T1088: لا تنس الفقراء والمساكين أجعله عيدا سعيدا لهم وأدخل عليهم الفرح والسرور عيدكم مبارك
+T1089: نقدم لك ست وصفات طبيعيه سهله التحضير للحصول علي أظافر بيضاء وصحيه
+T1090: حضر ألذ الأطباق علي وجبه الإفطار مع البوريتو المكسيكي علي أصوله بأسهل الخطوات لتبهر بها الجميع
+T1091: هل ينهي عام عصر نتفليكس الذهبي
+T1092: شكرا لمعالي وزير الأوقاف الأخ عيسي الكندري وجميع الجهات التي شاركت وساهمت في نجاح المؤتمر الافتراضي للتطبيقات القرآنيه والحديثيه التطبيقات القرآنيه والحديثيه
+T1093: كوب من الينسون الدافئ يساعد المصابين بالبرد علي تخفيف حده الأعراض كما يساعد علي طرد البلغم
+T1094: صلاح يودع ماني سأفتقدك
+T1095: تصفيات كاس العالم الامارات سوريا م ابوظبي اسيا تعليق علي الكعبي
+T1096: تطبيق يعلن عن إضافه وضع التركيز لمنع الطلاب من تشتيت تركيز بعضهم البعض حيث سيعمل هذا الوضع علي حجب صور وبث بقيه الطلاب والتركيز علي كاميرا الطالب والمدرس فقط لتجنب تشتيت انتباه الطالب في نفس الوقت سيتمكن المدرس من رؤيه جميع الطلاب في نفس الوقت بدون أي تغيير
+T1097: قد يحطم النمو الاقتصادي البنوك المركزيه في اختبار صعب أمام معدلات التضخم المرتفعه
+T1098: قدميها بجانب الأرز الأبيض المسلوق وزينيها بالليمون المشوي
+T1099: تعتبر الرضاعه الطبيعيه من أهم العوامل التي تساعد في بناء جسم الطفل الرضيع وتقويه جهازه المناعي لكن ما هو أفضل وقت للفطام ومتي يجب تأجيله إليك إجابات تلك الأسئله بالمقال التالي صحتك حياتك
+T1100: تشكيله الكويت امام السعوديه التوقيت م مكه

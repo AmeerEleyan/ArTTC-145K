@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0601 to T0650.
+- Each line has the form ID,Category (for example: T0601,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0601 to T0650):
+T0601: خرج عدد من المتقاعدين إلي الشوارع مره أخري في مدن مختلفه للاحتجاج ضد الأوضاع الاقتصاديه في إيران
+T0602: الاتحاد الأوروبي سيقر عقوبات ضد روسيا علي خلفيه اعترافها بمنطقتين انفصاليتين في أوكرانيا ونشرها المزيد من القوات علي أراضي جارتها
+T0603: منظمه الأقطار  المصدره للبترول أوابك تتوقع استمرار نمو صادرات أمريكا من الغاز لتصبح أكبر مصدر في العالم في
+T0604: هل تعرفون كيف يتسلل فيروس كورونا إلي الرئتين تابعو هذا المقال في اختراق علمي جديد رئات اصطناعيه تكشف كيفيه تسلل فيروس كورونا إلي الرئتين  العلميه  وباء
+T0605: لطالما أخذنا صور حيوانات ما قبل التاريخ الموضحه في كتب طفولتنا كأمر مسلم به نوعا ما لكن تجميع قطع الماضي الغامض للأرض أصعب بكثير مما يبدو عليه
+T0606: الخلايا العظميه ودورها في تقويم الأسنان مقال نون يعرض لك الموضوع
+T0607: قال النبي أول ما يسأل عنه العبديوم القيامه من النعيم أن يقال له ألم نصح لك جسمك ونرويك من الماءالبارد الترمذي وصححه الألباني الصحيحه
+T0608: الهلال يفوز علي الاتحاد بثلاثه أهداف مقابل هدف في الدوري السعودي للمحترفين
+T0609: حضريها إالي جانب الأرز بالشعيريه
+T0610: آبل تخسر الإستئناف وهي مطالبه الآن بدفع مليون دولار بسبب إنتهاك براءات الإختراع
+T0611: قال ابن عثيمين رحمه الله إذا شرب المريض الدواء في رمضان بعد طلوع الفجر فإن صيامه ذا غير صحيح ولا يحل للمريض أن يتناول دواء وهو صائم في رمضان إلا عند الضروره مجموع الفتاوي
+T0612: تاسي يرتفع وسط تباين قطاعاته الكبري وصفقات اس تي سي تقفز بالسيوله
+T0613: لماذا تشير أصابع الاتهام إلي الصين في تفشي كورونا
+T0614: تشكيله الفريقين الجزيره مومباي التوقيت م مكه
+T0615: احدث اجهزه أسوس المحموله والموجهه لصناع المحتوي
+T0616: نهايه المباراه الفتح التعاون الفتح التعاون
+T0617: اللهم إنا نسألك باسمك المعظم المطهر المبارك المقدس الاسم الأعظم الحي القيوم ذو الجلال والإكرام الاسم الذي إذا سئلت به أعطيت وإذا دعيت به أجبت أن تعفو عنا وتغفر لنا وترحمنا وأن تشرح صدورنا وتيسر أمورنا وتصلي وتسلم علي نبيك محمد ساعه استجابه يوم الجمعه يوم عرفه
+T0618: أشارت العديد من الدراسات إلي أن استهلاك الكرز مفيد لمرضي هشاشه العظام وقد يساعد دمج الفاكهه أو عصيرها بانتظام في وجبتك أو روتين الوجبات الخفيفه في تخفيف آلام المفاصل
+T0619: مراسل الحدث في فرنسا فادي دهوك السلطات تراقب الوضع عن كثب بعد تسجيل أول إصابه ب جدري القرود
+T0620: عقوبات أمريكيه علي قاده المليشيات العراقيه المرتبطه بإيران
+T0621: معالج رسوميات بقوه جهاز مايكروسوفت المنزلي الاكس بوكس ون اس موتمر ابل
+T0622: هذا التفسير للداله الموجيه ليس هو التفسير المعتمد لأن أساس مبدأ عدم اليقين لهايزنبرغ وما يسمي الذي تم اختباره تجريبيا وكذلك أساس التفسيرات الفيزيائيه التي جعلت من ميكانيكا الكم نظريه صحيحه كتفسير الروابط التساهميه بين الجزيئات استقرار ذره الهيدروجين
+T0623: اشياء لصحتك لا تتركها ما دمت حيا فضلها بتفيدك
+T0624: حالات تسمم ووفاه وسط تحذيرات من أكلها ماهي سمكه الأرنب وأين تتواجد ولماذا يجب أن تتجنب أكلها صحه مصر ترند متداول سمكه سمكه سامه النفيخه تحذير مصر
+T0625: صفعه الخذلان تأتي بلا مقدمات
+T0626: انزاغي مورينهو في لقاء الانتر روما
+T0627: عاااجل الرياضيه إداره الاهلي رفضت مليون من الهلال لشراء المده المتبقيه من عقد محمد العويس والمفاوضات مستمره
+T0628: أنت تعلم أنك سوف تقول في آخر شهر رمضان ما أسرعه سوف نفتقده ليته كان أطول لم نشبع منه ليتني اجتهدت أكثر إلخ أنت الآن تعيش هذه الأمنيه التي ستقولها آخر الشهر فأخرج أحسن ما عندك لكي لا تحتاج إلي الأماني
+T0629: بعدما قالت إنها ستوقف مبيعاتها في المستوطنات اليهوديه بالضفه الغربيه يونيليفر تبيع أعمالها التجاريه الخاصه ب بن آند جيري في إسرائيل
+T0630: منها الإنفلونزا الإسبانيه كورونا ليس أول وباء يقضي علي البشريه تعرفو عبر هذا المقال علي بعض ألأوبئه التي قضت علي الملاين منذ فجر التاريخ إلي عصر الكورونا أخطر الأوبئه الي كادت تقضي علي البشريه كورونا فيروس
+T0631: كب كيك صحي ولذيذ شاركي أطفالك في المنزل بتحضير كب كيك بالموز واجعليهم يتلذذوا بطعمه الشهي وقوامه الهش
+T0632: لتكون أسعد الناس امض كأنك لم تسمع اصمت كأنك لم تف م تجاهل كأنك لم تري وانسي كأنك لم تذكر فبذلك ستعيش مرتاحا رحم الله من تغافل وستر الزله لأجل بقاء الود ودوام المحبه
+T0633: الخضروات أنواع وأشكال مختلفه وحتي لا نحتار بين كل هذه الأنواع دعونا نتعرف علي الخضروات الأكثر فائده لصحه الإنسان للتفاصيل   خضروات
+T0634: أحبب من شئت وابغض من شئت لمن إياك ان تظلم الناس لمن أحببت او ان تظلم من أبغضت الشعراوي
+T0635: نصائح طبخ الأرز بالطريقه المثاليه
+T0636: مؤسس ورئيس مجلس إداره داماك العقاريه الإماراتيه حسين سجواني ل الشرق نخطط لتوسعات بالقطاع العقاري في دبي خلال الفتره القادمه وكذلك في استثماراتنا بشركات الأسهم الخاصه بالولايات المتحده
+T0637: في بدايه أي العلاقه تظهر المشاعر وفي نهايتها تظهر الأخلاق نجيب محفوظ
+T0638: وتولني فيمن توليت كررها في دعائك متيقنا بمعناها فإذا تولاك الله سخر لك كل شيء ولو كان في نظرك مستحيلا
+T0639: ما هي أكثر وصفه بالبشاميل مألوفه لديك في المنزل مع مطبخ سيدتي ستتعلمين وصفات شهيه لا تقاوم بالبشاميل
+T0640: المؤشرات الحيويه في الدم تثبت الدور القوي للغذاء في داء السكري نمط
+T0641: هدف اليامي ضد طاجيكستان
+T0642: قدره القياده بمهاره كيف تكتسبها وما هي أساليبها
+T0643: قياس ضغط المريء هو اختبار يبين إذا ما كان المريء يعمل بشكل صحيح فلماذا يتم قياس ضغط المريء وما هي الحالات التي تستدعي هذا الإجراء اكتشف من هنا
+T0644: إذا وليت أمرا أو منصبا فأبعد عنك الأشرار فإن جميع عيوبهم منسوبه إليك سقراط فيلسوف اغريقي
+T0645: جبران خليل جبران
+T0646: ليس هناك شيء أقوي من الحق ولكن إذا كانت الشريعه في يد السلطه الظالمه تجعل الباطل أقوي منه مصطفي الرافعي
+T0647: جربي تحضيره في مطبخك وتلذذي بطعمه الرائع والمميز
+T0648: أمين عام غرفه المدينه المنوره ل الشرق أتوقع نمو المصانع في منطقه المدينه المنوره بعدد مصنع في والمحافظه علي نسبه نمو ونسبه توطين تتجاوز ال ونعمل علي مشروع ضخم جدا لإنشاء مركز شامل للتغليف والتصدير لخارج المملكه بالتعاون مع البنك الإسلامي
+T0649: ومضي رمضان رمضان رمضان رمضان رمضان إن أحسنت فزد وإن قصرت فعد وتذكر قوله أياما معدودات اللهم أعنا علي ذكرك وشكرك وحسن عبادتك
+T0650: يوم يبعثهم الله جميعا فينبئهم بما عملوا أحصاه الله ونسوه والله علي كل شيء شهيد المجادله

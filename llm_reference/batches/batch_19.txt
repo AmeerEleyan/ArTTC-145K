@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0901 to T0950.
+- Each line has the form ID,Category (for example: T0901,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0901 to T0950):
+T0901: تحركات دبلوماسيه مغربيه مكثفه قبل قمه مكافحه داعش
+T0902: أطفال لأبوين من نفس الجنس
+T0903: أعرف تماما ماذا يعني الخذلان من ذلك الشخص الذي وعدك كثيرا بأن يبقي معك دائما أعرف ما هو الانطفاء بعد كل هذا التوهج أعرف الهجران بعد كل هذا الحب أعرف مراره الكلمه بعد أن كانت ضمادا أعرف ما معني أن يصبح غريبا بعد ما كان مألوفا أعرف كثيرا
+T0904: تعرفوا علي المشروع السري وراء لكزس أل أس
+T0905: احتفال بورشه الأسطوري بعيدها السبعين مع مجموعه من سياراتها الأسطوريه
+T0906: مشكلتنا نحن البشر تكمن في تلك التصورات الذهنيه الخاطئه في ادمغتنا والتي تعيقنا وتصعب علينا ان نعيش حياه سعيده للغايه
+T0907: آفه النصح أن يكون جدالا وأذاه أن يكون جهارا أحمد شوقي
+T0908: هيونداي وكيا تعلنان عن بطاريه الحاله الصلبه بطاقه العوامل سينضم صانعو السيارات الكوريون إلي شركه في ماساتشوستس لتطويرها هيونداي
+T0909: أتي النبي صلي الله عليه وسلم رجل يشكو قسوه قلبه قال أتحب أن يلين قلبك وتدرك حاجتك ارحم اليتيم وامسح رأسه وأطعمه من طعامك يلن قلبك وتدرك حاجتك ساهم في ادخال الفرحه في نفوس الأيتام وتوزيع كسوه عيديات عليهم بمبلغ دنانير
+T0910: من اتخذ المنصب ربا اتخذه المنصب عبدا ومن وجه كل مه إلي مظاهر الأرض حرم توفيق السماء
+T0911: ملهم العالم اركب سفينته واتبع سنته والزم شريعته وأبشر بالفردوس الأعلي من الجنه
+T0912: يجب أن يكون لديك أهدافا ذات مدي بعيد حتي لا تحبطك الإخفاقات قصيره المدي
+T0913: للمره الأولي يتمكن الفلكيون من رصد المستعرات من لحظه ولادتها حتي مماتها ترجمه رياض شهاب تدقيق سميه المهدي مراجعه أكرم محيي الدين
+T0914: وفقا للصحفي جيانلوكا دي مارزيو إيفان بيرزيتش يقترب من صفوف توتنهام
+T0915: مقارنه بين اسعار تويوتا لاندكروزر وفرق السعر في السعوديه والإمارات والكويت
+T0916: حميه البحر الأبيض المتوسط الإعتماد علي الأسماك والخضروات والفواكه تقليل الدواجن مره بالأسبوع تجنب اللحوم الحمراء بشكل كبير تستخدم في علاج أمراض القلب ضغط الدم السكري
+T0917: هل يوجد اغذيه تساعد في الوقايه من الاصابه بمرض سرطان الثدي اليكم قائمه ب أطعمه يمكن اعتبارها كأغذيه خارقه في الحرب علي السرطان
+T0918: كيف يؤدي تدخينك لإصابه القريبين منك بالسكري لا نتكلم هنا عن التدخين السلبي التفاصيل
+T0919: تشيلسي يدرس إمكانيه التعاقد مع ناثان آكي لتعويض رحيل الثنائي أنطونيو روديغر وأندرياس كريستنسن المدافع الهولندي سبق وأن لعب لتشيلسي قبل أن يرحل إلي بورنموث ومنه إلي مانشستر سيتي
+T0920: تعلمت انه كلما خالطت الناس عرفت صورا غير مألوفه للأذي وأن استحقاق الإحترام أصعب من منحه وأن البشر تتبدل أهواءهم كما يتبدل الليل بالنهار وكلما ابتعدت عنهم عرفت نفسي
+T0921: تسريب فيديو لأسلوب لعب علي موقع
+T0922: إذا كنت تحاول التخلص من وزنك الزائد في رمضان في هذا المقال نقدم دليل شامل سيساعدك  رمضان كريم
+T0923: مساعد مدير منظمه الصحه العالميه حنان بلخي لقاحات في مرحله التجارب السريريه و من سكان العالم سيحصلون علي الطعوم حال اعتمادها
+T0924: وغربت شمس التون
+T0925: تشير الدراسات يوما بعد يوم علي أهميه البروكلي في الوقايه من الإصابه بالسرطان اجعليه دائم التواجد علي سفرتك وتمتعي بالصحه والعافيه
+T0926: اريد هذا الكتاب ولم اجده في اكثر مكتبات مسقط يا تري أين اجده افيدوني
+T0927: سوق دبي المالي يعلن عن إيقاف التداول علي أسهم بنك دبي التجاري
+T0928: الاحتجاجات تفضح سوأه الملالي
+T0929: برلماني إيراني يتهم طرفا ثالثا بإشعالها هل تندلع الحرب بين واشنطن وطهران
+T0930: دائما بادلونا الصدق والوضوح ما نطلب أكثر
+T0931: بحسب مبابي روديجر إلي ريال مدريد تمت
+T0932: ساديو ماني نصير مزراوي ريان غرافنبرخ صفقات بايرن ميونخ الجديده تتواجد في مران للفريق استعدادا للموسم الجديد
+T0933: تطبيقات النظريه النسبيه في حياتنا اليوميه
+T0934: رائعه جدا جدا
+T0935: تشويقه سريعه قبل تنزل التجربه مكلارين جي تي
+T0936: اقتصاد قطر يعاود النمو خلال بدعم النشاط التجاري وتخفيف القيود
+T0937: دراسه حليب الإبل يخفض نسبه السكر في الدم ويحسن حساسيه الأنسولين
+T0938: روبرت اوبنهايمر أحد علماء مشروع مانهاتن للقنبله الذريه لل كان فيزيائيا مهتما بالاداب والفلسفه والشعر وكان يجيد لغات في أحد الأيام طلب من زميله بجامعه بيركلي تجهيز محاضره عبر كتاب به كل شيء إلا أنه عاد مرتبكا لأن الكتاب كان باللغه الهولنديه
+T0939: جربي وصفات المكرونه الشهيه بطعم سمك التونه مع تشكيله من الخضار المميزه
+T0940: قال الإمام أحمد بن حنبل رحمه الل ه الصبر علي ما نحن فيه خير من الفتنه يسفك فيها الدماء ويستباح فيها الأموال وينتهك فيها المحارم السنه للخلال
+T0941: المزيد من الألعاب المجانيه لمنصات
+T0942: نادي السد بطلا للدوري القطري للمره ال في تاريخه البطوله رقم في تاريخ النادي بجميع البطولات
+T0943: أمام النقص البشري الحاد الذي تواجهه لتغطيه هجماتها اشتدت حملات ميليشيا الحوثي في اليمن مجددا لإجبار اللاجئين الأفارقه علي التجنيد التفاصيل
+T0944: وبالاسحار يستغفرون استغفرالله استغفرالله استغفرالله استغفرالله استغفرالله استغفرالله
+T0945: ومعني يستعففن النور أي يحتفظن بملابسهن لا يضعن منها شيئا فهذا أدعي للعفه
+T0946: من يحبك حقا لن يجرؤ علي مرور الوقت بدونك سيحن سيشتاق سيتألم سيصنع المستحيل ليحادثك من يحبك فقط
+T0947: لا تبخل علي أمك بشيء وتذكر دائما أنه قطع حبلك السري لحظه خروجك للدنيا وبقي أثره في جسدك ليذكرك بإنسانه عظيمه كانت تغذيك من جسدها
+T0948: خائن الوطن من يكون سببا في خطوه يخطوها العدو في أرض الوطن جمال الدين الأفغاني
+T0949: النواب البريطانيون يصوتون علي بدائل لاتفاق بريكست
+T0950: الانسان لا يختار لونه ولا اصله ولا جنسيته ومع ذلك يصر البعض علي معاملته وفقا لهذه الأشياء ونسوا قول الله عز وجل إن اكرمكم عند الله اتقاكم

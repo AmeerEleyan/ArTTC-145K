@@ -1,0 +1,53 @@
+{
+  "model": "bilstm",
+  "seed": 1,
+  "n_test": 21757,
+  "metrics": {
+    "accuracy": 88.33,
+    "macro_precision": 88.22,
+    "macro_recall": 88.34,
+    "macro_f1": 88.19,
+    "weighted_f1": 88.35,
+    "per_class_f1": {
+      "اقتصاد": 89.25,
+      "تكنولوجيا": 89.62,
+      "خواطر واقتباسات": 85.67,
+      "دين": 87.18,
+      "رياضه": 96.01,
+      "سيارت": 94.52,
+      "سياسه": 91.14,
+      "صحه": 81.1,
+      "طهي": 91.09,
+      "علوم": 76.37
+    }
+  },
+  "info": {
+    "train_seconds": 287.573,
+    "train_peak_gpu_mb": 230.8,
+    "epochs_stage1": 8,
+    "epochs_stage2": 5,
+    "epochs_trained": 13,
+    "best_epoch": 9,
+    "inference_gpu_seconds": 27.54,
+    "inference_gpu_tweets_per_s": 790.0,
+    "inference_peak_gpu_mb": 136.8,
+    "n_parameters": 10174218,
+    "size_on_disk_mb": 47.8,
+    "inference_cpu_seconds_1000": 1.497,
+    "inference_cpu_tweets_per_s": 668.1
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB",
+    "cpu_count": "12",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tensorflow": "2.21.0",
+    "sklearn": "1.6.1",
+    "gensim": "4.4.0",
+    "numpy": "2.4.6"
+  },
+  "saved_at": "2026-11-21 21:58:15"
+}

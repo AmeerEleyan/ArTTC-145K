@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1901 to T1950.
+- Each line has the form ID,Category (for example: T1901,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1901 to T1950):
+T1901: نهايه اللقاء بالتعادل بين بايرن ميونيخ و ليفركوزن
+T1902: فوبيا المرتفعات أو الأكروفوبيا هو الخوف المرضي من الارتفاعات فما الأسباب والأعراض وكيفيه التشخيص والعلاج إجابه كل هذه التساؤلات في المقال التالي  معلومه ودواء صيدليات الدواء
+T1903: فيبكو توقع اتفاقيه تمويل مع الصندوق الصناعي السعودي ب مليون ريال
+T1904: رئيس الوزراء البريطاني يتلقي الجرعه الأولي من أسترازينيكا ودول أوروبيه تستئأنف استخدام اللقاح بعد تأكيد الوكاله الأوروبيه للأدويه أنه آمن وفعال كورونا
+T1905: بحسب القناه الرياضيه نادي الاتحاد يتفق مع مدرب روماني لتدريب الفريق الموسم المقبل وتم تحديد البرتغال كمعسكر للفريق ومباراه النصر هي الأخيره ل كاريلي
+T1906: قد تتظاهر الانثي بالقوه ولكنها تملك قلب طفله مهما كبرت تخدشها الكلمه الجارحه وتجعلها تنزف بلا صوت وبلا أنين
+T1907: نيسان تقدم أكبر عرض حتي الآن للمركبات ذاتيه القياده في اليابان
+T1908: كان مع أهله أحلم الناس يمازحهم ويلاطفهم ويعفو عنهم فيما يصدر منهم ويدخل عليهم بساما ضحاكا يحمل الأطفال ويحلم علي أذاهم تقول أم المؤمنين عائشه أتي رسول الله بصبي فبال علي ثوبه فدعا بماء فأتبعه إياه متفق عليه ملهم العالم
+T1909: بدايه أسبوع إيجابيه للسوق السعوديه وترقب إضافه أسهم إلي مؤشر جوله مع ثامر السعيد رئيس إداره الأصول في رصانه الماليه
+T1910: لجنه الانضباط توقف مؤقتا مسؤول نادي النصر حسين عبدالغني عن مرافقه الفريق وتحرم رئيس نادي الشباب خالد البلطان من دخول الملاعب أثناء وقت المباريات ل يوما طبقا للمادتين و من اللائحه لحين إكمال التحقيقات والاستماع للأطراف
+T1911: عن أبي ريره قال يعرق الناس يوم القيامه حتي يذهب عرقهم في الأرض سبعين ذراعا ويلجمهم حتي يبلغ آذانهم صحيح البخاري
+T1912: ستأتيك السعاده و البشري التي تبهجك مختومه ب إنا وجدناه صابرا نعم العبد فهل حققت الصبر
+T1913: فيدرر يأمل العوده إلي ويمبلدون مره أخيره
+T1914: قربإء الإمس غربإء اليوم
+T1915: سكاي سبورتس شرطه ميرسيسايد تفتح تحقيقا في حادثه كريستيانو رونالدو ومشجع إيفرتون
+T1916: قام فينارسول الله بأربع إن الله لا ينام ولا ينبغي له أن ينام يرفع القسط ويخفضه ويرفع إليه عمل النهار بالليل وعمل الليل بالنهار ص مسلم
+T1917: إضافه اللوز إلي أكلاتك الرمضانيه راح يحميكي من الإصابه بالسكري وكمان بيعطيكي الإحساس بالشبع دون الزياده في وزنك   الحياه حلوه رمضان لوز
+T1918: أنباء عن صدور قرار جديد يسمح ببيع السيارات من الشركه الأم مباشره بدون الحاجه للوكيل في السعوديه
+T1919: أستاذ علم الاجتماع حسين الخزاعي مخاوف من التعجل في الإعلان عن لقاح ل كورونا قبل استكمال المراحل العلميه والتوزيع العادل هو الأهم
+T1920: ثبتت وكاله موديز للتصنيف الائتماني تصنيف الكويت الائتماني عند مع نظره مستقبليه مستقره
+T1921: رسميا رفع نسبه الحضور الجماهيري إلي من سعه المدرجات في الموسم القادم
+T1922: لفته رائعه من كريستيانو رونالدو بعد مباراه نورويتش سيتي النجم البرتغالي منح كره الهاتريك الذي سجله إلي غارناتشو جناح مانشستر يونايتد للشباب الذي كان حاضرا في المباراه
+T1923: إن مصر ليست منقسمه إلي أحزاب و لكنها منقسمه إلي غرز كل غرزه لها أعضاء يخدمون بعضهم بعضا في سبيل بناء الوطن إحسان عبد القدوس
+T1924: طرق عمليه فعاله للتخلص من الرؤوس السوداء
+T1925: لن تملوا النظر جميع أعمال رولز رويس المذهله المصممه حسب الطلب خلال
+T1926: إليك بعض النصائح لإبقاء منزلك منطقه خاليه من المرض طرق لإبقاء منزلك خاليا من الأمراض
+T1927: وزاره الدفاع الروسيه تنشر مشاهد لراجمات الصواريخ غراد لحظه قصفها أهدافا عسكريه أوكرانيه أوكرانيا
+T1928: وزير التجاره قانون الأمن الغذائي سيؤمن مخزونا استراتيجيا من القمح للعراق
+T1929: قابليه حالات النوع الثاني من السكري للإصلاح أو الشفاء
+T1930: اختصاصيه التخدير والإنعاش منار مراد علاج أصحاب الحالات الحرجه ل كورونا تطور ونسبه الوفيات انخفضت
+T1931: حضري حلي المانجو علي طريقه عضوه مطبخ سيدتي ايه احمد ارسلوا لنا وصفاتكم الشهيه وسنقوم بنشرها علي موقع مطبخ سيدتي اطبخ بالبيت
+T1932: انطلاق هوندا الجيل الجديد كليا في آسيا
+T1933: كيكه السبع كاسات من أسهل الكيكات وطريقتها بسيطه جدا وطعمها لذيذ وخفيف وسميت بهذا الاسم لأن المكونات الرئيسيه السبعه في الوصفه تعتمد علي مقدار كوب واحد فقط جربيها وشاركينا رأيك بالطعم
+T1934: البروفيسور وي شين ليم رئيس اللجنه المشتركه للتلقيح والتحصين ضد فيروس كورونا في بريطانيا الجرعه المعززه تستمر في توفير حمايه عاليه ضد الأعراض الشديده التي يتسبب فيها متحور أوميكرون حتي بين كبار السن ولا حاجه لجرعه رابعه من اللقاح ضد فيروس كورونا حتي الآن
+T1935: إليك طريقه عمل مندي الدجاج المدخن
+T1936: تأخر حصول الأطفال علي حقن مضادات الحساسيه في حالات الطوارئ
+T1937: سيارات الأس يو في كوبيه المتوفره في السوق السعودي
+T1938: روسيا تطلب وقف تسليم مساعدات من تركيا لمناطق المعارضه بسوريا
+T1939: خطوات حل مشكله إدخال رقم جوال قديم بمنصه أبشر للتفاصيل
+T1940: فيروس كورونا أميركا تكشف عن الإصابه الثالثه
+T1941: مع أنك قد لا تستطيع السيطره علي كل الأحداث التي تمر بها فإنك دائما تستطيع أن تسيطر علي رد فعلك تجاهها
+T1942: عمر عبدالرحمن ينتقل لنادي شباب الاهلي بعقد حتي نهايه الموسم
+T1943: اللهم إني اعوذ بك من السحر والشر وكل أذي أنت تعلمه وتقدر عليه
+T1944: من تلغراف ستكثف حكومه المملكه المتحده الضغط علي الفيفا لاستبعاد روسيا من كأس العالم
+T1945: السودان تحديد هويه شرطيين متورطين بدهس ومحاوله قنص متظاهرين
+T1946: قراءه ممتعه لقراءه الحلقات السابقه من سلسله العصور التاريخيه للأرض
+T1947: الدوري الانجليزي تشيلسي توتنهام م تعليق رؤوف خليف
+T1948: أنت تعتقد أنك إذا فعلت فوق اللازم ستنال التقدير ولكن الحقيقه التي ستفاجئك هي أنك ستتعرض للإستغلال وبدون شفقه نجيب محفوظ
+T1949: أفضل من المتوقع هكذا جاءت نتائج خدمه البث ديزني بلس خلال الربع الثاني من السنه الماليه من حيث تدفق المشتركين الذين بلغ عددهم مليون مشترك بزياده المزيد مع مذيعه  مايا حجيج
+T1950: السعاده أن تبتسم دون مناسبه وكل ما في داخلك يهمس الحمد لله

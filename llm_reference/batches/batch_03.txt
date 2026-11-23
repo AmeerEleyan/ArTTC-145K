@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0101 to T0150.
+- Each line has the form ID,Category (for example: T0101,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0101 to T0150):
+T0101: خبير في الشؤون الإيرانيه ل الحدث نت إيران تهدف من ترميم القبور حتي وإن كانت غير حقيقيه ووهميه عبر تحويلها لمزارات دينيه إلي توفير تموضع استراتيجي طويل الأمد في سوريا علي عده أصعده
+T0102: بغداد القيادي بالحزب الديمقراطي الكردستاني عبد السلام البرواري مستعدون لأي تطور وأبوابنا مفتوحه للجميع ومن الضروري أن نشارك في الحكم العراقي
+T0103: من مقابلات  خلال الأسبوع الفرق بين تسعير إصدارات السندات و الصكوك بين البنوك السعوديه الدكتور عصام الطواري المدير الشريك في نيوبري للاستشارات يوضح آليه التسعير
+T0104: صحيح تماما أعلم هذا الكلام عن النجوم والمجرات البعيده التي تزين هذه السماء والتي شكلت المفارقه المطروحه علي أن كل ما ينير السماء ليلا هو مظهر من مظاهر هذا الإشكال لأنه ينير هذه السماء شكرا جزيلا علي الملاحظه
+T0105: تعرفي علي أسباب الذقن المزدوج أو اللغلوغ وما هي أفضل ال علاجات المنزليه للتخلص منها
+T0106: بعدما حصلت علي صوره أحد المنفذين لعمليه الاغتيال الحدث تعرض تفاصيل حصريه عن قلته الباحث هشام الهاشمي العراق
+T0107: لعلاج جفاف العين بشكل سليم يجب اتباع مجموعه من التعليمات والاهتمام ببعض الأدويه تعرفوا علي التفاصيل من هنا
+T0108: من أبرز الفوائد الصحيه لليمون الأسود أو اللومي وأشهرها أنه يقلل من خطر الإصابه بأمراض القلب كما أنه يعمل علي دعم جهاز المناعه وتحفيز الكولاجين في الجسم للمزيد من فوائد اللومي الأسود تصفحي الرابط التالي
+T0109: الدواء مهم لكن تغيير اسلوب الحياه أهم
+T0110: ميزانيه عمان تسجل ملايين ريال فائضا ماليا بنهايه فبراير
+T0111: رغم الإشاده في العلن بإجراءاتها لمواجهه كورونا اسوشيتدبرس مسؤولو الصحه العالميه اشتكوا من عدم تعاون الصين
+T0112: نادي مانشستريونايتد يحقق الفوز علي استون فيلا بنتيجه مارسيال برونو فيرنانديز تراوري
+T0113: وما دام ربك عز وجل يرزقك بغير حساب ويفيض عليك من فضله فأعط المحتاجين وارزق أنت أيضا المعدمين واعلم أنك مناول عن الله والرزق في الأصل من الله وقد تكفل لعباده به وما أنت إلا يد الله الممدوده بالعطاء
+T0114: يعد تكييف المباني القديمه غير الموفره للطاقه أقل إثاره ولكنه أكثر اخضرارا بكثير من العديد من حلول التكنولوجيا الفائقه
+T0115: أرسل الآلاف من سكان العاصمه الصينيه بكين ليلا لمراكز حجر صحي قسرا بعد اكتشاف إصابه بكوفيد في مكان سكنهم ونقل أكثر من ألفا من سكان مجمع جنوب شرق العاصمه لفنادق مخصصه للعزل الصحي ليلا علي الرغم من أن نتائج فحوصات كوفيد خضعوا لها أتت سلبيه
+T0116: الحلوم المشوي مع الأفوكادو وجبه صحيه وخفيفه مناسبه للرجيم
+T0117: حمله لإغاثه إخواننا في اليمن الذي اجتمع عليهم الجوع ومرض الكوليرا الذي يفتك بالآلاف لنساهم في تخفيف معاناتهم
+T0118: بومبيو سنعاقب أي مخترق للعقوبات علي إيران
+T0119: جربي الكروتون كنوع من المقرمشات اليوميه وصفات الأكل طبخات
+T0120: بدأت شركه سامسونج بإصدار تحديث جديد لكل من و و وهذا التحديث يجلب معه نسخه جديده ومحسنه من تطبيق الكاميرا وبعد تثبيت هذا التحديث وإستخدام تطبيق الكاميرا الجديد فمن المفترض أن نري تحسنا ملحوظا علي مستوي التركيز التلقائي
+T0121: هو لم يبحث عن الكآبه يوما ولكن الإفراط بالأمل هو من ألقي به إلي تلك الزاويه المظلمه اقتباس
+T0122: وقل ربي ارحمهما كما ربياني صغيرا
+T0123: بيض الله وجه الشاعر والناقل
+T0124: الإحصاء ارتفاع شبه جماعي لأسعار السلع والخضروات بالأسواق السعوديه خلال أبريل
+T0125: حلوي البروفيترول الفرنسيه الشهيه إليك سر تحضيرها
+T0126: هتان ردا علي الصوره المفبركه
+T0127: الروبل الروسي يقفز لأعلي مستوي في أعوام أمام الدولار الأميركي بالرغم من العقوبات الاقتصاديه الغربيه والحرب في أوكرانيا
+T0128: كانت في طريقها إلي فنزويلا واشنطن تصادر ناقلات وقود إيرانيه
+T0129: اللهم لا إنحناء ولا إحتياج إلا لك لا لغيرك
+T0130: يسعد صباحك سيدتي خبرينا أيش مكونات فطورك لليوم ولا تفوتي طريقه مبتكره لإعداد البيض
+T0131: اختصرت الشوق مع نبره نوال ابي ترجع تسولف لي تعلمني وش الاخبار
+T0132: لله در الصبر ما أعظمه كم ضاعف الأجر وكم عظمه كن صابرا بالله مستعصما تلق الرضا واللطف والمرحمه
+T0133: أطباء الجيش الأميركي يبتكرون أول لقاح ضد أوميكرون كما أنه فعال في نفس الوقت ضد جميع فيروسات كوفيد و سارس
+T0134: لماذا تتخلي أمازون عن مخازنها
+T0135: من هي أصغر رضيعه هزمت الجائحه
+T0136: هل النار سائله أم غازيه
+T0137: الحب ماهو إلا المبالغه في تعظيم الفوارق بين شخص معين وبين سائر الناس جورج برناردشو مؤلف إيرلندي
+T0138: لا تيأس مهما طال بك الكرب فالفرج كالجنين في بطن امه ان اتي قبل وقته تشوه ومات دعه يأتي في وقته مكتملا ليثبت لك انه يستحق العناء
+T0139: فريق لا يريد الإستسلام أو هجر نهائيا برغم من أن الطريق لا يزال طويل إلا أن الموسم الثاني هو أفضل نقطه ننصح بالعوده من خلالها لباتلفيلد لكل من تركها منذ مشاكل الإصدار انطباعاتنا بعد تجربه اللعبه لساعتين
+T0140: المرشحين لجائزه مدرب الموسم في البريميرليغ من يستحقها
+T0141: لن يقسم علي فقط لأنه أراد يقسم علي لاحظ البرهان أعلاه
+T0142: الطبق التقليدي لإفطار اسرتك هو طبق العجه هل تداومي عليه بإستمرار وصفات الأكل طبخات
+T0143: تأجيل الإعلان عن هاتف إلي مايو
+T0144: محكمه مصريه تنظر دعوي سب شاب ضد نجم مانشستر يونايتد
+T0145: رسميا نادي ابها يوقع مع اللاعب حسن القيد لمده مواسم
+T0146: هجوم بيل هاربور هو الأكثر تأثيرا علي مؤشر ستاندرد آند بورز
+T0147: اختصاصي الوبائيات والأمراض الساريه بسام حجاوي لا توجد لقاحات لفيروسات كورونا السابقه مثل سارس وميرس ودخول الشتاء والخريف يعني موجه إصابات جديده
+T0148: خبر مهم وتفاصيله علي الرابط التالي
+T0149: بخطوات ولا أسهل حضري سلطه الأفوكادو الصحيه
+T0150: فورد هي أول شركه تستخدم بلاستيك المحيط في سياراتها

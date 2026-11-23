@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0501 to T0550.
+- Each line has the form ID,Category (for example: T0501,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0501 to T0550):
+T0501: نجحت شركه بريطانيه ناشئه من إيجاد آليه لتطوير درع يمكنه إخفاء أي شيء خلفه عن طريق عدسات خاصه تعمل علي حرف الضوء بعيدا عن عين المراقب
+T0502: يناير مساهمو أمانه للتأمين يناقشون زياده رأس المال للاستحواذ علي عنايه
+T0503: بعدما تردد إصابته بالسرطان أو بباركنسون أوالخرف لافروف ينفي كل الإشاعات حول تدهور صحه الرئيس الروسي لا أعتقد أن أي شخص عاقل قد يري في بوتين علامات مرض أو تعب ما
+T0504: مقال نون انضمام النساء إلي مجالس إداره الشركات يحسن من القرارات المتعلقه بسلامه المنتجات الصحيه  ترجمه كوثر سليم تدقيق نصراء الشبيبي
+T0505: لطالما أثار فضولها معرفه ما يقبع خلف النجوم المتلألئه في الليل وهو ما ترجمته لاحقا في أبحاثها الرائده في مجال الفيزياء الفلكيه والتي جلبت لها سمعه عالميه مرموقه وجوائز وتكريمات عديده نتعرف علي المسيره المميزه للباحثه السوريه الأميركيه شاديه حبال
+T0506: لا مجد إلا مجد العلم ولا شرف إلا شرف التقوي ولا عظمه إلا عظمه الآخذين بيد الإنسانيه المعذبه رحمه بها وحنانا عليها محمد المنفلوطي
+T0507: ليونيل ميسي يسجل قبل قليل هاتريك ضد استونيا د د د
+T0508: دودج دورانجو قد تحصل علي جيل رابع جديد كليا في هذا الموعد للتفاصيل
+T0509: طيبتك ستكون عدوك الأول دائما
+T0510: إن كنا نريد الحكم العادل فلا عدل بغير قانون ولا فائده في قانون بغير ضمائر ولا أمل في ضمائر بغير إيمان
+T0511: فيديو من انتاج الموقع كيا سيلتوس تفضلوا و تعرفوا عليه
+T0512: إليكم من مطبخ سيدتي طريقه سهله وسريعه ومضمونه لتقطيع فاكهه الأناناس بالشكل الصحيح
+T0513: أسواق المال الكويتيه توافق علي زياده رأسمال استهلاكيه
+T0514: نادي اتالانتا ضمن رسميا تأهله لبطوله دوري ابطال اوروبا
+T0515: كلما جرحت أحدا فاطرق مسمارا في جدار وإن اعتذرت فأخلعه ثم انظر لأثر المسامير في الجدار كذلك الناس إن جرحتهم فإنها تترك أثر كبير في قلوبهم
+T0516: الكشف عن ألعاب شهر نوفمبر المجانيه لمشتركي خدمه
+T0517: ألغام ميليشيا الحوثي تحصد أرواح مدنيا في محافظه الجوف اليمنيه
+T0518: بطريقه مبتكره وسهله حضري لضيوفك كرات البرتقال بجوز الهند علي طريقه سهر الشريف
+T0519: ناساف يعبر السد ويقصيه من دوري الأبطال
+T0520: قال الشيخ ابن عثيمين رحمه الله والشرع لا يأمر بشيء يخالف الحس والواقع بل لا يأمر إلا بشيء يستحسنه العقل ويشهد له بالصحه والحسن وإن كان العقل لا يدرك أحيانا مدي حسن ذا الشيء الذي أمر به الشرع ولكن ليعلم علم اليقين أن الشرع لا يأمر إلا بما و حسن
+T0521: استكمالا لتسريبات وحدات المعالجه المركزيه لعائله والتي تتضمن عدد أنويه يصل إلي نواه و
+T0522: المبالغه في تناول الكربوهيدرات تناول قطعه من ال دوناتس أو ال كيك يدفع المرء إلي تناول المزيد منها الكربوهيدرات البسيطه المتوافره في المعجنات وال كيك ترفع السكر في الدم بسرعه ثم تدعه ينخفض ولذا يفضل اللجوء إلي الكربوهيدرات المعقده المشبعه التي تحتوي علي الكثير من الألياف
+T0523: تستحوذ علي خدمه البث التلفزيوني مقابل مليون دولار أمريكي
+T0524: إن المعدل السليم للنوم اليومي مابين س وكلما زاد المعدل اليومي للنوم كلما زاد الشخص كسلا وتقاعسا ويري أنه يحتاج الي النوم أكثر واكثر
+T0525: فيديو من الخطأ أخذ مضاد حيوي لنزلات البرد والإنفلونزا
+T0526: مأساه طبيب مصري عالج مرضي كورونا ففقد بصره
+T0527: سبكيم العالميه تعلن بدء تشغيل مصانع شركتين تابعتين بعد انتهاء الصيانه الدوريه
+T0528: حضري الحمص باللحم في دقيقه وعلي طريقه المطاعم
+T0529: المؤبد لأفغاني طعن أشخاص في فيينا
+T0530: لماذا يعد اللولب عاملا مؤثرا في الحمل خارج الرحم
+T0531: أعظم وصيه عائض القرني
+T0532: كم شخص سيعمل رتويت لهذا الدعاء ربي أسألك الجنه ل أمي
+T0533: صانعوا السيارات يستخدمون هذه السيارات المزيفه لاختبار أنظمه السلامه للتفاصيل
+T0534: أفضل مكمل غذائي للمفاصل
+T0535: تحالف دعم الشرعيه في اليمن إيران زودت الحوثيين بقدرات نوعيه
+T0536: يارب جنه الفردوس لمن حملتني تسعه أشهر
+T0537: لوكلير متصدر بطوله العالم يخرج بشكل مفاجئ من سباق إسبانيا
+T0538: انتهاء ولايه حكومه الدبيبه في ليبيا تحشيد عسكري ومخاوف من القادم
+T0539: تونس سترفع أسعار الكهرباء والمحروقات لخفض عجز الطاقه في ظل ارتفاع أسعار النفط وتهدف لإنتاج من الكهرباء عبر الطاقات المتجدده في كما ستمنح تراخيص مشاريع طاقه متجدده لإنتاج ميغاواط ما بين و
+T0540: الحنان طعام عسير الهضم علي كل معده مغروره
+T0541: مبيعات السيارات الفاخره والخارقه وصلت لمستويات قياسيه في لماذا
+T0542: عناصر غذائيه مهمه للصحه لا يمكن الحصول عليها من النباتات
+T0543: لنحييها بئرا في مناطق الأكثر حاجه للمياه ألف مستفيد يرتون منه وتشوب منه أنعامهم انشر رابط التبرع صدقه جاريه لك ولمن تحب للتبرع
+T0544: قيام ساعه يكتب بأجر قيام ليله قال الشيخ ابن عثيمين رحمه الله ينبغي أن نصلي مع الإمام حتي ينصرف من أجل أن ننال أجر الليله كاملا لقول النبي صلي الله عليه وآله وسلم من قام مع الإمام حتي ينصرف كتب له قيام ليله وإن كان باقي الليله نائما علي فراشه
+T0545: عندما تستيقظ في الصباح وتشعر أن صوتك يبدو محتلف هل تسأل نفسك لماذا يتغيرالصوت عند الإستيقاظ لماذا يتغير صوتنا عندما نستيقظ في الصباح
+T0546: مشاهد لإعصار نادر ومدمر ضرب ولايه ميشيغان الأميركيه خلف قتيلا وعشرات الإصابات أميركا
+T0547: الزبيب يضاف للكثير من الأطعمه اكتشفوا من هنا فوائده المتعدده
+T0548: انهار نظام الرعايه الصحيه في معظم أنحاء الهند ولم تعد أسره وحدات العنايه المركزه تكفي المرضي الجدد ونفد الأكسجين من المستشفيات ما جعل المرضي يتعرضون للاختناق كما تم تحويل مواقف السيارات إلي مواقع حرق جماعيه للجثث ما الذي وصل بالهند إلي هذه الحال
+T0549: ستتعلم كثير من دروس الحياه إذا لاحظت ان رجال الإطفاء لا يكافحون النار بالنار وليام شكسبير
+T0550: يا الله عبدك في ضيق وفرجك لا يضيق

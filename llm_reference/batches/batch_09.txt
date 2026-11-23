@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0401 to T0450.
+- Each line has the form ID,Category (for example: T0401,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0401 to T0450):
+T0401: اليمن عضو مجلس القياده الرئاسي نواجه تنظيمات إرهابيه تهدد أمن واستقرار اليمن
+T0402: جددي اشكال البسكويت واجعليه بطعم المربي والبيقان واللوز طعم بيجنن   الحياه حلوه حلوي
+T0403: تجاربهم فشلت في مصر و السودان و تونس و ماليزيا مآلات الإخوان إلي الهاويه
+T0404: قال الرئيس العلمي لشركه إيلي ليلي الأربعاء إن الشركه قد يكون لديها عقار مخصص لعلاج مرض كوفيد الناجم عن فيروس كورونا ومرخص باستخدامه بحلول سبتمبر أيلول
+T0405: مؤشر الإنتاج الصناعي ب السعوديه يرتفع خلال مايو
+T0406: وصبغ للآكلين المؤمنون يعني يتخذونه إداما يغمسون فيه الخبز ويأكلونه وهو من أشهي الأكلات وألذها عند من يزرعون الزيتون في سيناء وفي بلاد الشام وقد ذقنا ذه الأكله الشهيره في لبنان عندما ذهبنا إليها في موسم حصاد الزيتون
+T0407: الحاجه إلي الناس ضعف وأنا أكره أن اكون ضعيفا في نظر أحدهم ولو لثوان اقتباسات
+T0408: حلي الزبادي الأصفر قدميه باردا علي سفرتك
+T0409: الديان الرفيق الجامع السبوح يا الله
+T0410: لا ينبغي إعاده استعمال كمامات الوجه إذا كنت تخالط شخصا مصابا بأي عدوي تنفسيه فإن مقدمه الكمامه تعتبر ملوثه بالفعل يجب إزاله الكمامه دون لمسها من الأمام والتخلص منها بشكل سليم وبعد نزع الكمامه ينبغي فرك اليدين بمطهر كحولي أو غسلهما بالماء والصابون نصائح لتفادي كورونا
+T0411: العربيه للطيران الإماراتيه تعود للربحيه وتحقق مليون درهم أرباحا في مقابل مليون خسائر في العام الأسبق
+T0412: رئيس الرابطه الطبيه الأوروبيه في الشرق الأوسط فؤاد عوده إصابات كورونا ترتفع في أوروبا لكن لا يمكن مقارنتها بالعام الماضي
+T0413: تمكن جمال شختور من ابتكار عده اختراعات طبيه حصل عنها علي عده جوائز بما في ذلك جائزه مبتكرون دون عن ابتكاره حقيبه ظهر إلكترونيه
+T0414: البحرين المؤبد للمتهمين في قضيه التخابر مع قطر
+T0415: أكثر سيارات سيدان مبيعا في السعوديه لعام
+T0416: اول ل ريال مدريد عن طريق اسينسيو
+T0417: من المطبخ الخليجي اخترنا لك طريقه سريعه لتحضير البرياني بالروبيان وأخبرينا برأيك
+T0418: رولز رويس جوست بإعلان تشويقي في الرابط   سيارات
+T0419: تجربتنا مع تويوتا لاندكروزر الجزء الثاني اللي وده يجرب السياره او يستفسر عن تمويلها واقساطها يعبي بياناته في الرابط هنا مباشره
+T0420: شركه سامسونج اطلقت نسختين من الهاتف واحده تضم من الذاكره العشوائيه و من الذاكره الداخليه تضم النسخه الثانيه من الذاكره العشوائيهو من الذاكره الداخليه قررت شركه سامسونج إطلاق نسخه ثالثهللهاتف تضم من الذاكره العشوائيه و من الذاكره الداخليه
+T0421: عقار جديد لسرطان البنكرياس في بريطانيا
+T0422: قدمي علي وجبه السحور أطيب أطباق البطاطس بطعم جبن البارميزان الشهي جربيها الآن اطبخ بالبيت خليك بالبيت سحور
+T0423: وجود الدهون في البطن يرتبط بزياده خطر الإصابه بأمراض القلب والسكري إذا كنت تعاني من الكرش فأنت مهدد بأمراض القلب والسكري
+T0424: متجاوزا تأثير العقوبات النفط الروسي يدر أرباحا هائله علي خزائن حكومه موسكو  النفط
+T0425: هل يمكن للطاقه المتجدده تغطيه حاجه بلدان بأكملها
+T0426: لم أخشي مطلقا في يوم من الأيام من رجل متعلم إنما أتجنب هؤلاء الحمقي الذين يعتبرون أنفسهم علماء بعد قراءتهم بعض الكتب عبد الحميد الثاني
+T0427: بشكل مبسط جمله الإسناد هي فضاء من أبعاد مكان وبعد زمان يتكون من الأجسام المرجعيه في حركه النظام المدروس والذي ينتمي إلي هذه الجمله نقول مثلا السياره تتحرك بالنسبه للشجره
+T0428: لا يشرع التعبد بتحديد سوره معينه أو عدد معين أو زمن معين لم يرد في الشريعه فإن ذلك من البدع وهي من أسباب رد العمل وحرمان صاحبه من الأجر
+T0429: اللهم في حسن تدبيرك ما يغني عن الحيل وفي كرمك ما يفوق الأمل دعاء السحر
+T0430: هل تعتقد حقا أنك تستوعب معني المليار
+T0431: سعر الذهب ينخفض لما دون دولارا للأونصه للمره الأولي منذ أكتوبر
+T0432: تصفيات كاس العالم اليابان الصين م تعليق عبدالله الحربي
+T0433: ما حقيقه وفاه نرويجيا ممن تلقوا لقاح كورونا ترجمه حسام شبلي تدقيق عون حداد مراجعه رزان حميده
+T0434: نمو إنتاج عمان من وقود السيارات خلال نوفمبر
+T0435: الحياه كالطريق ألملتف كل شيء تفعله سيعود إليك يوما ما لذا أفعل كل ماهو جميل فهو مردودا إليك
+T0436: لاتؤجل استمتاعك بالحياه الي ان ينتهي العمل فالعمل لاينتهي ولاتؤجل العمل والانجاز حتي تحقق كل متعتك فالمتع أيضا لاتنتهي وعليك بالتوازن
+T0437: قال العلامه ابن عثيمين رحمه الله العلم إذا لم يثمر خشيه الله عز وجل والإنابه إليه والتعلق به سبحانه وتعالي واحترام المسلمين فإنه علم فاقد البركه شرح العقيده السفارينيه ص
+T0438: ناشطين بيئيين إيرانيين يواجهون عقوبه الإعدام
+T0439: صلصه الرانش بدون مايونيز المقادير بالرابط
+T0440: إضافه تعديلات علي رخصه تشغيل نادي تشيلسي تسمح ببيع التذاكر لحضور المباريات خارج الديار بما في ذلك مباريات الكأس ومباريات فريق السيدات
+T0441: شركه كريم التابعه ل أوبر تكنولوجيز تجري محادثات مع السعوديه من أجل تخفيف القيود ومنها تلك التي تحد من عدد السائقين وتسببت في طول فترات انتظار الرحلات
+T0442: عرض الصيف علي تمويل جميع سيارات مرسيدس الجفالي بدون دفعه أولي للتفاصيل
+T0443: رئيس الاتحاد الدولي لكره القدم جاني إنفانتينو أعتقد أن كأس العالم في قطر ستكون البطوله الأعظم علي الإطلاق
+T0444: الصحه العالميه إنفلونزا الطيور الجديده لن تصيب البشر
+T0445: الميدان الرياضي رفض بيتي مارتينيز توقيع انتقاله بالاعاره لأحد أنديه الدرجه الاولي السعودي تفشل مهمه اداره النصر في جلب الحارس محمد الشناوي
+T0446: السيسي يناقش مع الاتحاد الأوروبي استعدادات مصر لاستضافه قمه المناخ
+T0447: بعد تعطل سلاسل إمدادات الغذاء حول العالم جراء إغلاق البحر الأسود بسبب الحرب الروسيه الأوكرانيه موجه غلاء فاحش في الأسعار ونقص في السلع الغذائيه الأساسيه تضرب معظم بلدان العالم
+T0448: ساهم أوباميانج في هدفا خلال مباراه منذ انضمامه إلي برشلونه أهداف تمريره حاسمه يتواجد علي مقاعد البدلاء ضد قادش برشلونه قادش
+T0449: شرب الماء الفاتر علي معده خاليه في الصباح علاج ناجح لأمراض مزمنه وخطيره
+T0450: كيف للأبقار والقطط حمايه أطفال المزارع من الربو مقال نون  ترجمه مراجعه

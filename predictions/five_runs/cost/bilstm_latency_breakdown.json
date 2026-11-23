@@ -1,0 +1,12 @@
+{
+  "/CPU:0": {
+    "prep_ms": 0.104,
+    "model_ms": 23.975,
+    "model_ms_compiled_extra": 3.131
+  },
+  "/GPU:0": {
+    "prep_ms": 0.096,
+    "model_ms": 20.433,
+    "model_ms_compiled_extra": 2.622
+  }
+}

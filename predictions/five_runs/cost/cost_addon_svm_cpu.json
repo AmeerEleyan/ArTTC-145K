@@ -1,0 +1,13 @@
+{
+  "model": "svm",
+  "device": "cpu",
+  "n_tweets": 500,
+  "repeats": 3,
+  "batch_size": 1,
+  "latency_ms_median": 0.623,
+  "latency_ms_p95": 0.767,
+  "latency_ms_mean": 0.64,
+  "load_seconds": 1.25,
+  "ram_mb_model_loaded": 139.8,
+  "ram_mb_after_inference": 140.6
+}

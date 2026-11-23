@@ -1,0 +1,46 @@
+{
+  "model": "bilstm",
+  "seed": 5,
+  "n_test": 21757,
+  "metrics": {
+    "accuracy": 88.79,
+    "macro_precision": 88.95,
+    "macro_recall": 88.6,
+    "macro_f1": 88.71,
+    "weighted_f1": 88.83,
+    "per_class_f1": {
+      "اقتصاد": 89.55,
+      "تكنولوجيا": 90.25,
+      "خواطر واقتباسات": 86.21,
+      "دين": 86.91,
+      "رياضه": 96.35,
+      "سيارت": 94.32,
+      "سياسه": 90.81,
+      "صحه": 82.98,
+      "طهي": 93.15,
+      "علوم": 76.63
+    }
+  },
+  "info": {
+    "train_seconds": 295.32,
+    "train_peak_gpu_mb": 397.5,
+    "epochs_stage1": 9,
+    "epochs_stage2": 5,
+    "epochs_trained": 14,
+    "best_epoch": 10
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB",
+    "cpu_count": "12",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tensorflow": "2.21.0",
+    "sklearn": "1.6.1",
+    "gensim": "4.4.0",
+    "numpy": "2.4.6"
+  },
+  "saved_at": "2026-11-21 22:18:51"
+}

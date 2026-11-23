@@ -1,0 +1,13 @@
+{
+  "model": "bilstm",
+  "device": "cpu",
+  "n_tweets": 500,
+  "repeats": 3,
+  "batch_size": 1,
+  "latency_ms_median": 339.572,
+  "latency_ms_p95": 351.283,
+  "latency_ms_mean": 340.234,
+  "load_seconds": 0.42,
+  "ram_mb_model_loaded": 138.5,
+  "ram_mb_after_inference": 145.3
+}

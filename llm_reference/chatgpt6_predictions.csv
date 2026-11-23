@@ -1,0 +1,2001 @@
+id,chatgpt6_prediction,status
+T0001,Thoughts and Wisdom,ok
+T0002,Cooking,ok
+T0003,Thoughts and Wisdom,ok
+T0004,Politics,ok
+T0005,Health,ok
+T0006,Science,ok
+T0007,Politics,ok
+T0008,Technology,ok
+T0009,Cars,ok
+T0010,Thoughts and Wisdom,ok
+T0011,Cars,ok
+T0012,Science,ok
+T0013,Religion,ok
+T0014,Economy,ok
+T0015,Cooking,ok
+T0016,Health,ok
+T0017,Science,ok
+T0018,Economy,ok
+T0019,Technology,ok
+T0020,Thoughts and Wisdom,ok
+T0021,Health,ok
+T0022,Technology,ok
+T0023,Thoughts and Wisdom,ok
+T0024,Religion,ok
+T0025,Religion,ok
+T0026,Cars,ok
+T0027,Religion,ok
+T0028,Politics,ok
+T0029,Health,ok
+T0030,Cars,ok
+T0031,Health,ok
+T0032,Politics,ok
+T0033,Economy,ok
+T0034,Economy,ok
+T0035,Religion,ok
+T0036,Politics,ok
+T0037,Technology,ok
+T0038,Health,ok
+T0039,Religion,ok
+T0040,Cooking,ok
+T0041,Cars,ok
+T0042,Thoughts and Wisdom,ok
+T0043,Health,ok
+T0044,Economy,ok
+T0045,Sports,ok
+T0046,Politics,ok
+T0047,Economy,ok
+T0048,Politics,ok
+T0049,Cars,ok
+T0050,Thoughts and Wisdom,ok
+T0051,Sports,ok
+T0052,Cooking,ok
+T0053,Sports,ok
+T0054,Cooking,ok
+T0055,Politics,ok
+T0056,Technology,ok
+T0057,Science,ok
+T0058,Economy,ok
+T0059,Religion,ok
+T0060,Thoughts and Wisdom,ok
+T0061,Sports,ok
+T0062,Health,ok
+T0063,Health,ok
+T0064,Thoughts and Wisdom,ok
+T0065,Thoughts and Wisdom,ok
+T0066,Thoughts and Wisdom,ok
+T0067,Politics,ok
+T0068,Sports,ok
+T0069,Cars,ok
+T0070,Sports,ok
+T0071,Sports,ok
+T0072,Cooking,ok
+T0073,Science,ok
+T0074,Thoughts and Wisdom,ok
+T0075,Health,ok
+T0076,Cooking,ok
+T0077,Technology,ok
+T0078,Health,ok
+T0079,Health,ok
+T0080,Thoughts and Wisdom,ok
+T0081,Politics,ok
+T0082,Politics,ok
+T0083,Sports,ok
+T0084,Sports,ok
+T0085,Technology,ok
+T0086,Sports,ok
+T0087,Economy,ok
+T0088,Economy,ok
+T0089,Cooking,ok
+T0090,Technology,ok
+T0091,Sports,ok
+T0092,Technology,ok
+T0093,Health,ok
+T0094,Cooking,ok
+T0095,Religion,ok
+T0096,Thoughts and Wisdom,ok
+T0097,Health,ok
+T0098,Science,ok
+T0099,Sports,ok
+T0100,Thoughts and Wisdom,ok
+T0101,Politics,ok
+T0102,Politics,ok
+T0103,Economy,ok
+T0104,Science,ok
+T0105,Health,ok
+T0106,Politics,ok
+T0107,Health,ok
+T0108,Health,ok
+T0109,Health,ok
+T0110,Economy,ok
+T0111,Politics,ok
+T0112,Sports,ok
+T0113,Religion,ok
+T0114,Science,ok
+T0115,Politics,ok
+T0116,Health,ok
+T0117,Health,ok
+T0118,Politics,ok
+T0119,Cooking,ok
+T0120,Technology,ok
+T0121,Thoughts and Wisdom,ok
+T0122,Religion,ok
+T0123,Thoughts and Wisdom,ok
+T0124,Economy,ok
+T0125,Cooking,ok
+T0126,Thoughts and Wisdom,ok
+T0127,Economy,ok
+T0128,Politics,ok
+T0129,Religion,ok
+T0130,Cooking,ok
+T0131,Thoughts and Wisdom,ok
+T0132,Religion,ok
+T0133,Science,ok
+T0134,Economy,ok
+T0135,Health,ok
+T0136,Science,ok
+T0137,Thoughts and Wisdom,ok
+T0138,Thoughts and Wisdom,ok
+T0139,Technology,ok
+T0140,Sports,ok
+T0141,Thoughts and Wisdom,ok
+T0142,Cooking,ok
+T0143,Technology,ok
+T0144,Politics,ok
+T0145,Sports,ok
+T0146,Economy,ok
+T0147,Health,ok
+T0148,Thoughts and Wisdom,ok
+T0149,Cooking,ok
+T0150,Cars,ok
+T0151,Technology,ok
+T0152,Politics,ok
+T0153,Thoughts and Wisdom,ok
+T0154,Religion,ok
+T0155,Cooking,ok
+T0156,Sports,ok
+T0157,Economy,ok
+T0158,Technology,ok
+T0159,Economy,ok
+T0160,Technology,ok
+T0161,Health,ok
+T0162,Politics,ok
+T0163,Cars,ok
+T0164,Religion,ok
+T0165,Thoughts and Wisdom,ok
+T0166,Sports,ok
+T0167,Technology,ok
+T0168,Health,ok
+T0169,Cooking,ok
+T0170,Technology,ok
+T0171,Religion,ok
+T0172,Health,ok
+T0173,Religion,ok
+T0174,Thoughts and Wisdom,ok
+T0175,Economy,ok
+T0176,Science,ok
+T0177,Science,ok
+T0178,Technology,ok
+T0179,Politics,ok
+T0180,Technology,ok
+T0181,Thoughts and Wisdom,ok
+T0182,Science,ok
+T0183,Thoughts and Wisdom,ok
+T0184,Religion,ok
+T0185,Politics,ok
+T0186,Health,ok
+T0187,Thoughts and Wisdom,ok
+T0188,Technology,ok
+T0189,Health,ok
+T0190,Science,ok
+T0191,Health,ok
+T0192,Cooking,ok
+T0193,Health,ok
+T0194,Thoughts and Wisdom,ok
+T0195,Technology,ok
+T0196,Economy,ok
+T0197,Religion,ok
+T0198,Politics,ok
+T0199,Health,ok
+T0200,Sports,ok
+T0201,Thoughts and Wisdom,ok
+T0202,Economy,ok
+T0203,Cars,ok
+T0204,Health,ok
+T0205,Economy,ok
+T0206,Cooking,ok
+T0207,Sports,ok
+T0208,Science,ok
+T0209,Religion,ok
+T0210,Cars,ok
+T0211,Technology,ok
+T0212,Cars,ok
+T0213,Cooking,ok
+T0214,Cars,ok
+T0215,Health,ok
+T0216,Thoughts and Wisdom,ok
+T0217,Religion,ok
+T0218,Cooking,ok
+T0219,Health,ok
+T0220,Thoughts and Wisdom,ok
+T0221,Politics,ok
+T0222,Cars,ok
+T0223,Economy,ok
+T0224,Religion,ok
+T0225,Thoughts and Wisdom,ok
+T0226,Thoughts and Wisdom,ok
+T0227,Politics,ok
+T0228,Politics,ok
+T0229,Technology,ok
+T0230,Thoughts and Wisdom,ok
+T0231,Religion,ok
+T0232,Cooking,ok
+T0233,Technology,ok
+T0234,Sports,ok
+T0235,Technology,ok
+T0236,Cooking,ok
+T0237,Religion,ok
+T0238,Politics,ok
+T0239,Health,ok
+T0240,Economy,ok
+T0241,Health,ok
+T0242,Sports,ok
+T0243,Economy,ok
+T0244,Politics,ok
+T0245,Science,ok
+T0246,Cars,ok
+T0247,Politics,ok
+T0248,Religion,ok
+T0249,Politics,ok
+T0250,Health,ok
+T0251,Religion,ok
+T0252,Cooking,ok
+T0253,Religion,ok
+T0254,Economy,ok
+T0255,Sports,ok
+T0256,Religion,ok
+T0257,Economy,ok
+T0258,Health,ok
+T0259,Thoughts and Wisdom,ok
+T0260,Science,ok
+T0261,Cars,ok
+T0262,Religion,ok
+T0263,Cars,ok
+T0264,Sports,ok
+T0265,Religion,ok
+T0266,Sports,ok
+T0267,Health,ok
+T0268,Cars,ok
+T0269,Cooking,ok
+T0270,Religion,ok
+T0271,Science,ok
+T0272,Thoughts and Wisdom,ok
+T0273,Economy,ok
+T0274,Technology,ok
+T0275,Thoughts and Wisdom,ok
+T0276,Thoughts and Wisdom,ok
+T0277,Health,ok
+T0278,Economy,ok
+T0279,Sports,ok
+T0280,Cooking,ok
+T0281,Religion,ok
+T0282,Sports,ok
+T0283,Health,ok
+T0284,Health,ok
+T0285,Science,ok
+T0286,Cars,ok
+T0287,Cooking,ok
+T0288,Politics,ok
+T0289,Cars,ok
+T0290,Cars,ok
+T0291,Science,ok
+T0292,Sports,ok
+T0293,Sports,ok
+T0294,Economy,ok
+T0295,Economy,ok
+T0296,Cooking,ok
+T0297,Cars,ok
+T0298,Economy,ok
+T0299,Thoughts and Wisdom,ok
+T0300,Economy,ok
+T0301,Economy,ok
+T0302,Cars,ok
+T0303,Thoughts and Wisdom,ok
+T0304,Sports,ok
+T0305,Health,ok
+T0306,Thoughts and Wisdom,ok
+T0307,Religion,ok
+T0308,Science,ok
+T0309,Politics,ok
+T0310,Cars,ok
+T0311,Religion,ok
+T0312,Technology,ok
+T0313,Health,ok
+T0314,Politics,ok
+T0315,Religion,ok
+T0316,Economy,ok
+T0317,Sports,ok
+T0318,Sports,ok
+T0319,Thoughts and Wisdom,ok
+T0320,Sports,ok
+T0321,Cars,ok
+T0322,Technology,ok
+T0323,Cars,ok
+T0324,Cooking,ok
+T0325,Politics,ok
+T0326,Science,ok
+T0327,Thoughts and Wisdom,ok
+T0328,Health,ok
+T0329,Technology,ok
+T0330,Health,ok
+T0331,Economy,ok
+T0332,Economy,ok
+T0333,Sports,ok
+T0334,Economy,ok
+T0335,Cooking,ok
+T0336,Technology,ok
+T0337,Health,ok
+T0338,Economy,ok
+T0339,Thoughts and Wisdom,ok
+T0340,Economy,ok
+T0341,Sports,ok
+T0342,Cooking,ok
+T0343,Thoughts and Wisdom,ok
+T0344,Science,ok
+T0345,Economy,ok
+T0346,Technology,ok
+T0347,Cooking,ok
+T0348,Thoughts and Wisdom,ok
+T0349,Sports,ok
+T0350,Politics,ok
+T0351,Cars,ok
+T0352,Economy,ok
+T0353,Sports,ok
+T0354,Religion,ok
+T0355,Cars,ok
+T0356,Economy,ok
+T0357,Health,ok
+T0358,Technology,ok
+T0359,Health,ok
+T0360,Religion,ok
+T0361,Economy,ok
+T0362,Cooking,ok
+T0363,Health,ok
+T0364,Cars,ok
+T0365,Science,ok
+T0366,Economy,ok
+T0367,Technology,ok
+T0368,Cooking,ok
+T0369,Religion,ok
+T0370,Cooking,ok
+T0371,Sports,ok
+T0372,Religion,ok
+T0373,Cars,ok
+T0374,Technology,ok
+T0375,Sports,ok
+T0376,Sports,ok
+T0377,Economy,ok
+T0378,Technology,ok
+T0379,Thoughts and Wisdom,ok
+T0380,Sports,ok
+T0381,Sports,ok
+T0382,Politics,ok
+T0383,Economy,ok
+T0384,Economy,ok
+T0385,Sports,ok
+T0386,Health,ok
+T0387,Economy,ok
+T0388,Sports,ok
+T0389,Technology,ok
+T0390,Sports,ok
+T0391,Technology,ok
+T0392,Technology,ok
+T0393,Politics,ok
+T0394,Health,ok
+T0395,Economy,ok
+T0396,Politics,ok
+T0397,Technology,ok
+T0398,Technology,ok
+T0399,Cooking,ok
+T0400,Economy,ok
+T0401,Politics,ok
+T0402,Cooking,ok
+T0403,Politics,ok
+T0404,Health,ok
+T0405,Economy,ok
+T0406,Cooking,ok
+T0407,Thoughts and Wisdom,ok
+T0408,Cooking,ok
+T0409,Religion,ok
+T0410,Health,ok
+T0411,Economy,ok
+T0412,Health,ok
+T0413,Technology,ok
+T0414,Politics,ok
+T0415,Cars,ok
+T0416,Sports,ok
+T0417,Cooking,ok
+T0418,Cars,ok
+T0419,Cars,ok
+T0420,Technology,ok
+T0421,Health,ok
+T0422,Cooking,ok
+T0423,Health,ok
+T0424,Economy,ok
+T0425,Science,ok
+T0426,Thoughts and Wisdom,ok
+T0427,Science,ok
+T0428,Religion,ok
+T0429,Religion,ok
+T0430,Thoughts and Wisdom,ok
+T0431,Economy,ok
+T0432,Sports,ok
+T0433,Health,ok
+T0434,Economy,ok
+T0435,Thoughts and Wisdom,ok
+T0436,Thoughts and Wisdom,ok
+T0437,Religion,ok
+T0438,Politics,ok
+T0439,Cooking,ok
+T0440,Sports,ok
+T0441,Economy,ok
+T0442,Cars,ok
+T0443,Sports,ok
+T0444,Health,ok
+T0445,Sports,ok
+T0446,Politics,ok
+T0447,Economy,ok
+T0448,Sports,ok
+T0449,Health,ok
+T0450,Science,ok
+T0451,Cars,ok
+T0452,Health,ok
+T0453,Cars,ok
+T0454,Health,ok
+T0455,Thoughts and Wisdom,ok
+T0456,Technology,ok
+T0457,Cooking,ok
+T0458,Technology,ok
+T0459,Sports,ok
+T0460,Economy,ok
+T0461,Cooking,ok
+T0462,Cooking,ok
+T0463,Health,ok
+T0464,Religion,ok
+T0465,Economy,ok
+T0466,Cooking,ok
+T0467,Economy,ok
+T0468,Politics,ok
+T0469,Cooking,ok
+T0470,Politics,ok
+T0471,Economy,ok
+T0472,Economy,ok
+T0473,Politics,ok
+T0474,Health,ok
+T0475,Technology,ok
+T0476,Economy,ok
+T0477,Health,ok
+T0478,Economy,ok
+T0479,Cooking,ok
+T0480,Sports,ok
+T0481,Thoughts and Wisdom,ok
+T0482,Sports,ok
+T0483,Cooking,ok
+T0484,Economy,ok
+T0485,Health,ok
+T0486,Science,ok
+T0487,Health,ok
+T0488,Cooking,ok
+T0489,Politics,ok
+T0490,Cooking,ok
+T0491,Sports,ok
+T0492,Economy,ok
+T0493,Thoughts and Wisdom,ok
+T0494,Economy,ok
+T0495,Health,ok
+T0496,Health,ok
+T0497,Health,ok
+T0498,Economy,ok
+T0499,Technology,ok
+T0500,Health,ok
+T0501,Science,ok
+T0502,Economy,ok
+T0503,Politics,ok
+T0504,Economy,ok
+T0505,Science,ok
+T0506,Thoughts and Wisdom,ok
+T0507,Sports,ok
+T0508,Cars,ok
+T0509,Thoughts and Wisdom,ok
+T0510,Thoughts and Wisdom,ok
+T0511,Cars,ok
+T0512,Cooking,ok
+T0513,Economy,ok
+T0514,Sports,ok
+T0515,Thoughts and Wisdom,ok
+T0516,Technology,ok
+T0517,Politics,ok
+T0518,Cooking,ok
+T0519,Sports,ok
+T0520,Religion,ok
+T0521,Technology,ok
+T0522,Health,ok
+T0523,Economy,ok
+T0524,Health,ok
+T0525,Health,ok
+T0526,Health,ok
+T0527,Economy,ok
+T0528,Cooking,ok
+T0529,Politics,ok
+T0530,Health,ok
+T0531,Religion,ok
+T0532,Religion,ok
+T0533,Cars,ok
+T0534,Health,ok
+T0535,Politics,ok
+T0536,Religion,ok
+T0537,Sports,ok
+T0538,Politics,ok
+T0539,Economy,ok
+T0540,Thoughts and Wisdom,ok
+T0541,Cars,ok
+T0542,Health,ok
+T0543,Religion,ok
+T0544,Religion,ok
+T0545,Science,ok
+T0546,Science,ok
+T0547,Health,ok
+T0548,Health,ok
+T0549,Thoughts and Wisdom,ok
+T0550,Religion,ok
+T0551,Economy,ok
+T0552,Cars,ok
+T0553,Cooking,ok
+T0554,Religion,ok
+T0555,Cars,ok
+T0556,Health,ok
+T0557,Technology,ok
+T0558,Thoughts and Wisdom,ok
+T0559,Cars,ok
+T0560,Technology,ok
+T0561,Economy,ok
+T0562,Politics,ok
+T0563,Politics,ok
+T0564,Health,ok
+T0565,Technology,ok
+T0566,Religion,ok
+T0567,Thoughts and Wisdom,ok
+T0568,Politics,ok
+T0569,Religion,ok
+T0570,Cars,ok
+T0571,Science,ok
+T0572,Health,ok
+T0573,Health,ok
+T0574,Sports,ok
+T0575,Politics,ok
+T0576,Religion,ok
+T0577,Economy,ok
+T0578,Science,ok
+T0579,Thoughts and Wisdom,ok
+T0580,Thoughts and Wisdom,ok
+T0581,Sports,ok
+T0582,Thoughts and Wisdom,ok
+T0583,Sports,ok
+T0584,Cooking,ok
+T0585,Health,ok
+T0586,Economy,ok
+T0587,Science,ok
+T0588,Technology,ok
+T0589,Cooking,ok
+T0590,Cooking,ok
+T0591,Thoughts and Wisdom,ok
+T0592,Health,ok
+T0593,Religion,ok
+T0594,Health,ok
+T0595,Technology,ok
+T0596,Cars,ok
+T0597,Sports,ok
+T0598,Thoughts and Wisdom,ok
+T0599,Politics,ok
+T0600,Politics,ok
+T0601,Politics,ok
+T0602,Politics,ok
+T0603,Economy,ok
+T0604,Science,ok
+T0605,Science,ok
+T0606,Health,ok
+T0607,Religion,ok
+T0608,Sports,ok
+T0609,Cooking,ok
+T0610,Economy,ok
+T0611,Religion,ok
+T0612,Economy,ok
+T0613,Politics,ok
+T0614,Sports,ok
+T0615,Technology,ok
+T0616,Sports,ok
+T0617,Religion,ok
+T0618,Health,ok
+T0619,Health,ok
+T0620,Politics,ok
+T0621,Technology,ok
+T0622,Science,ok
+T0623,Health,ok
+T0624,Health,ok
+T0625,Thoughts and Wisdom,ok
+T0626,Sports,ok
+T0627,Sports,ok
+T0628,Religion,ok
+T0629,Economy,ok
+T0630,Science,ok
+T0631,Cooking,ok
+T0632,Thoughts and Wisdom,ok
+T0633,Health,ok
+T0634,Thoughts and Wisdom,ok
+T0635,Cooking,ok
+T0636,Economy,ok
+T0637,Thoughts and Wisdom,ok
+T0638,Religion,ok
+T0639,Cooking,ok
+T0640,Health,ok
+T0641,Sports,ok
+T0642,Thoughts and Wisdom,ok
+T0643,Health,ok
+T0644,Thoughts and Wisdom,ok
+T0645,Thoughts and Wisdom,ok
+T0646,Thoughts and Wisdom,ok
+T0647,Cooking,ok
+T0648,Economy,ok
+T0649,Religion,ok
+T0650,Religion,ok
+T0651,Technology,ok
+T0652,Health,ok
+T0653,Religion,ok
+T0654,Politics,ok
+T0655,Sports,ok
+T0656,Cars,ok
+T0657,Technology,ok
+T0658,Thoughts and Wisdom,ok
+T0659,Economy,ok
+T0660,Economy,ok
+T0661,Cars,ok
+T0662,Politics,ok
+T0663,Thoughts and Wisdom,ok
+T0664,Cooking,ok
+T0665,Thoughts and Wisdom,ok
+T0666,Technology,ok
+T0667,Cars,ok
+T0668,Technology,ok
+T0669,Health,ok
+T0670,Cars,ok
+T0671,Health,ok
+T0672,Sports,ok
+T0673,Politics,ok
+T0674,Politics,ok
+T0675,Economy,ok
+T0676,Economy,ok
+T0677,Sports,ok
+T0678,Health,ok
+T0679,Politics,ok
+T0680,Thoughts and Wisdom,ok
+T0681,Health,ok
+T0682,Religion,ok
+T0683,Science,ok
+T0684,Technology,ok
+T0685,Technology,ok
+T0686,Technology,ok
+T0687,Sports,ok
+T0688,Sports,ok
+T0689,Sports,ok
+T0690,Technology,ok
+T0691,Cooking,ok
+T0692,Economy,ok
+T0693,Health,ok
+T0694,Thoughts and Wisdom,ok
+T0695,Technology,ok
+T0696,Technology,ok
+T0697,Cars,ok
+T0698,Health,ok
+T0699,Health,ok
+T0700,Cars,ok
+T0701,Religion,ok
+T0702,Thoughts and Wisdom,ok
+T0703,Politics,ok
+T0704,Thoughts and Wisdom,ok
+T0705,Cars,ok
+T0706,Sports,ok
+T0707,Health,ok
+T0708,Health,ok
+T0709,Cooking,ok
+T0710,Cars,ok
+T0711,Politics,ok
+T0712,Science,ok
+T0713,Politics,ok
+T0714,Cars,ok
+T0715,Health,ok
+T0716,Economy,ok
+T0717,Sports,ok
+T0718,Cars,ok
+T0719,Politics,ok
+T0720,Technology,ok
+T0721,Cooking,ok
+T0722,Sports,ok
+T0723,Economy,ok
+T0724,Sports,ok
+T0725,Thoughts and Wisdom,ok
+T0726,Health,ok
+T0727,Cars,ok
+T0728,Politics,ok
+T0729,Health,ok
+T0730,Politics,ok
+T0731,Cooking,ok
+T0732,Politics,ok
+T0733,Cooking,ok
+T0734,Economy,ok
+T0735,Health,ok
+T0736,Science,ok
+T0737,Sports,ok
+T0738,Religion,ok
+T0739,Health,ok
+T0740,Health,ok
+T0741,Cars,ok
+T0742,Thoughts and Wisdom,ok
+T0743,Thoughts and Wisdom,ok
+T0744,Economy,ok
+T0745,Economy,ok
+T0746,Economy,ok
+T0747,Cars,ok
+T0748,Health,ok
+T0749,Science,ok
+T0750,Science,ok
+T0751,Sports,ok
+T0752,Science,ok
+T0753,Technology,ok
+T0754,Politics,ok
+T0755,Technology,ok
+T0756,Cars,ok
+T0757,Religion,ok
+T0758,Technology,ok
+T0759,Cooking,ok
+T0760,Health,ok
+T0761,Politics,ok
+T0762,Economy,ok
+T0763,Cooking,ok
+T0764,Science,ok
+T0765,Thoughts and Wisdom,ok
+T0766,Religion,ok
+T0767,Thoughts and Wisdom,ok
+T0768,Sports,ok
+T0769,Health,ok
+T0770,Health,ok
+T0771,Health,ok
+T0772,Technology,ok
+T0773,Religion,ok
+T0774,Sports,ok
+T0775,Health,ok
+T0776,Economy,ok
+T0777,Thoughts and Wisdom,ok
+T0778,Health,ok
+T0779,Cooking,ok
+T0780,Economy,ok
+T0781,Health,ok
+T0782,Health,ok
+T0783,Economy,ok
+T0784,Politics,ok
+T0785,Cars,ok
+T0786,Science,ok
+T0787,Health,ok
+T0788,Politics,ok
+T0789,Religion,ok
+T0790,Economy,ok
+T0791,Sports,ok
+T0792,Thoughts and Wisdom,ok
+T0793,Politics,ok
+T0794,Religion,ok
+T0795,Health,ok
+T0796,Politics,ok
+T0797,Economy,ok
+T0798,Science,ok
+T0799,Religion,ok
+T0800,Cooking,ok
+T0801,Health,ok
+T0802,Religion,ok
+T0803,Cars,ok
+T0804,Economy,ok
+T0805,Thoughts and Wisdom,ok
+T0806,Politics,ok
+T0807,Thoughts and Wisdom,ok
+T0808,Technology,ok
+T0809,Health,ok
+T0810,Politics,ok
+T0811,Technology,ok
+T0812,Health,ok
+T0813,Sports,ok
+T0814,Economy,ok
+T0815,Thoughts and Wisdom,ok
+T0816,Health,ok
+T0817,Technology,ok
+T0818,Sports,ok
+T0819,Thoughts and Wisdom,ok
+T0820,Health,ok
+T0821,Thoughts and Wisdom,ok
+T0822,Health,ok
+T0823,Technology,ok
+T0824,Politics,ok
+T0825,Politics,ok
+T0826,Cars,ok
+T0827,Technology,ok
+T0828,Sports,ok
+T0829,Cooking,ok
+T0830,Politics,ok
+T0831,Thoughts and Wisdom,ok
+T0832,Cooking,ok
+T0833,Health,ok
+T0834,Science,ok
+T0835,Politics,ok
+T0836,Politics,ok
+T0837,Cars,ok
+T0838,Religion,ok
+T0839,Cooking,ok
+T0840,Religion,ok
+T0841,Politics,ok
+T0842,Politics,ok
+T0843,Thoughts and Wisdom,ok
+T0844,Politics,ok
+T0845,Politics,ok
+T0846,Science,ok
+T0847,Cooking,ok
+T0848,Technology,ok
+T0849,Health,ok
+T0850,Cars,ok
+T0851,Religion,ok
+T0852,Politics,ok
+T0853,Politics,ok
+T0854,Health,ok
+T0855,Economy,ok
+T0856,Sports,ok
+T0857,Technology,ok
+T0858,Economy,ok
+T0859,Cars,ok
+T0860,Technology,ok
+T0861,Politics,ok
+T0862,Economy,ok
+T0863,Cars,ok
+T0864,Religion,ok
+T0865,Health,ok
+T0866,Cars,ok
+T0867,Economy,ok
+T0868,Thoughts and Wisdom,ok
+T0869,Economy,ok
+T0870,Thoughts and Wisdom,ok
+T0871,Health,ok
+T0872,Politics,ok
+T0873,Religion,ok
+T0874,Economy,ok
+T0875,Economy,ok
+T0876,Economy,ok
+T0877,Technology,ok
+T0878,Cooking,ok
+T0879,Economy,ok
+T0880,Sports,ok
+T0881,Technology,ok
+T0882,Health,ok
+T0883,Technology,ok
+T0884,Religion,ok
+T0885,Politics,ok
+T0886,Thoughts and Wisdom,ok
+T0887,Politics,ok
+T0888,Thoughts and Wisdom,ok
+T0889,Health,ok
+T0890,Cars,ok
+T0891,Sports,ok
+T0892,Sports,ok
+T0893,Politics,ok
+T0894,Economy,ok
+T0895,Health,ok
+T0896,Sports,ok
+T0897,Health,ok
+T0898,Sports,ok
+T0899,Health,ok
+T0900,Cooking,ok
+T0901,Politics,ok
+T0902,Thoughts and Wisdom,ok
+T0903,Thoughts and Wisdom,ok
+T0904,Cars,ok
+T0905,Cars,ok
+T0906,Thoughts and Wisdom,ok
+T0907,Thoughts and Wisdom,ok
+T0908,Cars,ok
+T0909,Religion,ok
+T0910,Thoughts and Wisdom,ok
+T0911,Religion,ok
+T0912,Thoughts and Wisdom,ok
+T0913,Science,ok
+T0914,Sports,ok
+T0915,Cars,ok
+T0916,Health,ok
+T0917,Health,ok
+T0918,Health,ok
+T0919,Sports,ok
+T0920,Thoughts and Wisdom,ok
+T0921,Technology,ok
+T0922,Health,ok
+T0923,Health,ok
+T0924,Thoughts and Wisdom,ok
+T0925,Health,ok
+T0926,Thoughts and Wisdom,ok
+T0927,Economy,ok
+T0928,Politics,ok
+T0929,Politics,ok
+T0930,Thoughts and Wisdom,ok
+T0931,Sports,ok
+T0932,Sports,ok
+T0933,Science,ok
+T0934,Thoughts and Wisdom,ok
+T0935,Cars,ok
+T0936,Economy,ok
+T0937,Health,ok
+T0938,Science,ok
+T0939,Cooking,ok
+T0940,Religion,ok
+T0941,Technology,ok
+T0942,Sports,ok
+T0943,Politics,ok
+T0944,Religion,ok
+T0945,Religion,ok
+T0946,Thoughts and Wisdom,ok
+T0947,Thoughts and Wisdom,ok
+T0948,Politics,ok
+T0949,Politics,ok
+T0950,Thoughts and Wisdom,ok
+T0951,Thoughts and Wisdom,ok
+T0952,Cooking,ok
+T0953,Health,ok
+T0954,Cooking,ok
+T0955,Technology,ok
+T0956,Health,ok
+T0957,Technology,ok
+T0958,Cars,ok
+T0959,Cars,ok
+T0960,Thoughts and Wisdom,ok
+T0961,Cars,ok
+T0962,Science,ok
+T0963,Religion,ok
+T0964,Cooking,ok
+T0965,Science,ok
+T0966,Sports,ok
+T0967,Politics,ok
+T0968,Health,ok
+T0969,Health,ok
+T0970,Politics,ok
+T0971,Politics,ok
+T0972,Technology,ok
+T0973,Cars,ok
+T0974,Politics,ok
+T0975,Religion,ok
+T0976,Politics,ok
+T0977,Cooking,ok
+T0978,Sports,ok
+T0979,Religion,ok
+T0980,Religion,ok
+T0981,Economy,ok
+T0982,Cars,ok
+T0983,Economy,ok
+T0984,Economy,ok
+T0985,Thoughts and Wisdom,ok
+T0986,Health,ok
+T0987,Health,ok
+T0988,Technology,ok
+T0989,Religion,ok
+T0990,Politics,ok
+T0991,Thoughts and Wisdom,ok
+T0992,Technology,ok
+T0993,Health,ok
+T0994,Science,ok
+T0995,Thoughts and Wisdom,ok
+T0996,Cars,ok
+T0997,Thoughts and Wisdom,ok
+T0998,Health,ok
+T0999,Religion,ok
+T1000,Cars,ok
+T1001,Economy,ok
+T1002,Politics,ok
+T1003,Politics,ok
+T1004,Politics,ok
+T1005,Economy,ok
+T1006,Health,ok
+T1007,Technology,ok
+T1008,Religion,ok
+T1009,Politics,ok
+T1010,Politics,ok
+T1011,Cars,ok
+T1012,Thoughts and Wisdom,ok
+T1013,Technology,ok
+T1014,Economy,ok
+T1015,Cooking,ok
+T1016,Cars,ok
+T1017,Health,ok
+T1018,Technology,ok
+T1019,Economy,ok
+T1020,Cooking,ok
+T1021,Cars,ok
+T1022,Economy,ok
+T1023,Cooking,ok
+T1024,Politics,ok
+T1025,Religion,ok
+T1026,Sports,ok
+T1027,Thoughts and Wisdom,ok
+T1028,Politics,ok
+T1029,Sports,ok
+T1030,Technology,ok
+T1031,Thoughts and Wisdom,ok
+T1032,Health,ok
+T1033,Science,ok
+T1034,Cooking,ok
+T1035,Science,ok
+T1036,Sports,ok
+T1037,Economy,ok
+T1038,Economy,ok
+T1039,Thoughts and Wisdom,ok
+T1040,Health,ok
+T1041,Thoughts and Wisdom,ok
+T1042,Religion,ok
+T1043,Cooking,ok
+T1044,Religion,ok
+T1045,Science,ok
+T1046,Health,ok
+T1047,Cars,ok
+T1048,Economy,ok
+T1049,Cars,ok
+T1050,Economy,ok
+T1051,Politics,ok
+T1052,Sports,ok
+T1053,Cars,ok
+T1054,Technology,ok
+T1055,Technology,ok
+T1056,Thoughts and Wisdom,ok
+T1057,Thoughts and Wisdom,ok
+T1058,Sports,ok
+T1059,Religion,ok
+T1060,Cooking,ok
+T1061,Technology,ok
+T1062,Thoughts and Wisdom,ok
+T1063,Religion,ok
+T1064,Religion,ok
+T1065,Health,ok
+T1066,Science,ok
+T1067,Science,ok
+T1068,Health,ok
+T1069,Health,ok
+T1070,Cars,ok
+T1071,Cars,ok
+T1072,Sports,ok
+T1073,Politics,ok
+T1074,Thoughts and Wisdom,ok
+T1075,Cars,ok
+T1076,Health,ok
+T1077,Cooking,ok
+T1078,Science,ok
+T1079,Health,ok
+T1080,Cars,ok
+T1081,Politics,ok
+T1082,Religion,ok
+T1083,Cooking,ok
+T1084,Economy,ok
+T1085,Technology,ok
+T1086,Cars,ok
+T1087,Cooking,ok
+T1088,Religion,ok
+T1089,Health,ok
+T1090,Cooking,ok
+T1091,Technology,ok
+T1092,Religion,ok
+T1093,Health,ok
+T1094,Sports,ok
+T1095,Sports,ok
+T1096,Technology,ok
+T1097,Economy,ok
+T1098,Cooking,ok
+T1099,Health,ok
+T1100,Sports,ok
+T1101,Economy,ok
+T1102,Religion,ok
+T1103,Health,ok
+T1104,Health,ok
+T1105,Religion,ok
+T1106,Thoughts and Wisdom,ok
+T1107,Cars,ok
+T1108,Health,ok
+T1109,Science,ok
+T1110,Health,ok
+T1111,Cooking,ok
+T1112,Religion,ok
+T1113,Cooking,ok
+T1114,Religion,ok
+T1115,Religion,ok
+T1116,Politics,ok
+T1117,Thoughts and Wisdom,ok
+T1118,Cars,ok
+T1119,Cars,ok
+T1120,Cars,ok
+T1121,Health,ok
+T1122,Cars,ok
+T1123,Economy,ok
+T1124,Cars,ok
+T1125,Economy,ok
+T1126,Sports,ok
+T1127,Cars,ok
+T1128,Cars,ok
+T1129,Politics,ok
+T1130,Health,ok
+T1131,Cars,ok
+T1132,Cars,ok
+T1133,Thoughts and Wisdom,ok
+T1134,Sports,ok
+T1135,Economy,ok
+T1136,Technology,ok
+T1137,Politics,ok
+T1138,Cars,ok
+T1139,Health,ok
+T1140,Economy,ok
+T1141,Politics,ok
+T1142,Politics,ok
+T1143,Science,ok
+T1144,Cars,ok
+T1145,Thoughts and Wisdom,ok
+T1146,Health,ok
+T1147,Health,ok
+T1148,Cars,ok
+T1149,Politics,ok
+T1150,Cars,ok
+T1151,Politics,ok
+T1152,Science,ok
+T1153,Politics,ok
+T1154,Technology,ok
+T1155,Technology,ok
+T1156,Technology,ok
+T1157,Health,ok
+T1158,Politics,ok
+T1159,Cooking,ok
+T1160,Health,ok
+T1161,Sports,ok
+T1162,Cooking,ok
+T1163,Religion,ok
+T1164,Cars,ok
+T1165,Technology,ok
+T1166,Health,ok
+T1167,Cooking,ok
+T1168,Sports,ok
+T1169,Thoughts and Wisdom,ok
+T1170,Cars,ok
+T1171,Economy,ok
+T1172,Sports,ok
+T1173,Technology,ok
+T1174,Economy,ok
+T1175,Health,ok
+T1176,Thoughts and Wisdom,ok
+T1177,Sports,ok
+T1178,Cars,ok
+T1179,Health,ok
+T1180,Religion,ok
+T1181,Religion,ok
+T1182,Technology,ok
+T1183,Cars,ok
+T1184,Science,ok
+T1185,Health,ok
+T1186,Thoughts and Wisdom,ok
+T1187,Religion,ok
+T1188,Health,ok
+T1189,Thoughts and Wisdom,ok
+T1190,Health,ok
+T1191,Sports,ok
+T1192,Sports,ok
+T1193,Economy,ok
+T1194,Technology,ok
+T1195,Health,ok
+T1196,Science,ok
+T1197,Politics,ok
+T1198,Health,ok
+T1199,Science,ok
+T1200,Politics,ok
+T1201,Cars,ok
+T1202,Politics,ok
+T1203,Health,ok
+T1204,Cooking,ok
+T1205,Cars,ok
+T1206,Religion,ok
+T1207,Cooking,ok
+T1208,Sports,ok
+T1209,Religion,ok
+T1210,Thoughts and Wisdom,ok
+T1211,Sports,ok
+T1212,Economy,ok
+T1213,Science,ok
+T1214,Cars,ok
+T1215,Economy,ok
+T1216,Health,ok
+T1217,Cooking,ok
+T1218,Politics,ok
+T1219,Cooking,ok
+T1220,Politics,ok
+T1221,Technology,ok
+T1222,Technology,ok
+T1223,Science,ok
+T1224,Economy,ok
+T1225,Health,ok
+T1226,Technology,ok
+T1227,Religion,ok
+T1228,Politics,ok
+T1229,Economy,ok
+T1230,Science,ok
+T1231,Thoughts and Wisdom,ok
+T1232,Politics,ok
+T1233,Health,ok
+T1234,Politics,ok
+T1235,Health,ok
+T1236,Health,ok
+T1237,Thoughts and Wisdom,ok
+T1238,Health,ok
+T1239,Religion,ok
+T1240,Religion,ok
+T1241,Cooking,ok
+T1242,Health,ok
+T1243,Sports,ok
+T1244,Cooking,ok
+T1245,Politics,ok
+T1246,Health,ok
+T1247,Health,ok
+T1248,Religion,ok
+T1249,Politics,ok
+T1250,Sports,ok
+T1251,Sports,ok
+T1252,Sports,ok
+T1253,Sports,ok
+T1254,Technology,ok
+T1255,Science,ok
+T1256,Technology,ok
+T1257,Technology,ok
+T1258,Health,ok
+T1259,Politics,ok
+T1260,Economy,ok
+T1261,Religion,ok
+T1262,Thoughts and Wisdom,ok
+T1263,Science,ok
+T1264,Health,ok
+T1265,Sports,ok
+T1266,Cars,ok
+T1267,Cars,ok
+T1268,Religion,ok
+T1269,Politics,ok
+T1270,Technology,ok
+T1271,Politics,ok
+T1272,Science,ok
+T1273,Economy,ok
+T1274,Technology,ok
+T1275,Cooking,ok
+T1276,Cooking,ok
+T1277,Religion,ok
+T1278,Politics,ok
+T1279,Politics,ok
+T1280,Thoughts and Wisdom,ok
+T1281,Politics,ok
+T1282,Sports,ok
+T1283,Sports,ok
+T1284,Sports,ok
+T1285,Health,ok
+T1286,Cars,ok
+T1287,Religion,ok
+T1288,Cars,ok
+T1289,Health,ok
+T1290,Cars,ok
+T1291,Religion,ok
+T1292,Cars,ok
+T1293,Politics,ok
+T1294,Health,ok
+T1295,Thoughts and Wisdom,ok
+T1296,Religion,ok
+T1297,Economy,ok
+T1298,Technology,ok
+T1299,Thoughts and Wisdom,ok
+T1300,Economy,ok
+T1301,Cooking,ok
+T1302,Religion,ok
+T1303,Cars,ok
+T1304,Science,ok
+T1305,Health,ok
+T1306,Thoughts and Wisdom,ok
+T1307,Politics,ok
+T1308,Cars,ok
+T1309,Sports,ok
+T1310,Religion,ok
+T1311,Thoughts and Wisdom,ok
+T1312,Economy,ok
+T1313,Politics,ok
+T1314,Politics,ok
+T1315,Politics,ok
+T1316,Religion,ok
+T1317,Religion,ok
+T1318,Economy,ok
+T1319,Health,ok
+T1320,Health,ok
+T1321,Cooking,ok
+T1322,Health,ok
+T1323,Thoughts and Wisdom,ok
+T1324,Technology,ok
+T1325,Religion,ok
+T1326,Sports,ok
+T1327,Sports,ok
+T1328,Technology,ok
+T1329,Politics,ok
+T1330,Health,ok
+T1331,Thoughts and Wisdom,ok
+T1332,Cars,ok
+T1333,Sports,ok
+T1334,Economy,ok
+T1335,Thoughts and Wisdom,ok
+T1336,Religion,ok
+T1337,Politics,ok
+T1338,Politics,ok
+T1339,Religion,ok
+T1340,Science,ok
+T1341,Economy,ok
+T1342,Sports,ok
+T1343,Politics,ok
+T1344,Economy,ok
+T1345,Politics,ok
+T1346,Health,ok
+T1347,Health,ok
+T1348,Economy,ok
+T1349,Cooking,ok
+T1350,Cars,ok
+T1351,Technology,ok
+T1352,Economy,ok
+T1353,Cooking,ok
+T1354,Economy,ok
+T1355,Religion,ok
+T1356,Technology,ok
+T1357,Sports,ok
+T1358,Science,ok
+T1359,Economy,ok
+T1360,Cars,ok
+T1361,Science,ok
+T1362,Politics,ok
+T1363,Sports,ok
+T1364,Thoughts and Wisdom,ok
+T1365,Thoughts and Wisdom,ok
+T1366,Cars,ok
+T1367,Thoughts and Wisdom,ok
+T1368,Health,ok
+T1369,Thoughts and Wisdom,ok
+T1370,Sports,ok
+T1371,Politics,ok
+T1372,Sports,ok
+T1373,Health,ok
+T1374,Cars,ok
+T1375,Politics,ok
+T1376,Economy,ok
+T1377,Health,ok
+T1378,Health,ok
+T1379,Thoughts and Wisdom,ok
+T1380,Technology,ok
+T1381,Health,ok
+T1382,Economy,ok
+T1383,Religion,ok
+T1384,Politics,ok
+T1385,Technology,ok
+T1386,Science,ok
+T1387,Cars,ok
+T1388,Economy,ok
+T1389,Thoughts and Wisdom,ok
+T1390,Politics,ok
+T1391,Health,ok
+T1392,Thoughts and Wisdom,ok
+T1393,Cars,ok
+T1394,Politics,ok
+T1395,Sports,ok
+T1396,Thoughts and Wisdom,ok
+T1397,Health,ok
+T1398,Politics,ok
+T1399,Health,ok
+T1400,Thoughts and Wisdom,ok
+T1401,Cars,ok
+T1402,Cooking,ok
+T1403,Cooking,ok
+T1404,Religion,ok
+T1405,Religion,ok
+T1406,Technology,ok
+T1407,Health,ok
+T1408,Technology,ok
+T1409,Thoughts and Wisdom,ok
+T1410,Health,ok
+T1411,Politics,ok
+T1412,Cars,ok
+T1413,Politics,ok
+T1414,Sports,ok
+T1415,Cooking,ok
+T1416,Health,ok
+T1417,Religion,ok
+T1418,Religion,ok
+T1419,Economy,ok
+T1420,Health,ok
+T1421,Religion,ok
+T1422,Health,ok
+T1423,Technology,ok
+T1424,Health,ok
+T1425,Health,ok
+T1426,Science,ok
+T1427,Sports,ok
+T1428,Thoughts and Wisdom,ok
+T1429,Politics,ok
+T1430,Technology,ok
+T1431,Thoughts and Wisdom,ok
+T1432,Science,ok
+T1433,Health,ok
+T1434,Technology,ok
+T1435,Cooking,ok
+T1436,Economy,ok
+T1437,Economy,ok
+T1438,Thoughts and Wisdom,ok
+T1439,Politics,ok
+T1440,Health,ok
+T1441,Sports,ok
+T1442,Religion,ok
+T1443,Thoughts and Wisdom,ok
+T1444,Sports,ok
+T1445,Religion,ok
+T1446,Religion,ok
+T1447,Religion,ok
+T1448,Thoughts and Wisdom,ok
+T1449,Science,ok
+T1450,Health,ok
+T1451,Thoughts and Wisdom,ok
+T1452,Politics,ok
+T1453,Sports,ok
+T1454,Religion,ok
+T1455,Technology,ok
+T1456,Religion,ok
+T1457,Health,ok
+T1458,Economy,ok
+T1459,Health,ok
+T1460,Health,ok
+T1461,Science,ok
+T1462,Technology,ok
+T1463,Science,ok
+T1464,Economy,ok
+T1465,Politics,ok
+T1466,Religion,ok
+T1467,Politics,ok
+T1468,Politics,ok
+T1469,Economy,ok
+T1470,Health,ok
+T1471,Religion,ok
+T1472,Economy,ok
+T1473,Sports,ok
+T1474,Religion,ok
+T1475,Sports,ok
+T1476,Cars,ok
+T1477,Health,ok
+T1478,Technology,ok
+T1479,Religion,ok
+T1480,Politics,ok
+T1481,Cars,ok
+T1482,Health,ok
+T1483,Thoughts and Wisdom,ok
+T1484,Science,ok
+T1485,Cooking,ok
+T1486,Cooking,ok
+T1487,Health,ok
+T1488,Politics,ok
+T1489,Politics,ok
+T1490,Politics,ok
+T1491,Cars,ok
+T1492,Thoughts and Wisdom,ok
+T1493,Technology,ok
+T1494,Politics,ok
+T1495,Politics,ok
+T1496,Politics,ok
+T1497,Health,ok
+T1498,Religion,ok
+T1499,Cars,ok
+T1500,Technology,ok
+T1501,Technology,ok
+T1502,Cooking,ok
+T1503,Sports,ok
+T1504,Thoughts and Wisdom,ok
+T1505,Economy,ok
+T1506,Religion,ok
+T1507,Religion,ok
+T1508,Politics,ok
+T1509,Technology,ok
+T1510,Cooking,ok
+T1511,Science,ok
+T1512,Sports,ok
+T1513,Cooking,ok
+T1514,Economy,ok
+T1515,Religion,ok
+T1516,Health,ok
+T1517,Economy,ok
+T1518,Cars,ok
+T1519,Sports,ok
+T1520,Health,ok
+T1521,Politics,ok
+T1522,Science,ok
+T1523,Religion,ok
+T1524,Religion,ok
+T1525,Economy,ok
+T1526,Politics,ok
+T1527,Health,ok
+T1528,Cooking,ok
+T1529,Economy,ok
+T1530,Cooking,ok
+T1531,Cars,ok
+T1532,Health,ok
+T1533,Cars,ok
+T1534,Politics,ok
+T1535,Technology,ok
+T1536,Politics,ok
+T1537,Thoughts and Wisdom,ok
+T1538,Politics,ok
+T1539,Politics,ok
+T1540,Economy,ok
+T1541,Science,ok
+T1542,Thoughts and Wisdom,ok
+T1543,Religion,ok
+T1544,Religion,ok
+T1545,Health,ok
+T1546,Sports,ok
+T1547,Religion,ok
+T1548,Health,ok
+T1549,Technology,ok
+T1550,Economy,ok
+T1551,Cars,ok
+T1552,Politics,ok
+T1553,Politics,ok
+T1554,Science,ok
+T1555,Health,ok
+T1556,Politics,ok
+T1557,Sports,ok
+T1558,Economy,ok
+T1559,Thoughts and Wisdom,ok
+T1560,Cars,ok
+T1561,Cars,ok
+T1562,Science,ok
+T1563,Health,ok
+T1564,Thoughts and Wisdom,ok
+T1565,Politics,ok
+T1566,Politics,ok
+T1567,Thoughts and Wisdom,ok
+T1568,Cars,ok
+T1569,Religion,ok
+T1570,Politics,ok
+T1571,Thoughts and Wisdom,ok
+T1572,Technology,ok
+T1573,Health,ok
+T1574,Cars,ok
+T1575,Cooking,ok
+T1576,Economy,ok
+T1577,Technology,ok
+T1578,Technology,ok
+T1579,Thoughts and Wisdom,ok
+T1580,Religion,ok
+T1581,Economy,ok
+T1582,Thoughts and Wisdom,ok
+T1583,Religion,ok
+T1584,Economy,ok
+T1585,Cars,ok
+T1586,Thoughts and Wisdom,ok
+T1587,Religion,ok
+T1588,Science,ok
+T1589,Sports,ok
+T1590,Religion,ok
+T1591,Religion,ok
+T1592,Economy,ok
+T1593,Sports,ok
+T1594,Health,ok
+T1595,Technology,ok
+T1596,Religion,ok
+T1597,Technology,ok
+T1598,Sports,ok
+T1599,Politics,ok
+T1600,Religion,ok
+T1601,Cooking,ok
+T1602,Health,ok
+T1603,Technology,ok
+T1604,Health,ok
+T1605,Economy,ok
+T1606,Technology,ok
+T1607,Technology,ok
+T1608,Thoughts and Wisdom,ok
+T1609,Health,ok
+T1610,Cooking,ok
+T1611,Cars,ok
+T1612,Health,ok
+T1613,Religion,ok
+T1614,Science,ok
+T1615,Politics,ok
+T1616,Technology,ok
+T1617,Thoughts and Wisdom,ok
+T1618,Health,ok
+T1619,Thoughts and Wisdom,ok
+T1620,Health,ok
+T1621,Technology,ok
+T1622,Science,ok
+T1623,Thoughts and Wisdom,ok
+T1624,Sports,ok
+T1625,Sports,ok
+T1626,Technology,ok
+T1627,Health,ok
+T1628,Thoughts and Wisdom,ok
+T1629,Politics,ok
+T1630,Technology,ok
+T1631,Cars,ok
+T1632,Politics,ok
+T1633,Religion,ok
+T1634,Politics,ok
+T1635,Technology,ok
+T1636,Politics,ok
+T1637,Politics,ok
+T1638,Cars,ok
+T1639,Thoughts and Wisdom,ok
+T1640,Politics,ok
+T1641,Economy,ok
+T1642,Religion,ok
+T1643,Health,ok
+T1644,Technology,ok
+T1645,Cars,ok
+T1646,Sports,ok
+T1647,Sports,ok
+T1648,Politics,ok
+T1649,Technology,ok
+T1650,Religion,ok
+T1651,Cars,ok
+T1652,Cars,ok
+T1653,Economy,ok
+T1654,Thoughts and Wisdom,ok
+T1655,Health,ok
+T1656,Thoughts and Wisdom,ok
+T1657,Religion,ok
+T1658,Thoughts and Wisdom,ok
+T1659,Cars,ok
+T1660,Religion,ok
+T1661,Thoughts and Wisdom,ok
+T1662,Religion,ok
+T1663,Politics,ok
+T1664,Cooking,ok
+T1665,Science,ok
+T1666,Politics,ok
+T1667,Technology,ok
+T1668,Politics,ok
+T1669,Sports,ok
+T1670,Thoughts and Wisdom,ok
+T1671,Health,ok
+T1672,Cooking,ok
+T1673,Technology,ok
+T1674,Cooking,ok
+T1675,Technology,ok
+T1676,Science,ok
+T1677,Sports,ok
+T1678,Cars,ok
+T1679,Politics,ok
+T1680,Health,ok
+T1681,Thoughts and Wisdom,ok
+T1682,Thoughts and Wisdom,ok
+T1683,Health,ok
+T1684,Technology,ok
+T1685,Sports,ok
+T1686,Economy,ok
+T1687,Thoughts and Wisdom,ok
+T1688,Religion,ok
+T1689,Cars,ok
+T1690,Technology,ok
+T1691,Religion,ok
+T1692,Economy,ok
+T1693,Politics,ok
+T1694,Thoughts and Wisdom,ok
+T1695,Science,ok
+T1696,Technology,ok
+T1697,Economy,ok
+T1698,Science,ok
+T1699,Cars,ok
+T1700,Religion,ok
+T1701,Science,ok
+T1702,Health,ok
+T1703,Cars,ok
+T1704,Health,ok
+T1705,Sports,ok
+T1706,Politics,ok
+T1707,Cars,ok
+T1708,Technology,ok
+T1709,Politics,ok
+T1710,Thoughts and Wisdom,ok
+T1711,Cooking,ok
+T1712,Thoughts and Wisdom,ok
+T1713,Science,ok
+T1714,Cars,ok
+T1715,Health,ok
+T1716,Cooking,ok
+T1717,Sports,ok
+T1718,Politics,ok
+T1719,Health,ok
+T1720,Sports,ok
+T1721,Technology,ok
+T1722,Thoughts and Wisdom,ok
+T1723,Technology,ok
+T1724,Thoughts and Wisdom,ok
+T1725,Religion,ok
+T1726,Technology,ok
+T1727,Sports,ok
+T1728,Cooking,ok
+T1729,Technology,ok
+T1730,Politics,ok
+T1731,Sports,ok
+T1732,Cooking,ok
+T1733,Health,ok
+T1734,Cars,ok
+T1735,Economy,ok
+T1736,Health,ok
+T1737,Thoughts and Wisdom,ok
+T1738,Politics,ok
+T1739,Technology,ok
+T1740,Economy,ok
+T1741,Thoughts and Wisdom,ok
+T1742,Sports,ok
+T1743,Sports,ok
+T1744,Sports,ok
+T1745,Economy,ok
+T1746,Religion,ok
+T1747,Economy,ok
+T1748,Sports,ok
+T1749,Religion,ok
+T1750,Technology,ok
+T1751,Science,ok
+T1752,Religion,ok
+T1753,Technology,ok
+T1754,Technology,ok
+T1755,Science,ok
+T1756,Health,ok
+T1757,Religion,ok
+T1758,Technology,ok
+T1759,Technology,ok
+T1760,Technology,ok
+T1761,Cooking,ok
+T1762,Health,ok
+T1763,Sports,ok
+T1764,Sports,ok
+T1765,Health,ok
+T1766,Health,ok
+T1767,Science,ok
+T1768,Politics,ok
+T1769,Health,ok
+T1770,Thoughts and Wisdom,ok
+T1771,Health,ok
+T1772,Sports,ok
+T1773,Sports,ok
+T1774,Thoughts and Wisdom,ok
+T1775,Religion,ok
+T1776,Health,ok
+T1777,Sports,ok
+T1778,Science,ok
+T1779,Sports,ok
+T1780,Technology,ok
+T1781,Science,ok
+T1782,Thoughts and Wisdom,ok
+T1783,Thoughts and Wisdom,ok
+T1784,Technology,ok
+T1785,Thoughts and Wisdom,ok
+T1786,Health,ok
+T1787,Health,ok
+T1788,Religion,ok
+T1789,Thoughts and Wisdom,ok
+T1790,Economy,ok
+T1791,Health,ok
+T1792,Economy,ok
+T1793,Religion,ok
+T1794,Technology,ok
+T1795,Technology,ok
+T1796,Religion,ok
+T1797,Politics,ok
+T1798,Religion,ok
+T1799,Politics,ok
+T1800,Religion,ok
+T1801,Technology,ok
+T1802,Health,ok
+T1803,Thoughts and Wisdom,ok
+T1804,Sports,ok
+T1805,Economy,ok
+T1806,Technology,ok
+T1807,Cars,ok
+T1808,Religion,ok
+T1809,Economy,ok
+T1810,Technology,ok
+T1811,Health,ok
+T1812,Politics,ok
+T1813,Sports,ok
+T1814,Technology,ok
+T1815,Sports,ok
+T1816,Politics,ok
+T1817,Sports,ok
+T1818,Religion,ok
+T1819,Cooking,ok
+T1820,Cooking,ok
+T1821,Politics,ok
+T1822,Politics,ok
+T1823,Cooking,ok
+T1824,Health,ok
+T1825,Thoughts and Wisdom,ok
+T1826,Science,ok
+T1827,Religion,ok
+T1828,Economy,ok
+T1829,Health,ok
+T1830,Thoughts and Wisdom,ok
+T1831,Health,ok
+T1832,Technology,ok
+T1833,Politics,ok
+T1834,Sports,ok
+T1835,Health,ok
+T1836,Health,ok
+T1837,Cars,ok
+T1838,Politics,ok
+T1839,Science,ok
+T1840,Sports,ok
+T1841,Economy,ok
+T1842,Economy,ok
+T1843,Religion,ok
+T1844,Religion,ok
+T1845,Politics,ok
+T1846,Science,ok
+T1847,Cooking,ok
+T1848,Cars,ok
+T1849,Religion,ok
+T1850,Cars,ok
+T1851,Thoughts and Wisdom,ok
+T1852,Cooking,ok
+T1853,Sports,ok
+T1854,Technology,ok
+T1855,Health,ok
+T1856,Cooking,ok
+T1857,Politics,ok
+T1858,Technology,ok
+T1859,Cooking,ok
+T1860,Economy,ok
+T1861,Sports,ok
+T1862,Religion,ok
+T1863,Religion,ok
+T1864,Sports,ok
+T1865,Health,ok
+T1866,Religion,ok
+T1867,Science,ok
+T1868,Health,ok
+T1869,Thoughts and Wisdom,ok
+T1870,Cars,ok
+T1871,Thoughts and Wisdom,ok
+T1872,Cars,ok
+T1873,Religion,ok
+T1874,Religion,ok
+T1875,Politics,ok
+T1876,Cooking,ok
+T1877,Cars,ok
+T1878,Health,ok
+T1879,Cooking,ok
+T1880,Health,ok
+T1881,Religion,ok
+T1882,Politics,ok
+T1883,Cooking,ok
+T1884,Technology,ok
+T1885,Health,ok
+T1886,Technology,ok
+T1887,Health,ok
+T1888,Technology,ok
+T1889,Religion,ok
+T1890,Science,ok
+T1891,Technology,ok
+T1892,Sports,ok
+T1893,Politics,ok
+T1894,Thoughts and Wisdom,ok
+T1895,Economy,ok
+T1896,Thoughts and Wisdom,ok
+T1897,Cooking,ok
+T1898,Politics,ok
+T1899,Cooking,ok
+T1900,Economy,ok
+T1901,Sports,ok
+T1902,Health,ok
+T1903,Economy,ok
+T1904,Health,ok
+T1905,Sports,ok
+T1906,Thoughts and Wisdom,ok
+T1907,Cars,ok
+T1908,Religion,ok
+T1909,Economy,ok
+T1910,Sports,ok
+T1911,Religion,ok
+T1912,Religion,ok
+T1913,Sports,ok
+T1914,Thoughts and Wisdom,ok
+T1915,Sports,ok
+T1916,Religion,ok
+T1917,Health,ok
+T1918,Cars,ok
+T1919,Health,ok
+T1920,Economy,ok
+T1921,Sports,ok
+T1922,Sports,ok
+T1923,Thoughts and Wisdom,ok
+T1924,Health,ok
+T1925,Cars,ok
+T1926,Health,ok
+T1927,Politics,ok
+T1928,Economy,ok
+T1929,Health,ok
+T1930,Health,ok
+T1931,Cooking,ok
+T1932,Cars,ok
+T1933,Cooking,ok
+T1934,Health,ok
+T1935,Cooking,ok
+T1936,Health,ok
+T1937,Cars,ok
+T1938,Politics,ok
+T1939,Technology,ok
+T1940,Health,ok
+T1941,Thoughts and Wisdom,ok
+T1942,Sports,ok
+T1943,Religion,ok
+T1944,Sports,ok
+T1945,Politics,ok
+T1946,Science,ok
+T1947,Sports,ok
+T1948,Thoughts and Wisdom,ok
+T1949,Economy,ok
+T1950,Thoughts and Wisdom,ok
+T1951,Health,ok
+T1952,Health,ok
+T1953,Cars,ok
+T1954,Thoughts and Wisdom,ok
+T1955,Economy,ok
+T1956,Health,ok
+T1957,Sports,ok
+T1958,Science,ok
+T1959,Economy,ok
+T1960,Religion,ok
+T1961,Economy,ok
+T1962,Sports,ok
+T1963,Politics,ok
+T1964,Health,ok
+T1965,Cooking,ok
+T1966,Cars,ok
+T1967,Science,ok
+T1968,Economy,ok
+T1969,Religion,ok
+T1970,Cooking,ok
+T1971,Science,ok
+T1972,Science,ok
+T1973,Cooking,ok
+T1974,Politics,ok
+T1975,Sports,ok
+T1976,Sports,ok
+T1977,Health,ok
+T1978,Health,ok
+T1979,Science,ok
+T1980,Science,ok
+T1981,Cars,ok
+T1982,Technology,ok
+T1983,Politics,ok
+T1984,Religion,ok
+T1985,Health,ok
+T1986,Cars,ok
+T1987,Sports,ok
+T1988,Cooking,ok
+T1989,Health,ok
+T1990,Economy,ok
+T1991,Cars,ok
+T1992,Technology,ok
+T1993,Religion,ok
+T1994,Technology,ok
+T1995,Thoughts and Wisdom,ok
+T1996,Religion,ok
+T1997,Science,ok
+T1998,Politics,ok
+T1999,Sports,ok
+T2000,Religion,ok

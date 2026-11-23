@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1401 to T1450.
+- Each line has the form ID,Category (for example: T1401,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1401 to T1450):
+T1401: جينسيس ستنتج الكهربائي داخل الولايات المتحده الامريكيه و ستكون هناك نسختين واحده تصنع في كوريا و الاخري في الولايات المتحده جينسيس
+T1402: حضري مع مطبخ سيدتي أطيب الحلويات المقدمه بنكهات المربيات اللذيذه
+T1403: المطبخ السعودي غني بالأطباق التقليديه المشهوره بطعمها الرائع والمفيد صحيا جربي وصفه الجريش المميزه وزيني الطبق بالبصل المحمر هي لنا دار اليوم الوطني السعودي
+T1404: الفوضي في المعرفه الدينيه الشيخ يوسف القرضاوي الشريعه والحياه
+T1405: قال رسول الله إذا صليتم الجمعه فصلوا بعدها أربعا الألباني ت صحيح الجامع صحيح
+T1406: ترافق الانتقال الذي أحدثه انتشار فيروس كورونا إلي أسلوب العمل عن بعد مع ارتفاع ملحوظ في استخدام برامج المراقبه التي تتيح لأصحاب العمل تتبع أداء الموظفين لمهامهم ولكن كيف سيكون الحال عند استخدام التعلم الآلي لتطبيق فكره درجه الإنتاجيه
+T1407: إضافات مهمه يوميه بوجباتك
+T1408: أطلقت شركه آبل تحديثات لجميع أنظمه تشغيلها وعلي رأسها لمستخدمي هواتف آيفون بالإضافه إلي تحديث وكذلك نظام بالإضافه إلي نظام ماك والأنظمه الأخري
+T1409: لا شيء أجمل من أن تمنحك الحياه صديقا مخلصا يبكي الصداقه من شده إخلاصه
+T1410: الجلوس لفترات طويله يضاعف احتمال الإصابه بالسكري
+T1411: طهران إيران تستخدم العنف لقمع الاحتجاجات علي اشتعال الأسعار
+T1412: رحله في فورد موستنج
+T1413: وزير الخارجيه المنطقه تعاني من تدخلات مليشيات طائفيه
+T1414: ميلان لقبول هديه بولونيا والاقتراب أكثر من لقب طال انتظاره
+T1415: تعلمي نكهه جديده ومميزه بإضافه البقدونس وجبن الفيتا إلي البيض
+T1416: عصائر الديتوكس اتبعت هذه الطريقه في التخسيس ميراندا كير وجيسيكا ألبا تحويل الوجبات الصلبه إلي هيئه عصائر الفواكه والخضروات الورقيه ليس جيدا علي الصعيد الصحي لو أنه يساعد في تخسيس الجسم
+T1417: جرب أن تربط شيئا تتمناه بالاستغفار وتنوي بأن يتحقق لك حينها كن علي ثقه بأن الله لن يردك خائبا
+T1418: الحج لا يطهر الإنسان من المال الحرام ولا من حقوق العباد الشيخ يوسف
+T1419: توقعات وزيره الخزانه الأميركيه تباطؤ اقتصاد بلادها فيما وصفت إنفاق المستهلكين بأنه ما يزال قويا و التضخم يعود جزئيا إلي حرب روسيا في أوكرانيا
+T1420: يقول الباحثون إنه من المحتمل أن يصاب الأطفال الذين يعانون الأكزيما بصعوبات التعلم أكثر من غيرهم كيف ذلك
+T1421: احفظ لسانك وبصرك وسمعك وفرجك عن الحرام صيام يوم عرفه وحده يكفر ذنوب سنه ماضيه وسنه قادمه خصص ليوم عرفه دعاء طويلا بخيري الدنيا والآخره واعلم أن شر الناس في يوم عرفه من يظن أن الله لن يغفر له العشر من ذي الحجه
+T1422: امتناع الأطفال عن الطعام يسبب الاكتئاب
+T1423: شركه تكشف عن قائمه هواتفها الذكيه التي ستحصل علي تحديث
+T1424: التصوير الشعاعي يحد من الوفاه بسرطان الثدي
+T1425: هل يمكن استخدام زيت إكليل الجبل لنمو الشعر ترجمه يمام نضال دالي تدقيق نغم رابي مراجعه أكرم محيي الدين
+T1426: يمكن لهذا الحبار الصغير تغير لونه من اللون الأسود إلي الرمادي بغمضه عين سبحان الخالق  الحبار عالم الحيوان
+T1427: د ادواردو يسجل الاول الاهلي الاتحاد
+T1428: تجاهل فإنك إن وقفت علي كل موقف ستكره الجميع تجاهل تسلم
+T1429: كوريا الشماليه تطلق صواريخ باليستيه باتجاه بحر اليابان و أوكرانيا تؤكد عدم جدوي المفاوضات والأسواق العالميه تترقب أسبوعا حافلا باجتماعات البنوك المركزيه مع مذيعه الشرق نور عماشه
+T1430: الف مبروك للفائز بالإيفون لليوم الثامن والعشرون يرجي التواصل معنا ولمن لم يحالفه الحظ بعد قليل سيتم طرح السؤال التاسع والعشرون
+T1431: وجه المرأه يوم الجمعه
+T1432: الكون يتمدد أسرع مما كنا نعتقد
+T1433: علميا لماذا تعتبر الإنطوائيه أفضل للصحه العقليه تابعوا الإجابه معناعبر المقال
+T1434: آبل تؤكد أنها تستخدم المشاه إلي جانب السيارات لجمع البيانات من أجل خدمه الخرائط الخاصه بها
+T1435: لا تفوتي فرصه تعلم أطيب الطبخات السعوديه التقليديه والمعروفه
+T1436: أسعار النفط تقترب من الوصول إلي دولار للبرميل فماذا يعني ذلك للاقتصاد العالمي مع محرره  آلاء جودي
+T1437: سهم تويتر ارتفع خلال سنوات مقابل ل تسلا  إيلون ماسك
+T1438: تمتعي بستايلك واعرفي الشكل المناسب لطريقه لف الطرحه اليوميه   الحياه حلوه
+T1439: الآلاف يتظاهرون في الجزائر ودعوه للجيش بعدم التدخل
+T1440: أنواع من آلام الصدر يجب أن لا تتجاهلها كن علي علم بها إقرأ عنها عبر المقال
+T1441: من الديلي ميل روسيا قد تلتحق بالاتحاد الاسيوي وتشارك في دوري الابطال وتصفيات عبر قاره اسيا
+T1442: تبارك الذي بيده الملك وهو علي كل شيء قدير الملك
+T1443: أنيري مكان البدر إن أفل البدر وقومي مقام الشمس ما استأخر الفجر ففيك من الشمس المنيره ضوؤها وليس لها منك التبسم والثغر بلي لك نور الشمس والبدر كله ولا حملت عينيك شمس ولا بدر مجنون ليلي
+T1444: النجم براد بيت والسير لويس هاميلتون يصنعان فيلما عن الفورمولا
+T1445: قال العلامه صالح الفوزان فإن صلاتك عمود دينك متي استقامت استقام الدين ومتي اختلت اختل الدين الملخص الفقهي
+T1446: هل تعرف أحد مات يوم الجمعه
+T1447: قال العلامه ابن باز رحمه الله لا يشرع للنساء لا الأذان ولا الإقامه بل الأذان والإقامه مما يتعلق بالرجال فالمرأه تصلي بدون أذان ولا إقامه فتاوي نور علي الدرب
+T1448: أجمل ما يقال عن الصحبه حزن واحد يحمله قلبان
+T1449: مركب كيميائي موجود في نبته يثبط انتشار الخلايا الجذعيه السرطانيه مقال نون يعرض تفاصيل التجارب  ترجمه مراجعه
+T1450: الباحث في العلاج المناعي بجامعه كارديف محمد الحاج علي لقاحات كورونا يمكن تطويرها خلال أسابيع لمواجهه السلاله الجديده

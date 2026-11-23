@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T1701 to T1750.
+- Each line has the form ID,Category (for example: T1701,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T1701 to T1750):
+T1701: في مثل هذا اليوم سنه ولد الفيزيائي الألماني الذي اشتهر باكتشافه أشعه بمحض الصدفه سنه حيث رصد اشعاعا غريبا عالي التردد قادرا علي اختراق الأجسام بحسب صلابته فسماه كما نرمز للمجهول في المعادلات الرياضيه كانت يد زوجته أول صوره باستخدام أشعه
+T1702: يحدث احتباس البول للعديد من الاشخاص وتتعدد أسبابه تعرفوا علي بعض منها من هنا واكتشفوا العلاج الممكن
+T1703: تضمنت مجموعه من الترقيات الميكانيكيه والتكنولوجيه لتلبيه الاحتياجات المتزايده للعائلات في المنطقه
+T1704: استخدام الهواتف المحموله يزيد فرص الإصابه بسرطان المخ
+T1705: كنو يبكي أثناء التتويج
+T1706: الدفاع الروسيه تنشر لقطات لقصف مدفعي علي مواقع أوكرانيه أوكرانيا روسيا
+T1707: خاصه وأنها سجلت علامه التجاريه مؤخرا ما يشير إلي إمكانيه إعاده إحياء بيتل كسياره كهربائيه
+T1708: تسريبات جديده تؤكد حقيقه قدوم الهاتف مع ثلاث كاميرات في الواجهه الخلفيه
+T1709: المرشح عن دائره بعبدا للانتخابات البرلمانيه بيار بوعاصي ل الحدث علي المسؤولين السياسيين و حزب الله عدم الاستخفاف بالشعب اللبناني وإهانته
+T1710: في سن المراهقه تختلف المعامله مع أبنائك بشكل كبير أخبرونا كيف تتعاملون مع أولادكم في هذه المرحله من عمرهم   الحياه حلوه مراهقه أبنه
+T1711: غيري من طعم سلاطاتك علي السفره اصنعي سلطه التونه بالأفوكادو والسبانخ والخيار بطريقه ليلي المعينا   الحياه حلوه ليلي المعينا غذي مودك أطباق جانبيه سلطات أفوكادو   رمضان
+T1712: إن مشكلتك ليست سنواتك التي ضاعت و لكن سنواتك القادمه التي ستضيع حتما إذا واجهت الدنيا بنفس العقليه
+T1713: فرنسا تعتمد علي الطاقه النوويه في تلبيه من حاجتها إلي الكهرباء فما هو مستقبل الطاقه في البلاد
+T1714: المربع نت مقطع من تجربتنا السابقه لسياره تويوتا لاندكروزر المربع نت تويوتا
+T1715: دواء إيبوبروفين إرشادات الاستخدام والآثار الجانبيه والتحذيرات ترجمه آيه وقاف تدقيق تسبيح علي
+T1716: حلي الأرز بحليب جوز الهند من المطبخ الآسيوي
+T1717: كلوب يعلن جاهزيه تياغو و فابينيو لنهائي دوري أبطال أوروبا
+T1718: العراق خطف شاب انتقد خامنئي يشعل غضبا
+T1719: مع بدايه فصل ال شتاء وبروده الجو حضري سموذي الحمضيات لتزيد من مناعتك وتحميك من الانفلونزا
+T1720: محمد بوحفصي ميسي اختار باريس سيوقع عقد لمده عامين الاتفاق قريب جدا بين الطرفين
+T1721: تحديثات عديده يحصل عليها نظام ماك الجديد
+T1722: وكأنك تملك قلبان الأول اكتفي من الوجع فانعزل والآخر ينبض ما ان تداعبه الكلمات الطيبه أحدهم يريد العزله والاخر يريد الحياه وما بينهم تتمزق أنت
+T1723: يعتبر تنقيب الحجج من أهم التقنيات الأساسيه التي تساعد الآلات علي التفكير لنحصل علي أدوات تساعدنا في اتخاذ قرارات أفضل وكشف الأخبار المزيفه وحتي فلتره نتائج البحث علي الإنترنت يبدو أن آي بي إم قد حققت خطوه كبيره في هذا الاتجاه
+T1724: تحدثك دائما عن نفسك دليل علي أنك لست واثقا منها
+T1725: قال صلي الله عليه وسلم صيام يوم عرفه أحتسب علي الله أن يكفر السنه التي قبله والسنه التي بعده
+T1726: جهاز سيحصل علي روم أندرويد غير رسمي قريبا
+T1727: رسميا ميلان يجدد عقد بيولي حتي عام
+T1728: لمقبلات شهيه حضري قوارب التوست المقرمش
+T1729: في مؤتمر هواوي لاطلاق هاتفي و
+T1730: مراسل الحدث محمد عثمان انطلاق أولي جلسات الحوار الوطني في مصر بعد قليل
+T1731: نهايه اللقاء بفوز اندونيسيا علي الكويت بنتيجه
+T1732: من سمع عن لفافه الموز بالجاك فروت وصفات الأكل طبخات
+T1733: منظمه الصحه العالميه تنسحب من رعايه مبادره عالميه بعد تساؤلات عن الأسس العلميه للحميه المعتمده علي الأغذيه ذات الأساس النباتي والتي تستبعد اللحوم
+T1734: هل سبق ورأيتم هذه الطرازات من فيراري   سيارات
+T1735: صندوق الاستثمارات السعودي علي وشك شراء حصه كبيره في مكلارين
+T1736: خلال السفر تجنب قطع الثلج بالمشروبات
+T1737: الذين يواجهون الموت غالبا ما يدركون لاول مره مدي حبهم للحياه فكر في هذا الشعور وحاول أن تقدر ماتمتلكه الان واستمتع به فهو لا يقدر بثمن
+T1738: الأمم المتحده تطالب بتوفير مليارات دولار كمساعدات إنسانيه لليمن اليمن
+T1739: تخطط شاومي لدعم إصدارها القادم من الهواتف القابله للطي بشاشه من سامسونج بحجم إنش
+T1740: الإيرادات الفصليه لمجموعه علي بابا عملاقه التجاره الإلكترونيه الصينيه ارتفعت متجاوزه التوقعات إذ تغلبت علي إغلاقات كورونا في الصين
+T1741: كن مبتسما ولو بلغ الأسي بك بحرا
+T1742: هدف الساطي حمدالله العالمي
+T1743: الدوري الايطالي لاتسيو اتلانتا م يوتيوب تعليق محمد ابوكبده
+T1744: نايكي تلغي عقد الرعايه مع سبارتاك موسكو
+T1745: نصيب الفرد من صافي الدين
+T1746: ما أحزن الله عبدا إلا ليسعده
+T1747: إغلاقات الصين وتشديد السياسه النقديه الأمريكيه تدفع النحاس إلي أدني مستوي له في أكثر من أشهر
+T1748: تشيفرين سألتقي ب بيريز في نهائي دروي الأبطال ولم أتحدث معه عن النظام الجديد للبطوله
+T1749: فمنهم ظالم لنفسه ومنهم مقتصد ومنهم سابق بالخيرات بإذن الله فاطر اختلف أهل العلم في سبب تقديم الظالم في الوعد بالجنه علي المقتصد والسابق فقال بعضهم قدم الظالم لئلا يقنط وأخر السابق بالخير لئلا يعجب بعمله فيحبط أضواء البيان للشنقيطي
+T1750: شركه تعمل حاليا علي ميزه فتح وإستخدام علي متصفح جوجل كروم

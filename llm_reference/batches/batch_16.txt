@@ -1,0 +1,89 @@
+You are an expert annotator of Arabic social media posts. Your task is to identify the main topic of each Arabic tweet below and assign it to exactly one of ten categories.
+
+The tweet texts have been preprocessed: account-specific hashtags, emojis, punctuation, digits, URLs, user handles, and Latin characters were removed, and some letters were normalized (for example, ة is written as ه, ى as ي, and أ إ آ as ا).
+
+Categories (name, Arabic name, what it covers, and how to decide in borderline cases):
+
+1. Politics (سياسة): Government and state affairs: elections, officials and their statements, diplomacy and international relations, conflicts and security, laws and political decisions. Borderline: an economic decision by a government is Economy if the tweet is mainly about its economic effects.
+
+2. Economy (اقتصاد): Markets and money: companies and their results, stock markets, prices and inflation, oil and energy markets, trade, banking, investment, employment, economic policy. Borderline: technology companies' products are Technology; their business results are Economy.
+
+3. Religion (دين): Islamic religious content: Qur'anic verses, hadith, supplications (دعاء), fatwas and rulings, worship and religious occasions (prayer, fasting, Hajj), sayings of scholars about faith and worship. Borderline: a religious text (verse, hadith, supplication) is Religion, even if it is phrased as a saying.
+
+4. Sports (رياضة): Matches, results, line-ups, players, clubs, coaches, transfers, tournaments and championships.
+
+5. Health (صحة): Human health: diseases and symptoms, treatments and medicines, medical advice, nutrition for health, fitness and weight, mental health, skin and body care, public health. Borderline: mainly a scientific discovery or research finding is Science; mainly a recipe or dish is Cooking.
+
+6. Technology (تكنولوجيا): Devices and digital products: smartphones and computers, apps and software, the internet and social media platforms, artificial intelligence, video games, tech companies' products and features, cybersecurity. Borderline: the scientific research behind a technology is Science.
+
+7. Science (علوم): Scientific knowledge and discovery: research findings, space and astronomy, physics and chemistry, biology, animals and nature, earth, environment and climate, general scientific facts. Borderline: if the main point is a person's health or a treatment, it is Health.
+
+8. Cars (سيارات): Cars and driving: car models, specifications, prices, reviews, the automotive industry and motor shows, maintenance and driving tips.
+
+9. Cooking (طهي): Food preparation: recipes, dishes, ingredients, cooking methods, kitchen tips. Borderline: if the main point is the health effect of a food, it is Health.
+
+10. Thoughts and Wisdom (خواطر واقتباسات): A genre rather than a subject: personal reflections, aphorisms, sayings and quotations, poetry, motivational or emotional messages, life advice. Borderline: a general reflection or quotation is Thoughts and Wisdom, even if it mentions God briefly; a religious text is Religion.
+
+Rules:
+- Judge each tweet from its own text only, independently of the other tweets.
+- Choose the category of the tweet's main topic. If a tweet relates to several categories, choose the one it is mainly about, applying the borderline rules above.
+- If the topic cannot be determined with certainty, choose the closest category.
+- Read and classify every tweet yourself. Do not write or run code, and do not use keyword rules.
+
+Output format:
+- Exactly 50 lines inside one code block, in the same order as the tweets, from T0751 to T0800.
+- Each line has the form ID,Category (for example: T0751,Health).
+- Use only these category names, written exactly: Politics, Economy, Religion, Sports, Health, Technology, Science, Cars, Cooking, Thoughts and Wisdom.
+- Do not skip any tweet and do not add any explanation.
+
+Tweets (50 tweets, T0751 to T0800):
+T0751: أهداف المباراه الاتحاد النصر الاتحاد النصر
+T0752: قانون نيوتن الاول
+T0753: تسريب صوره لهاتف متين جديد من سامسونج قد يكون
+T0754: السعوديه ونيكاراجوا تبحثان تعزيز أوجه التعاون بمختلف المجالات
+T0755: صور مسربه تعرض لنا التطبيقين و المستقلين لنظام
+T0756: تعرف علي أغلي سيارات بورشه في التاريخ للتفاصيل
+T0757: والشيء المبارك الذي يعطي فوق ما ينتظر منه الشعراوي اللهم بارك لنا ولأحبتنا فيما رزقتنا يارب
+T0758: نأخذكم عبر هذا الفيديو في جوله داخل عددنا الرقمي الأخير الذي نقدم فيه اختراقات تقنيه لعام والذي أصدرناه رقميا تماشيا مع الإجراءات الوقائيه المتبعه وأتحناه بشكل مجاني لقرائنا عبر الرابط التالي
+T0759: زعيم الكميات محمد الحارثي قصه طاه سعودي يطعم آلاف الحجاج يوميا السعوديه
+T0760: السؤال الاهم في الوقت الحالي كيف تغذي جهازك المناعي لا تستهين بهذه الخطوه المهمه المناعه
+T0761: حكومه اوكرانيا توقع قانونا لوضع إطار قانوني للعملات الرقميه واعتمادها تأتي هذه الخطوه بعد تلقي الحكومه لملايين الدولارات كتبرعات من اشخاص ومؤسسات باستخدام العملات الرقميه اثناء الحرب الحاليه مع روسيا
+T0762: الأصول الروسيه تدفع ثمنا فادحا للتحركات العسكريه الروبل يهبط لأدني مستوي منذ وتكلفه التأمين علي الديون الروسيه ترتفع إلي أعلي مستوي منذ عام وسوق الأسهم يمحو مليار دولار من قيمته السوقيه روسيا وأوكرانيا
+T0763: حضري فطائر التفاح بالقرفه والزبيب بعجينه البف باستري مع كوب الشاي
+T0764: اكتشاف الآلاف من إشارات الراديو الجديده من مصادر كونيه قريبه
+T0765: مهما كنت جميلا بدون أخلاق سيراك الناس قبيحا مهما كنت قبيحا ذو أخلاق جميله سيراك الناس جميلا
+T0766: قد تكون لك أمنيات كبيره وتري أنها بعيده التحقيق لكن الله بكرمه قادر علي تقريب كل بعيد يقول تعالي قل عسي أن يكون قريبا أحسن الظن بمولاك
+T0767: تظاهر بأنك بخير دائما مهما عصفت بك الحياه فالكتمان أجمل بكثير من شفقه الآخرين عليك شكسبير
+T0768: تشكيله الفريقين الغرافه شباب الاهلي
+T0769: الصحه العالميه تنصح بالطعام المنزلي وتقليل الملح والمشروبات الغازيه للوقايه من كورونا
+T0770: كيف يمكن للعيش في الريف أن يساعدك في التغلب علي السرطان
+T0771: خصائص مضادات الأكسده فيتامين ب الموجود في الفطر الأسود يعمل كمضاد قوي للأكسده ويحمي الخلايا من الجذور الحره ويقلل من خطر الإصابه بالأمراض المزمنه كما أن له تأثير مفيد يدعم نظام المناعه
+T0772: مقال نون خلاف المتوقع لم يسهم التحول الرقمي في زياده الإنتاجيه يتحدث المقال عن التحول الرقمي وتأثيره في مجال الصناعه والبناء  ترجمه لمي الجريد مراجعه ثريا البرقان
+T0773: أصحاب الأهواء سبب كل فتنه للعلامه صالح بن فوزان الفوزان وهو يبكي مؤثر دقيقه و ثانيه
+T0774: توقعاتكم سريعا ل الكلاسيكو
+T0775: من سحر الطبيعه يأتي زيت الخروع لتحسين جميع مشاكل شعرك تعلمي كيف ولماذا الحياه حلوه
+T0776: أكد علي الإبراهيم المؤسس والمدير التنفيذي لتطبيق أن سوق القهوه ستنمو بعشر مرات خلال السنوات الخمس المقبله علي الرغم من مشكله الجفاف وتقطع سلاسل الإمداد وارتفاع أسعار البن مؤخرا
+T0777: السعاده أن تكسب أشخاصا لا يجيدون التصنع ولا يتلاعبون بالأقنعه تغيب عن أعينهم ولكن لا تغيب عن قلوبهم أبدا
+T0778: ما هي أسباب السعال وعلاجه ترجمه لبيد الأغبري تدقيق سلمي توفيق
+T0779: ما فيه أسهل لطريقه التحضير بالتفصيل
+T0780: التراجعات الحاده التي تطال أسواق الأسهم في الإمارات صباح اليوم تفصلها وضيف  وليد الخطيب المدير الشريك في جلوبال لتداول الأسهم والسندات يشرح أسبابها
+T0781: نسبه الإصابه بالاكتئاب تبدأ من رحم الأم
+T0782: معلومه إذا جفت علبه الأيلاينر لا تقومي بالتخلص منها بل استخدمي زيت الزيتون أو زيت جوز الهند لمعالجتها
+T0783: رئيس مجلس إداره شركه المتقدمه للبتروكيماويات ل الشرق ألف طن الطاقه الانتاجيه للمصانع الثلاثه الجديده وهناك ضغط علي الهوامش الربحيه للشركه بسبب عدم مواكبه نمو أسعار البيع للمنتجات مع ارتفاع تكلفه اللقيم
+T0784: لليوم الثالث علي التوالي سويداء سوريه تهتف بسقوط النظام
+T0785: معك حق و لكن الفرق فيه ناس تترك سياراتها غير نظيفه لسنين و البعض يعرف ان عنده اطفال و انه لابد من تنظيف السياره بين فتره و فتره بل ان فيه مواد تمنع امتصاص المراتب للعصير او الشاي و هذا شي جدا مفيد
+T0786: أماكن غامضه حول العالم لم تسمع بها من قبل
+T0787: القهوه العربيه مفيده جدا
+T0788: المملكه القضيه الفلسطينيه ثبات لا يتغير نرفض المزايدات صفقه القرن فلسطين
+T0789: قال صلي الله عليه وسلم من فرج عن مسلم كربه من كرب الدنيا نفس الله عنه كربه من كرب يوم القيامه ساهموا في تفريج كربات اخوانكم في ادلب تجوز في حقهم دفع الزكاه
+T0790: زلزال مدمر يضرب سوق العملات الرقميه خسائر بمليارات الدولارات لمغامرين ومستثمرين وشركات قد تعلن إفلاسها ماذا حدث ل الكريبتو
+T0791: هدف  التعادل ليوفنتوس عن طريق ديبالا
+T0792: في ليله مظلمه ومليئه بالمعاناه كنت أنت الشمعه التي تضيء هذا الظلام حتي يأتي الفجر جلال الدين الرومي
+T0793: فضيحه جديده ل الحمدين طائره أسلحه لمليشيات طرابلس
+T0794: بفضل الله ورحمته تم انشاء قناتي الرسميه علي موقع اليوتيوب وهذا اول ظهور لي فيها انتظروا ختمات للقرآن الكريم بصوتي رابط القناه
+T0795: تعلمي طريقه صنع الصابون الأسود بنفسك وإستفيدي منه لجمال بشرتك وشعرك
+T0796: ألف متظاهر في برشلونه احتجاجا علي محاكمه الإنفصاليين
+T0797: ساسكو تستحوذ علي من خدمات النفط المحدوده ب مليار ريال
+T0798: دراسه جديده تؤكد أن كبار السن أكثر سعاده من الشبان التفاصيل سايكولوجيا
+T0799: أما الإنسان المتفرغ فالاعتكاف في حقه مشروع فإذا كان عليه التزامات في أول العشر ولكنه يفرغ منها في أثنائها وأراد أن يعتكف البقيه فلا بأس مجموع الفتاوي
+T0800: جربي وصفه الأرز البسمتي مع الخضار المنوعه الشهيه وقدميه بجانب الدجاج أو اللحم
