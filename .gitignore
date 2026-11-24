@@ -1,0 +1,6 @@
+# Trained model weights
+**/final_model/model.safetensors
+
+# Training checkpoints
+**/checkpoint-*/optimizer.pt
+**/checkpoint-*/model.safetensors
